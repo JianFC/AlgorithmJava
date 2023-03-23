@@ -1,0 +1,206 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ac338",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_5.ac338",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac2_2",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_5.ac2_2",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac868",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_4.ac868",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac875",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_4.ac875",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac890",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_4.ac890",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac797",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_1.ac797",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac872",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_4.ac872",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac785",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_1.ac785",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac826",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_2.ac826",
+            "projectName": "Java_a5ec0a56"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac2816",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_1.ac2816",
+            "projectName": "Java_a5ec0a56"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac143",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_2.ac143",
+            "projectName": "Java_a5ec0a56"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac841",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.Chapter_2.ac841",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac802",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.ac802",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac803",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.ac803",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac799",
+            "request": "launch",
+            "mainClass": "AcWing.Level_1.ac799",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac785",
+            "request": "launch",
+            "mainClass": "AcWing.基础课.ac785",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac786",
+            "request": "launch",
+            "mainClass": "AcWing.ac786",
+            "projectName": "Java_a75a4fae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ac785",
+            "request": "launch",
+            "mainClass": "AcWing.ac785",
+            "projectName": "Java_a75a4fae"
+        }
+    ]
+} // https://code.visualstudio.com/docs/cpp/launch-json-reference
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "java",
+//             "name": "Launch ac786",
+//             "request": "launch",
+//             "mainClass": "AcWing.ac786",
+//             "projectName": "Java_a75a4fae"
+//         },
+//         {
+//             "type": "java",
+//             "name": "Launch ac785",
+//             "request": "launch",
+//             "mainClass": "AcWing.ac785",
+//             "projectName": "Java_a75a4fae"
+//         },
+//         {
+//             "type": "java",
+//             "name": "Launch Mainsclear",
+//             "request": "launch",
+//             "mainClass": "AcWing.Mainsclear",
+//             "projectName": "Java_a75a4fae"
+//         },
+//         {
+//             "type": "java",
+//             "name": "Launch Mains",
+//             "request": "launch",
+//             "mainClass": "AcWing.Mains",
+//             "projectName": "Java_a75a4fae"
+//         },
+//         {
+//             "type": "java",
+//             "name": "Launch test",
+//             "request": "launch",
+//             "mainClass": "AcWing.test",
+//             "projectName": "Java_a75a4fae"
+//         },
+//         {
+//             "type": "java",
+//             "name": "Launch Main",
+//             "request": "launch",
+//             "mainClass": "AcWing.Main",
+//             "projectName": "Java_a75a4fae"
+//         },
+//         {
+//             "type": "java",
+//             "name": "Launch Main",
+//             "request": "launch",
+//             "mainClass": "Main",
+//             "projectName": "Java_a75a4fae"
+//         },
+//         {
+//             "name": "(gdb) Launch",
+//             "type": "cppdbg",
+//             "request": "launch",
+//             "program": "${fileDirname}/program.exe",
+//             "args": [],
+//             "stopAtEntry": false,
+//             "cwd": "${workspaceFolder}",
+//             "environment": [],
+//             "externalConsole": true,
+//             "internalConsoleOptions": "neverOpen",
+//             "MIMode": "gdb",
+//             "miDebuggerPath": "gdb.exe",
+//             "setupCommands": [
+//                 {
+//                     "description": "Enable pretty-printing for gdb",
+//                     "text": "-enable-pretty-printing",
+//                     "ignoreFailures": false
+//                 }
+//             ],
+//             "preLaunchTask": "Compile"
+//         }
+//     ]
+// }
