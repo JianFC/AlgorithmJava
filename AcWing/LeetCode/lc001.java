@@ -2,7 +2,7 @@ package AcWing.LeetCode;
 
 import java.util.*;
 
-public class lc1 {  // 1. 两数之和 朴素版
+public class lc001 {  // 1. 两数之和 朴素版
     public int[] twoSum(int[] nums, int target) {
         int[] res = null;
         for (int i=0; i<nums.length; i++) 
