@@ -10,7 +10,7 @@ package AcWing.LeetCode;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {    //双指针变形
+class Solution {    //双指针变形：单指针+双指针
     public ListNode swapPairs(ListNode head) {
         ListNode dummy = new ListNode(-1, head);
 
