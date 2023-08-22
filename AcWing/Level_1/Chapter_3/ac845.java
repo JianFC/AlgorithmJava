@@ -21,14 +21,14 @@ public class ac845 {    //八数码
             if (t.equals("12345678x")) return d.get(t);
             
             int k = t.indexOf("x"), dist = d.get(t);
-            int x = k/3, y = k % 3;
+            int x = k / 3, y = k % 3;
             
-            for (int i=0; i<4; i++) {
-                int a = x+dx[i], b = y+dy[i];
+            for (int i = 0; i < 4; i++) {
+                int a = x + dx[i], b = y + dy[i];
                 
                 if (a >= 0 && a < 3 && b >= 0 && b < 3) {
                     char[] arr = t.toCharArray();
-                    char tp = arr[k]; arr[k] = arr[3*a+b]; arr[3*a+b] = tp;
+                    char tp = arr[k]; arr[k] = arr[3 * a + b]; arr[3 * a + b] = tp;
                     String str = new String(arr);
                     
                     if (d.get(str) == null) {   //保证队列一定会清空
