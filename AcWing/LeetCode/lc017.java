@@ -14,8 +14,8 @@ class Solution {    //DFS
         if (u == digits.length()) res.add(path);
         else {
             int ind = digits.charAt(u)-'0';     //下标
-            for (int i=0; i<map[ind].length(); i++) {
-                dfs(digits, u+1, path+map[ind].charAt(i));
+            for (int i = 0; i < map[ind].length(); i++) {
+                dfs(digits, u+1, path + map[ind].charAt(i));
             }
         }
     }

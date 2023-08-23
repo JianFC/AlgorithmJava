@@ -14,7 +14,7 @@ class Solution {    //k路归并
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode dummy = new ListNode(-1), tail = dummy;
         //创建小根堆，利用堆来维护k个指针
-        PriorityQueue<ListNode> heap = new PriorityQueue<>((o1, o2) -> o1.val-o2.val);
+        PriorityQueue<ListNode> heap = new PriorityQueue<>((o1, o2) -> o1.val - o2.val);
 
         for (ListNode ln: lists) if (ln != null) heap.offer(ln);    //初始入堆
 

@@ -3,20 +3,20 @@ package AcWing.LeetCode;
 class Solution {
     public boolean isMatch(String s, String p) {
         int n = s.length(), m = p.length();
-        s = " "+s; p = " "+p;   //从下标1开始dp
+        s = " " + s; p = " " + p;   //从下标1开始dp
 
-        boolean[][] f = new boolean[n+1][m+1];  //dp
+        boolean[][] f = new boolean[n + 1][m + 1];  //dp
         f[0][0] = true; //边界情况
 
-        for (int i=0; i<=n; i++) {      //注意从0开始，当s为空时，可能匹配
-            for (int j=1; j<=m; j++) {
-                if (j+1<=m && p.charAt(j+1) == '*') continue;    //把*和前面的字符视为一个整体处理
+        for (int i = 0; i <= n; i++) {      //注意从0开始，当s为空时，可能匹配
+            for (int j = 1; j <= m; j++) {
+                if (j + 1 <= m && p.charAt(j + 1) == '*') continue;    //把*和前面的字符视为一个整体处理
 
                 if (p.charAt(j) != '*') {   //不等于*
-                    f[i][j] = i>0 && f[i-1][j-1] && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
+                    f[i][j] = i>0 && f[i - 1][j - 1] && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
                 }
                 else {  //等于*
-                    f[i][j] = f[i][j-2] || ( i>0 && f[i-1][j] && (s.charAt(i) == p.charAt(j-1) || p.charAt(j-1)=='.'));
+                    f[i][j] = f[i][j - 2] || ( i > 0 && f[i - 1][j] && (s.charAt(i) == p.charAt(j - 1) || p.charAt(j - 1)=='.'));
                 }
 
             }

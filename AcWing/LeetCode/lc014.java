@@ -5,7 +5,7 @@ class Solution {
         String res = "";
         if (strs.length == 0) return res;
 
-        for (int i=0; ; i++) {
+        for (int i = 0; ; i++) {
             if (i >= strs[0].length()) return res;
             char c = strs[0].charAt(i);
             for (String s: strs) {  //遍历每一个字符串

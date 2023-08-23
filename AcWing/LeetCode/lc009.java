@@ -6,7 +6,7 @@ class Solution {
 
         long s = 0, y = x;     //逆序可能会溢出
         while (x != 0) {
-            s = s*10+x%10;
+            s = s * 10 + x % 10;
             x /= 10;
         }
 

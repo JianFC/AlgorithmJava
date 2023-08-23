@@ -14,7 +14,7 @@ class Solution {    //双指针算法，额外多开n的空间，类似归并，
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(-1), tail = dummy;    //tail指向链表尾部
 
-        while (list1!=null && list2!=null) {
+        while (list1! = null && list2! = null) {
             if (list1.val < list2.val) {
                 tail = tail.next = list1;
                 list1 = list1.next;
