@@ -16,8 +16,8 @@ class Solution {    //双指针
                     res = new PII(Math.abs(target - sum), sum);
                 
                 //情况二
-                sum = nums[i] + nums[j] + nums[k-1];
-                if (j<k-1 && Math.abs(target - sum) < res.first)
+                sum = nums[i] + nums[j] + nums[k - 1];
+                if (j < k - 1 && Math.abs(target - sum) < res.first)
                     res = new PII(Math.abs(target - sum), sum);
             }
         }
