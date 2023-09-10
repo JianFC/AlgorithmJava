@@ -20,7 +20,7 @@ public class ac836 {    //acwing836 合并集合
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
 
-        for (int i=1; i<=n; i++) p[i] = i;
+        for (int i = 1; i <= n; i++) p[i] = i;
 
         while (m-- > 0) {
             ins.nextToken(); String op = (String)ins.sval;

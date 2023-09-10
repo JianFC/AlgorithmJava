@@ -14,7 +14,7 @@ public class ac785 {
     static void quickSort(int[] q, int l, int r) {
         if (l >= r) return;
         
-        int x = q[l+r>>1], i = l-1, j = r+1;
+        int x = q[l + r >> 1], i = l - 1, j = r + 1;
         while (i < j) {
             do i++; while (q[i] < x);
             do j--; while (q[j] > x);
@@ -23,17 +23,17 @@ public class ac785 {
             }
         }
         
-        quickSort(q, l, j); quickSort(q, j+1, r); 
+        quickSort(q, l, j); quickSort(q, j + 1, r); 
     }
     
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i=0; i<n; i++) { ins.nextToken(); q[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i++) { ins.nextToken(); q[i] = (int)ins.nval; }
         
         quickSort(q, 0, n-1);
         
-        for (int i=0; i<n; i++) out.print(q[i]+" ");
+        for (int i = 0; i < n; i++) out.print(q[i]+" ");
         
         out.flush();
     }

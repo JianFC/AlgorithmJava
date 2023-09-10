@@ -19,7 +19,7 @@ public class ac830 {    //830. 单调栈
             ins.nextToken(); int x = (int)ins.nval;
             
             while (tt > 0 && stk[tt] >= x) tt--;
-            if (tt > 0) out.print(stk[tt]+" ");
+            if (tt > 0) out.print(stk[tt] + " ");
             else out.print("-1 ");
             
             stk[++tt] = x;

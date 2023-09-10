@@ -14,8 +14,8 @@ public class ac838 {
     
     static void down(int u) {
         int t = u;
-        if (2*u <= cnt && h[2*u]<h[t]) t = 2*u;
-        if (2*u+1 <= cnt && h[2*u+1]<h[t]) t = 2*u+1;
+        if (2 * u <= cnt && h[2 * u] < h[t]) t = 2 * u;
+        if (2 * u + 1 <= cnt && h[2 * u + 1] < h[t]) t = 2 * u + 1;
         if (t != u) {
             int tp = h[u]; h[u] = h[t]; h[t] = tp;
             down(t);
@@ -23,8 +23,8 @@ public class ac838 {
     }
     
     static void up(int u) {
-        while (u/2 > 0 && h[u/2] > h[u]) {
-            int tp = h[u]; h[u] = h[u/2]; h[u/2] = tp;
+        while (u / 2 > 0 && h[u / 2] > h[u]) {
+            int tp = h[u]; h[u] = h[u / 2]; h[u / 2] = tp;
             u >>= 1;
         }
     }
@@ -33,13 +33,13 @@ public class ac838 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i=1; i<=n; i++) { ins.nextToken(); h[i] = (int)ins.nval; }
+        for (int i = 1; i <= n; i++) { ins.nextToken(); h[i] = (int)ins.nval; }
         cnt = n;
         
-        for (int i=n/2; i>0; i--) down(i);  //O(n)方式建堆
+        for (int i = n / 2; i > 0; i--) down(i);  //O(n)方式建堆
         
         while (m-- > 0) {
-            out.print(h[1]+" ");
+            out.print(h[1] + " ");
             h[1] = h[cnt--];
             down(1);
         }

@@ -14,7 +14,7 @@ public class ac786 {
     static int quickSort(int[] q, int l, int r, int k) {
         if (l >= r) return q[l];
         
-        int x = q[l+r>>1], i = l-1, j = r+1;
+        int x = q[l + r >> 1], i = l - 1, j = r + 1;
         while (i < j) {
             do i++; while (q[i] < x);
             do j--; while (q[j] > x);
@@ -23,7 +23,7 @@ public class ac786 {
             }
         }
         
-        if (k-(j-l+1) > 0) return quickSort(q, j+1, r, k-(j-l+1));
+        if (k - (j - l + 1) > 0) return quickSort(q, j + 1, r, k - (j - l + 1));
         else return quickSort(q, l, j, k);
     }
     
@@ -31,9 +31,9 @@ public class ac786 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); k = (int)ins.nval;
         
-        for (int i=0; i<n; i++) { ins.nextToken(); q[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i++) { ins.nextToken(); q[i] = (int)ins.nval; }
         
-        out.print(quickSort(q, 0, n-1, k));
+        out.print(quickSort(q, 0, n - 1, k));
         
         out.flush();
     }

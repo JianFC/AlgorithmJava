@@ -15,7 +15,7 @@ public class ac803 {
     static int merge(List<PII> segs) {
         List<PII> res = new ArrayList<PII>();
         
-        segs.sort((o1, o2) -> o1.first-o2.first);   //sort参数>0交换，<0不交换
+        segs.sort((o1, o2) -> o1.first - o2.first);   //sort参数>0交换，<0不交换
         
         int st = (int)-2e9, ed = (int)-2e9;
         for (PII seg: segs) {

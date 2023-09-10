@@ -14,8 +14,8 @@ public class ac790 {
         
         double l = -100, r = 100;
         while (r - l > eps) {
-            double mid = (l+r)/2;
-            if (mid*mid*mid >= x) r=mid;
+            double mid = (l + r) / 2;
+            if (mid * mid * mid >= x) r = mid;
             else l = mid;
         }
         

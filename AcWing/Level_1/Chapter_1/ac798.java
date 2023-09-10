@@ -13,9 +13,9 @@ public class ac798 {
     
     static void insert(int x1, int y1, int x2, int y2, int c) {
         b[x1][y1] += c;
-        b[x2+1][y1] -= c;
-        b[x1][y2+1] -= c;
-        b[x2+1][y2+1] += c;
+        b[x2 + 1][y1] -= c;
+        b[x1][y2 + 1] -= c;
+        b[x2 + 1][y2 + 1] += c;
     }
 
     public static void main(String[] args) throws Exception {
@@ -23,8 +23,8 @@ public class ac798 {
         ins.nextToken(); m = (int)ins.nval;
         ins.nextToken(); k = (int)ins.nval;
         
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=m; j++) {
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= m; j++) {
                 ins.nextToken(); a[i][j] = (int)ins.nval;
                 insert(i, j, i, j, a[i][j]);
             }
@@ -38,9 +38,10 @@ public class ac798 {
             insert(x1, y1, x2, y2, c);
         }
         
-        for (int i=1; i<=n; i++) {
-            for (int j=1; j<=m; j++) {
-                b[i][j] += b[i-1][j]+b[i][j-1]-b[i-1][j-1]; out.print(b[i][j]+" ");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
+                b[i][j] += b[i - 1][j] + b[i][j - 1] - b[i - 1][j - 1]; 
+                out.print(b[i][j] + " ");
             }
             out.print("\n");
         }

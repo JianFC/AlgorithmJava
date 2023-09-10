@@ -16,7 +16,7 @@ public class ac840 {    //AcWing 840. 模拟散列表
 
     //当x存在时返回x存储的位置，不存在时返回应该存储的位置
     static int find(int x) {
-        int k = (x % N+N) % N;
+        int k = (x % N + N) % N;
 
         while (h[k] != nul && h[k] != x) {
             k++;
@@ -28,9 +28,9 @@ public class ac840 {    //AcWing 840. 模拟散列表
 
 
     public static void main(String[] args) throws Exception {
-        // for (int i=200000; true; i++) {
+        // for (int i = 200000; true; i++) {
         //     int flag = 1;
-        //     for (int j=2; j<=i/j; j++)
+        //     for (int j = 2; j <= i / j; j++)
         //         if (i % j == 0) {
         //             flag = 0;
         //             break;

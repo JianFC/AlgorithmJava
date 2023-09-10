@@ -46,21 +46,21 @@ public class ac827 {    //827. 双链表
             }
             else if (op.equals("D")) {
                 ins.nextToken(); int k = (int)ins.nval;
-                remove(k+1);
+                remove(k + 1);
             }
             else if (op.equals("IL")) {
                 ins.nextToken(); int k = (int)ins.nval;
                 ins.nextToken(); int x = (int)ins.nval;
-                add(l[k+1], x);
+                add(l[k + 1], x);
             }
             else if (op.equals("IR")) {
                 ins.nextToken(); int k = (int)ins.nval;
                 ins.nextToken(); int x = (int)ins.nval;
-                add(k+1, x);
+                add(k + 1, x);
             }
         }
         
-        for (int i=r[0]; i!=1; i=r[i]) out.print(e[i]+" ");
+        for (int i = r[0]; i != 1; i = r[i]) out.print(e[i] + " ");
 
         out.flush();
     }

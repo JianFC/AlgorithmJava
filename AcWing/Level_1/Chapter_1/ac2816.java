@@ -15,11 +15,11 @@ public class ac2816 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i=0; i<n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
-        for (int i=0; i<m; i++) { ins.nextToken(); b[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
+        for (int i = 0; i < m; i++) { ins.nextToken(); b[i] = (int)ins.nval; }
         
         int j = 0;
-        for (int i=0; i<m; i++) 
+        for (int i = 0; i < m; i++) 
             if (j < n && a[j] == b[i]) j++;
         
         if (j == n) out.print("Yes");

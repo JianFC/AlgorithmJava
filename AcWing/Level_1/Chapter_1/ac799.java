@@ -14,10 +14,10 @@ public class ac799 {
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i=0; i<n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
         
         int res = 0;
-        for (int i=0, j=0; i<n; i++) {
+        for (int i = 0, j = 0; i < n; i++) {
             s[a[i]]++;
             
             while (j < i && s[a[i]] > 1) {
@@ -25,7 +25,7 @@ public class ac799 {
                 j++;
             }
             
-            res = Math.max(res, i-j+1);
+            res = Math.max(res, i - j + 1);
         }
         
         out.print(res);

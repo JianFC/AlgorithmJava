@@ -15,11 +15,11 @@ public class ac868_2 {
     
     // 埃式筛法，时间复杂度O(nloglogn)
     static void getPrimes(int n) {
-        for (int i=2; i<=n; i++) {
+        for (int i = 2; i <= n; i++) {
             if (!st[i]) {
                 primes[cnt++] = i;
                 
-                for (int j=i+i; j<=n; j+=i) st[j] = true;
+                for (int j = i + i; j <= n; j += i) st[j] = true;
             }
         }
     }

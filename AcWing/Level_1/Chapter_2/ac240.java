@@ -25,7 +25,7 @@ public class ac240 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); k = (int)ins.nval;
         
-        for (int i=1; i<=n; i++) p[i] = i;
+        for (int i = 1; i <= n; i++) p[i] = i;
         
         int res = 0;
         while (k-- > 0) {
@@ -37,18 +37,18 @@ public class ac240 {
             else {
                 if (t == 1) {
                     int px = find(x), py = find(y);
-                    if (px == py && (d[x]-d[y]) % 3 != 0) res++;
+                    if (px == py && (d[x] - d[y]) % 3 != 0) res++;
                     else if (px != py) {
                         p[px] = py;
-                        d[px] = d[y]-d[x];
+                        d[px] = d[y] - d[x];
                     }
                 }
                 else if (t == 2){
                     int px = find(x), py = find(y);
-                    if (px == py && (d[x]-d[y]+1) % 3 != 0) res++;
+                    if (px == py && (d[x] - d[y] + 1) % 3 != 0) res++;
                     else if (px != py) {
                         p[px] = py;
-                        d[px] = d[y]-d[x]-1;
+                        d[px] = d[y] - d[x] - 1;
                     }
                 }
             } 

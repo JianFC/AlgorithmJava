@@ -17,7 +17,7 @@ public class ac791 {
             t /= 10;
         }
         
-        while (res.size() > 1 && res.get(res.size()-1) == 0) res.remove(res.size()-1);
+        while (res.size() > 1 && res.get(res.size() - 1) == 0) res.remove(res.size() - 1);
         
         return res;
     }
@@ -28,12 +28,12 @@ public class ac791 {
         List<Integer> B = new ArrayList<Integer>();
         List<Integer> C = new ArrayList<Integer>();
         
-        for (int i=a.length()-1; i>=0; i--) A.add(a.charAt(i)-'0');
-        for (int i=b.length()-1; i>=0; i--) B.add(b.charAt(i)-'0');
+        for (int i = a.length() - 1; i >= 0; i--) A.add(a.charAt(i) - '0');
+        for (int i = b.length() - 1; i >= 0; i--) B.add(b.charAt(i) - '0');
         
         C = add(A, B);
         
-        for (int i=C.size()-1; i>=0; i--) out.print(C.get(i));
+        for (int i = C.size() - 1; i >= 0; i--) out.print(C.get(i));
 
         out.flush();
     }

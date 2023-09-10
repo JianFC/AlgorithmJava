@@ -43,16 +43,16 @@ public class ac826 {
             else if (op.equals("D")) {
                 ins.nextToken(); int k = (int)ins.nval;
                 if (k == 0) head = ne[head];
-                else remove(k-1);
+                else remove(k - 1);
             }
             else if (op.equals("I")) {
                 ins.nextToken(); int k = (int)ins.nval;
                 ins.nextToken(); int x = (int)ins.nval;
-                add(k-1, x);
+                add(k - 1, x);
             }
         }
         
-        for (int i=head; i!=-1; i=ne[i]) out.print(e[i]+" ");
+        for (int i = head; i != -1; i = ne[i]) out.print(e[i] + " ");
 
         out.flush();
     }

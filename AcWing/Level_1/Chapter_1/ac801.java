@@ -9,7 +9,7 @@ public class ac801 {
     static int n;
     
     static int lowbit(int x) {
-        return x&-x;
+        return x & -x;
     }
     
     public static void main(String[] args) throws Exception {

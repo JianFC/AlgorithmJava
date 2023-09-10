@@ -27,8 +27,8 @@ public class ac839 {
     
     static void down(int u) {
         int t = u;
-        if (2*u <= cnt && h[2*u] < h[t]) t = 2*u;
-        if (2*u+1 <= cnt && h[2*u+1] < h[t]) t = 2*u+1;
+        if (2 * u <= cnt && h[2 * u] < h[t]) t = 2 * u;
+        if (2 * u + 1 <= cnt && h[2 * u + 1] < h[t]) t = 2 * u + 1;
         if (t != u) {
             heap_swap(t, u);
             down(t);
@@ -36,8 +36,8 @@ public class ac839 {
     }
     
     static void up(int u) {
-        while (u/2 > 0 && h[u/2] > h[u]) {
-            heap_swap(u/2, u);
+        while (u / 2 > 0 && h[u / 2] > h[u]) {
+            heap_swap(u / 2, u);
             u >>= 1;
         }
     }

@@ -21,10 +21,10 @@ public class ac3302 {   //3302. 表达式求值
         char c = op[tt2--];
         
         int x = 0;
-        if (c == '+') x = a+b;
-        else if (c == '-') x = a-b;
-        else if (c == '*') x = a*b;
-        else if (c == '/') x = a/b;
+        if (c == '+') x = a + b;
+        else if (c == '-') x = a - b;
+        else if (c == '*') x = a * b;
+        else if (c == '/') x = a / b;
         
         num[++tt1] = x;
     }
@@ -35,14 +35,14 @@ public class ac3302 {   //3302. 表达式求值
         Map<Character, Integer> pr = new HashMap<Character, Integer>();
         pr.put('+', 1); pr.put('-', 1); pr.put('*', 2); pr.put('/', 2);
         
-        for (int i=0; i<str.length(); i++) {
+        for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             
             if (Character.isDigit(c)) {
                 int x = 0, j = i;
                 while (j < str.length() && Character.isDigit(str.charAt(j)))
-                    x = x*10 + str.charAt(j++)-'0';
-                i = j-1;
+                    x = x * 10 + str.charAt(j++)-'0';
+                i = j - 1;
                 num[++tt1] = x;
             }
             else if (c == '(') op[++tt2] = c;

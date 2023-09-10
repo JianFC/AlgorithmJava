@@ -16,19 +16,20 @@ public class ac796 {
         ins.nextToken(); m = (int)ins.nval;
         ins.nextToken(); q = (int)ins.nval;
         
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=m; j++) { ins.nextToken(); a[i][j] = (int)ins.nval; }
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= m; j++) { ins.nextToken(); a[i][j] = (int)ins.nval; }
         
         //初始化前缀和
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=m; j++) s[i][j] = s[i-1][j]+s[i][j-1]-s[i-1][j-1]+a[i][j];
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= m; j++) 
+                s[i][j] = s[i - 1][j] + s[i][j - 1] - s[i - 1][j - 1] + a[i][j];
         
         while (q-- > 0) {
             ins.nextToken(); int x1 = (int)ins.nval;
             ins.nextToken(); int y1 = (int)ins.nval;
             ins.nextToken(); int x2 = (int)ins.nval;
             ins.nextToken(); int y2 = (int)ins.nval;
-            out.println(s[x2][y2]-s[x2][y1-1]-s[x1-1][y2]+s[x1-1][y1-1]);
+            out.println(s[x2][y2] - s[x2][y1 - 1] - s[x1 - 1][y2] + s[x1 - 1][y1 - 1]);
         }
         
         out.flush();

@@ -10,13 +10,13 @@ public class ac793 {
     static List<Integer> mul(List<Integer> A, int b) {
          List<Integer> res = new ArrayList<Integer>();
          
-         for (int i=0, t=0; i < A.size() || t > 0; i++) {
-             if (i < A.size()) t += A.get(i)*b;
+         for (int i = 0, t = 0; i < A.size() || t > 0; i++) {
+             if (i < A.size()) t += A.get(i) * b;
              res.add(t % 10);
              t /= 10;
          }
          
-         while (res.size() > 1 && res.get(res.size()-1) == 0) res.remove(res.size()-1);
+         while (res.size() > 1 && res.get(res.size() - 1) == 0) res.remove(res.size() - 1);
          
          return res;
     }
@@ -27,11 +27,11 @@ public class ac793 {
         List<Integer> A = new ArrayList<Integer>();
         List<Integer> C = new ArrayList<Integer>();
         
-        for (int i=a.length()-1; i>=0; i--) A.add(a.charAt(i)-'0');
+        for (int i = a.length() - 1; i >= 0; i--) A.add(a.charAt(i)-'0');
         
         C = mul(A, b);
         
-        for (int i=C.size()-1; i>=0; i--) out.print(C.get(i));
+        for (int i = C.size() - 1; i >= 0; i--) out.print(C.get(i));
 
         out.flush();
     }

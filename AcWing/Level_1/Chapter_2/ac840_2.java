@@ -15,23 +15,23 @@ public class ac840_2 {
     static int idx;
 
     static void insert(int x) {
-        int k = (x % N+N) % N;
+        int k = (x % N + N) % N;
 
         e[idx] = x; ne[idx] = h[k]; h[k] = idx++;
     }
 
     static boolean find(int x) {
-        int k = (x % N+N) % N;
+        int k = (x % N + N) % N;
 
-        for (int i=h[k]; i!=-1; i=ne[i])
+        for (int i = h[k]; i != -1; i = ne[i])
             if (e[i] == x) return true;
         return false;
     }
 
     public static void main(String[] args) throws Exception {
-        // for (int i=100000; true; i++) {
+        // for (int i = 100000; true; i++) {
         //     int flag = 1;
-        //     for (int j=2; j<=i/j; j++) {
+        //     for (int j = 2; j <= i / j; j++) {
         //         if (i % j == 0) {
         //             flag = 0;
         //             break;

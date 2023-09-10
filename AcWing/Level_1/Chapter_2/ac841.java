@@ -13,19 +13,19 @@ public class ac841 {    //841. 字符串哈希
     static long[] h = new long[N], p = new long[N];
     
     static long get(int l, int r) {
-        return h[r]-h[l-1]*p[r-l+1];
+        return h[r] - h[l - 1] * p[r - l + 1];
     }
 
     public static void main(String[] args) throws Exception {
         String[] ss = inb.readLine().split(" ");
         n = Integer.parseInt(ss[0]); m = Integer.parseInt(ss[1]);
-        String str = " "+inb.readLine();    //不能用ins.sval，字符串长度超过缓存
+        String str = " " + inb.readLine();    //不能用ins.sval，字符串长度超过缓存
         
         //预处理h和p数组
         p[0] = 1;
-        for (int i=1; i<=n; i++) {
-            p[i] = p[i-1]*P;
-            h[i] = h[i-1]*P+str.charAt(i);
+        for (int i = 1; i <= n; i++) {
+            p[i] = p[i - 1] * P;
+            h[i] = h[i - 1] * P + str.charAt(i);
         }
         
         while (m-- > 0) {
