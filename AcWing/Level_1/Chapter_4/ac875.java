@@ -9,9 +9,9 @@ public class ac875 {    //875. 快速幂
     static long qmi(long a, long k, long p) {   //Java实现时需扩大为long类型
         long res = 1 % p;
         while (k > 0) {
-            if ((k&1) == 1) res = res*a % p;
+            if ((k & 1) == 1) res = res * a % p;
             k >>= 1;
-            a = a*a % p;
+            a = a * a % p;
         }
         
         return res;

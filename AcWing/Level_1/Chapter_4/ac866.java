@@ -9,7 +9,7 @@ public class ac866 {    //866. 试除法判定质数
     static boolean isPrime(int x) {
         if (x < 2) return false;
         else
-            for (int i=2; i<=x/i; i++)
+            for (int i = 2; i <= x / i; i++)
                 if (x % i == 0) return false;
         
         return true;

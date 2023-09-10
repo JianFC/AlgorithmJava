@@ -7,16 +7,16 @@ public class ac867 {
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     
     static void divide(int x) {
-        for (int i=2; i<=x/i; i++)
+        for (int i = 2; i <= x / i; i++)
             if (x % i == 0) {
                 int s = 0;
                 while (x % i == 0) {
                     x /= i; s++;
                 }
-                out.println(i+" "+s);
+                out.println(i + " " + s);
             }
         
-        if (x > 1) out.println(x+" 1");
+        if (x > 1) out.println(x + " 1");
         out.println();
     }
     

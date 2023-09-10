@@ -10,15 +10,15 @@ public class ac869 {
     static List<Integer> getDivisors(int x) {
         List<Integer> res = new ArrayList<>();
         
-        for (int i=1; i<=x/i; i++) {
+        for (int i = 1; i <= x / i; i++) {
             if (x % i == 0) {
                 res.add(i);
                 
-                if (i != x/i) res.add(x/i);
+                if (i != x / i) res.add(x/i);
             }
         }
         
-        res.sort((o1, o2) -> o1-o2);
+        res.sort((o1, o2) -> o1 - o2);
         return res;
     } 
     
@@ -30,7 +30,7 @@ public class ac869 {
             
             List<Integer> res = getDivisors(x);
             
-            for (int p: res) out.print(p+" ");
+            for (int p: res) out.print(p + " ");
             out.println();
         }
 

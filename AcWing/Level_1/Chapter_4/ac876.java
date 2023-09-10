@@ -9,9 +9,9 @@ public class ac876 {    //876. 快速幂求逆元
     static long qmi(long a, long k, long p) {
         long res = 1 % p;
         while (k > 0) {
-            if ((k&1) == 1) res = res*a % p;
+            if ((k & 1) == 1) res = res * a % p;
             k >>= 1;
-            a = a*a % p;
+            a = a * a % p;
         }
         
         return res;
@@ -26,7 +26,7 @@ public class ac876 {    //876. 快速幂求逆元
             ins.nextToken(); int p = (int)ins.nval;
             
             if (a % p == 0) out.println("impossible");
-            else out.println(qmi(a, p-2, p));
+            else out.println(qmi(a, p - 2, p));
         }
 
         out.flush();

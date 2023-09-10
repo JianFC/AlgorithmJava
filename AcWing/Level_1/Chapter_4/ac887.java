@@ -9,9 +9,9 @@ public class ac887 {    //887. 求组合数 III
     static long qmi(long a, long k, long p) {
         long res = 1 % p;
         while (k > 0) {
-            if ((k&1) == 1) res = res*a % p;
+            if ((k & 1) == 1) res = res * a % p;
             k >>= 1;
-            a = a*a % p;
+            a = a * a % p;
         }
         
         return res;
@@ -21,17 +21,17 @@ public class ac887 {    //887. 求组合数 III
         if (b > a) return 0;
         
         long res = 1;
-        for (long i=1, j=a; i<=b; i++, j--) {
-            res = res*j % p;
-            res = res*qmi(i, p-2, p) % p;
+        for (long i = 1, j = a; i <= b; i++, j--) {
+            res = res * j % p;
+            res = res*qmi(i, p - 2, p) % p;
         }
         
         return res;
     }
     
     static long lucas(long a, long b, long p) {
-        if (a<p && b<p) return C(a, b, p);
-        else return C(a % p, b % p, p)*lucas(a/p, b/p, p) % p;
+        if (a < p && b < p) return C(a, b, p);
+        else return C(a % p, b % p, p) * lucas(a / p, b / p, p) % p;
     }
     
     public static void main(String[] args) throws Exception {
