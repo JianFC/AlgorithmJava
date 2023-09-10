@@ -20,7 +20,7 @@ public class ac861 {    //861. 二分图的最大匹配
     }
     
     static boolean find(int x) {
-        for (int i=h[x]; i!=-1; i=ne[i]) {
+        for (int i = h[x]; i != -1; i = ne[i]) {
             int j = e[i];
             if (!st[j]) {
                 st[j] = true;
@@ -50,7 +50,7 @@ public class ac861 {    //861. 二分图的最大匹配
         }
         
         int res = 0;
-        for (int i=1; i<=n1; i++) {
+        for (int i = 1; i <= n1; i++) {
             Arrays.fill(st, false);
             if (find(i)) res++;
         }

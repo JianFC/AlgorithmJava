@@ -7,7 +7,7 @@ public class ac860 {    //AcWing 860. 染色法判定二分图
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     
-    static int N = 100010, M = 2*N;
+    static int N = 100010, M = 2 * N;
     
     static int n, m;
     static int idx;
@@ -21,10 +21,10 @@ public class ac860 {    //AcWing 860. 染色法判定二分图
     static boolean dfs(int u, int c) {
         color[u] = c;
         
-        for (int i=h[u]; i!=-1; i=ne[i]) {
+        for (int i = h[u]; i != -1; i = ne[i]) {
             int j = e[i];
             if (color[j] == 0) {    // 此处括号不能省略！
-                if (!dfs(j, 3-c)) return false;
+                if (!dfs(j, 3 - c)) return false;
             }
             else if (color[j] == c) return false;
         }
@@ -45,7 +45,7 @@ public class ac860 {    //AcWing 860. 染色法判定二分图
         }
         
         int flag = 1;
-        for (int i=1; i<=n; i++)
+        for (int i = 1; i <= n; i++)
             if (color[i] == 0) {
                 if (!dfs(i, 1)) {
                     flag = 0;

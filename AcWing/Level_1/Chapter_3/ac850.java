@@ -24,7 +24,7 @@ public class ac850 {    //850. Dijkstra求最短路 II
         dist[1] = 0;
         
         //自定义堆组织方式
-        PriorityQueue<PII> heap = new PriorityQueue<PII>((o1, o2) -> o1.first-o2.first);
+        PriorityQueue<PII> heap = new PriorityQueue<PII>((o1, o2) -> o1.first - o2.first);
         heap.add(new PII(0, 1));
         
         while (!heap.isEmpty()) {
@@ -35,10 +35,10 @@ public class ac850 {    //850. Dijkstra求最短路 II
             if (st[ver]) continue;  //判断最短距离是否已经确定
             st[ver] = true;
             
-            for (int i=h[ver]; i!=-1; i=ne[i]) {    //更新ver所有出边
+            for (int i = h[ver]; i != -1; i = ne[i]) {    //更新ver所有出边
                 int j = e[i];
-                if (!st[j] && dist[j] > d+w[i]) {
-                    dist[j] = d+w[i];
+                if (!st[j] && dist[j] > d + w[i]) {
+                    dist[j] = d + w[i];
                     heap.add(new PII(dist[j], j));
                 }
             }

@@ -19,17 +19,17 @@ public class ac849 {    //849. Dijkstra求最短路 I
         
         dist[1] = 0;
         
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             int t = -1;
             
-            for (int j=1; j<=n; j++)
+            for (int j = 1; j <= n; j++)
                 if (!st[j] && (t == -1 || dist[j] < dist[t]))
                     t = j;
             
             st[t] = true;
             
-            for (int j=1; j<=n; j++)
-                dist[j] = Math.min(dist[j], dist[t]+g[t][j]);
+            for (int j = 1; j <= n; j++)
+                dist[j] = Math.min(dist[j], dist[t] + g[t][j]);
         }
         
         return dist[n] == INF ? -1 : dist[n];
@@ -40,7 +40,7 @@ public class ac849 {    //849. Dijkstra求最短路 I
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i=1; i<=n; i++) Arrays.fill(g[i], INF);
+        for (int i = 1; i <= n; i++) Arrays.fill(g[i], INF);
         
         while (m-- > 0) {
             ins.nextToken(); int a = (int)ins.nval;

@@ -10,7 +10,7 @@ public class ac843_1 {  //843. n-皇后问题
     
     static int n;
     static char[][] g = new char[N][N];
-    static boolean[] row = new boolean[N], col = new boolean[N], dg = new boolean[N*2], udg = new boolean[N*2];
+    static boolean[] row = new boolean[N], col = new boolean[N], dg = new boolean[N * 2], udg = new boolean[N * 2];
     
     static void dfs(int x, int y, int s) {
         if (y == n) {
@@ -19,8 +19,8 @@ public class ac843_1 {  //843. n-皇后问题
         
         if (x == n) {
             if (s == n) {
-                for (int i=0; i<n; i++) {
-                    for (int j=0; j<n; j++) out.print(g[i][j]);
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < n; j++) out.print(g[i][j]);
                     out.println();
                 }
                 out.println();
@@ -29,14 +29,14 @@ public class ac843_1 {  //843. n-皇后问题
         }
         
         //不放皇后
-        dfs(x, y+1, s);
+        dfs(x, y + 1, s);
         
         //放皇后
-        if (!row[x] && !col[y] && !dg[x+y] && !udg[y-x+n]) {
+        if (!row[x] && !col[y] && !dg[x + y] && !udg[y - x + n]) {
             g[x][y] = 'Q';
-            row[x] = col[y] = dg[x+y] = udg[y-x+n] = true;
-            dfs(x, y+1, s+1);
-            row[x] = col[y] = dg[x+y] = udg[y-x+n] = false;
+            row[x] = col[y] = dg[x + y] = udg[y - x + n] = true;
+            dfs(x, y + 1, s + 1);
+            row[x] = col[y] = dg[x + y] = udg[y - x + n] = false;
             g[x][y] = '.';
         }
     }
@@ -44,8 +44,8 @@ public class ac843_1 {  //843. n-皇后问题
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i=0; i<n; i++)
-            for (int j=0; j<n; j++) g[i][j] = '.';
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++) g[i][j] = '.';
         
         dfs(0, 0, 0);
 

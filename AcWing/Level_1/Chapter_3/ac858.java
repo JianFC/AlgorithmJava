@@ -18,10 +18,10 @@ public class ac858 {    //AcWing 858. Prim算法求最小生成树
         Arrays.fill(dist, INF);
         
         int res = 0;
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             int t = -1;
             
-            for (int j=1; j<=n; j++)
+            for (int j = 1; j <= n; j++)
                 if (!st[j] && (t == -1 || dist[j] < dist[t]))
                     t = j;
             
@@ -29,7 +29,7 @@ public class ac858 {    //AcWing 858. Prim算法求最小生成树
             if (i != 0) res += dist[t];
             st[t] = true;   // 将该点加入集合
             
-            for (int j=1; j<=n; j++)
+            for (int j = 1; j <= n; j++)
                 dist[j] = Math.min(dist[j], g[t][j]);
         }
         
@@ -40,7 +40,7 @@ public class ac858 {    //AcWing 858. Prim算法求最小生成树
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i=1; i<=n; i++) Arrays.fill(g[i], INF);
+        for (int i = 1; i <= n; i++) Arrays.fill(g[i], INF);
         
         while (m-- > 0) {
             ins.nextToken(); int a = (int)ins.nval;

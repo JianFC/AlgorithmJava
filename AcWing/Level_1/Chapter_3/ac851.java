@@ -32,10 +32,10 @@ public class ac851 {    //851. spfa求最短路
             int t = q[hh++];
             st[t] = false;
             
-            for (int i=h[t]; i!=-1; i=ne[i]) {
+            for (int i = h[t]; i != -1; i = ne[i]) {
                 int j = e[i];
-                if (dist[j] > dist[t]+w[i]) {
-                    dist[j] = dist[t]+w[i];
+                if (dist[j] > dist[t] + w[i]) {
+                    dist[j] = dist[t] + w[i];
                     
                     if (!st[j]) {   //注意更新的位置
                         q[++tt] = j;

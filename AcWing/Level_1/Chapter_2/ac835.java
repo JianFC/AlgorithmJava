@@ -15,7 +15,7 @@ public class ac835 {    //835. Trie字符串统计
     
     static void insert(String s) {
         int p = 0;
-        for (int i=0; i<s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             int u = s.charAt(i)-'a';
             if (son[p][u] == 0) son[p][u] = ++idx;
             p = son[p][u];
@@ -26,7 +26,7 @@ public class ac835 {    //835. Trie字符串统计
     
     static int query(String s) {
         int p = 0;
-        for (int i=0; i<s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             int u = s.charAt(i)-'a';
             if (son[p][u] == 0) return 0;
             p = son[p][u];

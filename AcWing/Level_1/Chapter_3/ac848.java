@@ -21,20 +21,20 @@ public class ac848 {    //848. 有向图的拓扑序列
     } 
     
     static boolean topoSort() {
-        for (int i=1; i<=n; i++)
+        for (int i = 1; i <= n; i++)
             if (d[i] == 0) q[++tt] = i; //初始将所有入读为0的点加入队列
         
         while (hh <= tt) {
             int t = q[hh++];
             
-            for (int i=h[t]; i!=-1; i=ne[i]) {
+            for (int i = h[t]; i != -1; i = ne[i]) {
                 int j = e[i];
                 d[j]--;
                 if (d[j] == 0) q[++tt] = j;
             }
         }
         
-        return tt == n-1;
+        return tt == n - 1;
     }
 
     public static void main(String[] args) throws Exception {
@@ -43,14 +43,14 @@ public class ac848 {    //848. 有向图的拓扑序列
         
         Arrays.fill(h, -1);
         
-        for (int i=0; i<m; i++) {
+        for (int i = 0; i < m; i++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             add(a, b); d[b]++;
         }
         
         if (topoSort())
-            for (int i=0; i<n; i++) out.print(q[i]+" ");
+            for (int i = 0; i < n; i++) out.print(q[i]+" ");
         else out.print("-1");
         
         out.flush();

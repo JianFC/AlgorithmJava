@@ -29,10 +29,10 @@ public class ac847 {    //847. 图中点的层次
         while (hh <= tt) {
             int t = q[hh++];
             
-            for (int i=h[t]; i!=-1; i=ne[i]) {
+            for (int i = h[t]; i != -1; i = ne[i]) {
                 int j = e[i];
                 if (d[j] == -1) {
-                    d[j] = d[t]+1;
+                    d[j] = d[t] + 1;
                     q[++tt] = j;
                 }
             }
@@ -48,7 +48,7 @@ public class ac847 {    //847. 图中点的层次
         
         Arrays.fill(h, -1);
         
-        for (int i=0; i<m; i++) {
+        for (int i = 0; i < m; i++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             add(a, b);

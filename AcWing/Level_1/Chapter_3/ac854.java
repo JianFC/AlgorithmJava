@@ -12,10 +12,10 @@ public class ac854 {    //AcWing 854. Floyd求最短路
     static int[][] dist = new int[N][N];
 
     static void floyd() {
-        for (int k=1; k<=n; k++)
-            for (int i=1; i<=n; i++)
-                for (int j=1; j<=n; j++)
-                    dist[i][j] = Math.min(dist[i][j], dist[i][k]+dist[k][j]);
+        for (int k = 1; k <= n; k++)
+            for (int i = 1; i <= n; i++)
+                for (int j = 1; j <= n; j++)
+                    dist[i][j] = Math.min(dist[i][j], dist[i][k] + dist[k][j]);
     }
 
 
@@ -24,8 +24,8 @@ public class ac854 {    //AcWing 854. Floyd求最短路
         ins.nextToken(); m = (int)ins.nval;
         ins.nextToken(); q = (int)ins.nval;
 
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=n; j++)
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= n; j++)
                 dist[i][j] = (i == j ? 0: INF);
 
         while (m-- > 0) {
@@ -40,7 +40,7 @@ public class ac854 {    //AcWing 854. Floyd求最短路
         while (q-- > 0) {
             ins.nextToken(); int x = (int)ins.nval;
             ins.nextToken(); int y = (int)ins.nval;
-            out.println((dist[x][y] > INF/2 ? "impossible": dist[x][y]));
+            out.println((dist[x][y] > INF / 2 ? "impossible": dist[x][y]));
         }
 
         out.flush();

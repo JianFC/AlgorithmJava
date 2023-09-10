@@ -22,7 +22,7 @@ public class ac852 {    //AcWing 852. spfa判断负环
     
     static boolean spfa() {
         //存在负权边，所以dist可以不用初始化为INF
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             q.offer(i); st[i] = true;   //初始将所有点加入q中
         }
         
@@ -30,12 +30,12 @@ public class ac852 {    //AcWing 852. spfa判断负环
             int t = q.poll();
             st[t] = false;  //出队
             
-            for (int i=h[t]; i!=-1; i=ne[i]) {
+            for (int i = h[t]; i != -1; i = ne[i]) {
                 int j = e[i];
                 
-                if (dist[j] > dist[t]+w[i]) {
-                    dist[j] = dist[t]+w[i];
-                    cnt[j] = cnt[t]+1;  //到达j的路径边数=到达t的路径边数+1
+                if (dist[j] > dist[t] + w[i]) {
+                    dist[j] = dist[t] + w[i];
+                    cnt[j] = cnt[t] + 1;  //到达j的路径边数=到达t的路径边数+1
                     
                     if (cnt[j] >= n) return true;
                     

@@ -7,7 +7,7 @@ public class ac846 {    //846. 树的重心
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     
-    static int N = 100010, M = 2*N; //注意无向图
+    static int N = 100010, M = 2 * N; //注意无向图
     
     static int n;
     static int idx;
@@ -23,7 +23,7 @@ public class ac846 {    //846. 树的重心
         st[u] = true;
         
         int res = 0, sum = 1;   //res存储若删去当前点，剩下的连通块点数最大值
-        for (int i=h[u]; i!=-1; i=ne[i]) {
+        for (int i = h[u]; i != -1; i = ne[i]) {
             int j = e[i];
             if (!st[j]) {
                 int s = dfs(j);
@@ -32,7 +32,7 @@ public class ac846 {    //846. 树的重心
             } 
         }
         
-        res = Math.max(res, n-sum);
+        res = Math.max(res, n - sum);
         ans = Math.min(res, ans);
         
         return sum;
@@ -43,7 +43,7 @@ public class ac846 {    //846. 树的重心
         
         Arrays.fill(h, -1);
         
-        for (int i=0; i<n-1; i++) {
+        for (int i = 0; i < n-1; i++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             add(a, b); add(b, a);

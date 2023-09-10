@@ -18,16 +18,16 @@ public class ac853 {    //853. 有边数限制的最短路
         
         dist[1] = 0;
         
-        for (int i=0; i<k; i++) {
+        for (int i = 0; i < k; i++) {
             last = dist.clone();    //备份上一次迭代结果，防止串联
             
-            for (int j=0; j<m; j++) {
+            for (int j = 0; j < m; j++) {
                 Edge e = edge[j];
-                dist[e.b] = Math.min(dist[e.b], last[e.a]+e.w);
+                dist[e.b] = Math.min(dist[e.b], last[e.a] + e.w);
             }
         }
         
-        if (dist[n] > INF/2) return INF;
+        if (dist[n] > INF / 2) return INF;
         else return dist[n];
     }
 
@@ -36,7 +36,7 @@ public class ac853 {    //853. 有边数限制的最短路
         ins.nextToken(); m = (int)ins.nval;
         ins.nextToken(); k = (int)ins.nval;
         
-        for (int i=0; i<m; i++) {
+        for (int i = 0; i < m; i++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             ins.nextToken(); int c = (int)ins.nval;
