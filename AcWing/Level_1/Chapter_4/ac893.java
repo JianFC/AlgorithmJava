@@ -17,13 +17,13 @@ public class ac893 {    //893. 集合-Nim游戏
         
         Set<Integer> S = new HashSet<Integer>();
         
-        for (int i=0; i<m; i++) {
+        for (int i = 0; i < m; i++) {
             int ss = s[i];
-            if (x >= ss) S.add(sg(x-ss));    //dfs求子节点SG集合
+            if (x >= ss) S.add(sg(x - ss));    //dfs求子节点SG集合
         }
         
         //求SG(x)
-        for (int i=0; ; i++) {
+        for (int i = 0; ; i++) {
             if (!S.contains(i))
                 return f[x] = i;
         }
@@ -33,7 +33,7 @@ public class ac893 {    //893. 集合-Nim游戏
         Arrays.fill(f, -1);
         
         ins.nextToken(); m = (int)ins.nval;
-        for (int i=0; i<m; i++) { ins.nextToken(); s[i] = (int)ins.nval; }
+        for (int i = 0; i < m; i++) { ins.nextToken(); s[i] = (int)ins.nval; }
         
         ins.nextToken(); n = (int)ins.nval;
         int res = 0;

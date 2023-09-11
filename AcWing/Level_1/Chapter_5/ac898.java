@@ -19,17 +19,17 @@ public class ac898 {    //898. 数字三角形（降维优化）
         //初始化f[j]
         Arrays.fill(f, -INF);
         
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=i; j++) { ins.nextToken(); a[i][j] = (int)ins.nval; }
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= i; j++) { ins.nextToken(); a[i][j] = (int)ins.nval; }
         
         f[1] = 0;     //初始化f[1]
-        for (int i=1; i<=n; i++)
-            for (int j=i; j>=1; j--)
-                f[j] = Math.max(f[j], f[j-1])+a[i][j];
+        for (int i = 1; i <= n; i++)
+            for (int j = i; j >= 1; j--)
+                f[j] = Math.max(f[j], f[j - 1]) + a[i][j];
         
         //找出底层最大的路径
         int k = 1;
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             if (f[i] > f[k]) k = i;
         }
         

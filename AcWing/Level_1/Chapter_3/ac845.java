@@ -8,7 +8,7 @@ public class ac845 {    //八数码
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     
     static Queue<String> q = new LinkedList<String>();
-    static Map<String, Integer> d = new HashMap<String, Integer>();
+    static Map<String, Integer> d = new HashMap<>();
     
     static int bfs(String st) {
         d.put(st, 0); q.offer(st);

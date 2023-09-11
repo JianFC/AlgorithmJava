@@ -15,12 +15,12 @@ public class ac913 {    //913. 排队打水
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i=0; i<n; i++) { ins.nextToken(); t[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++) { ins.nextToken(); t[i] = (int)ins.nval; }
         
         Arrays.sort(t, 0, n);   //将t[i]从小到大排序
         
         long res = 0;
-        for (int i=0; i<n; i++) res += t[i]*(n-i-1);
+        for (int i = 0; i < n; i ++) res += t[i] * (n - i - 1);
         
         out.println(res);
         

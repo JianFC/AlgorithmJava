@@ -15,17 +15,17 @@ public class ac905 {    //905. 区间选点
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             ivals[i] = new Interval(a, b);
         }
         
         //按右端点升序排列所有区间，Comparator函数 = sign(o1.r-o2.r)，1交换元素位置，0和-1则不变
-        Arrays.sort(ivals, 0, n, (o1, o2) -> o1.r-o2.r);
+        Arrays.sort(ivals, 0, n, (o1, o2) -> o1.r - o2.r);
         
         int res = 0, ed = (int)-2e9;     //ed初始化当前所有区间最右点为-2e9
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             if (ivals[i].l > ed) {
                 res++;
                 ed = ivals[i].r;    //更新ed

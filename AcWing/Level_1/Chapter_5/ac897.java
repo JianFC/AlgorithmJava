@@ -16,13 +16,13 @@ public class ac897 {    //897. 最长公共子序列
         String[] ss = inb.readLine().split(" +");
         n = Integer.parseInt(ss[0]); m = Integer.parseInt(ss[1]);
         
-        String tmp = inb.readLine(); tmp = " "+tmp; a = tmp.toCharArray();
-        tmp = inb.readLine(); tmp = " "+tmp; b = tmp.toCharArray();
+        String tmp = inb.readLine(); tmp = " " + tmp; a = tmp.toCharArray();
+        tmp = inb.readLine(); tmp = " " + tmp; b = tmp.toCharArray();
 
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=m; j++) {
-                f[i][j] = Math.max(f[i-1][j], f[i][j-1]);
-                if (a[i] == b[j]) f[i][j] = Math.max(f[i][j], f[i-1][j-1]+1);
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= m; j++) {
+                f[i][j] = Math.max(f[i - 1][j], f[i][j - 1]);
+                if (a[i] == b[j]) f[i][j] = Math.max(f[i][j], f[i - 1][j - 1] + 1);
             }
             
         out.println(f[n][m]);

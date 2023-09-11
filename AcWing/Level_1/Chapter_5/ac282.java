@@ -15,16 +15,16 @@ public class ac282 {    //AcWing 282. 石子合并
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i=1; i<=n; i++) { ins.nextToken(); s[i] = (int)ins.nval; }
-        for (int i=1; i<=n; i++) s[i] += s[i-1];    //处理前缀和
+        for (int i = 1; i <= n; i++) { ins.nextToken(); s[i] = (int)ins.nval; }
+        for (int i = 1; i <= n; i++) s[i] += s[i - 1];    //处理前缀和
         
-        for (int len=2; len<=n; len++) {    //枚举区间长度
-            for (int i=1; i+len-1<=n; i++) {    //枚举左端点
-                int l = i, r = i+len-1;     //区间左右端点
+        for (int len = 2; len <= n; len++) {    //枚举区间长度
+            for (int i = 1; i + len - 1 <= n; i++) {    //枚举左端点
+                int l = i, r = i + len - 1;     //区间左右端点
                 f[l][r] = INF;
                 
-                for (int k=l; k<r; k++)
-                    f[l][r] = Math.min(f[l][r], f[l][k]+f[k+1][r]+s[r]-s[l-1]);
+                for (int k = l; k < r; k++)
+                    f[l][r] = Math.min(f[l][r], f[l][k] + f[k + 1][r] + s[r] - s[l - 1]);
             }
         }
         

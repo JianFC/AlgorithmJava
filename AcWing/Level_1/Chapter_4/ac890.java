@@ -12,17 +12,17 @@ public class ac890 {    //890. 能被整除的数
         ins.nextToken(); int n = (int)ins.nval;
         ins.nextToken(); int m = (int)ins.nval;
         
-        for (int i=0; i<m; i++) { ins.nextToken(); p[i] = (int)ins.nval; }
+        for (int i = 0; i < m; i++) { ins.nextToken(); p[i] = (int)ins.nval; }
         
         long res = 0;
-        for (int i=1; i<1<<m; i++) {
+        for (int i = 1; i < 1 << m; i++) {
             long t = 1, s = 0;
             
-            for (int j=0; j<m; j++) {
-                if ((i>>j & 1) == 1) {
+            for (int j = 0; j < m; j++) {
+                if ((i >> j & 1) == 1) {
                     s++;
                     
-                    if (t*p[j] > n) {
+                    if (t * p[j] > n) {
                         t = -1;
                         break;
                     }
@@ -32,8 +32,8 @@ public class ac890 {    //890. 能被整除的数
             }
                 
             if (t != -1) {
-                if (s % 2 == 0) res -= n/t;
-                else res += n/t;
+                if (s % 2 == 0) res -= n / t;
+                else res += n / t;
             }
         }
     

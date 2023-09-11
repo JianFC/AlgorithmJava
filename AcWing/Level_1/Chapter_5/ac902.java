@@ -14,19 +14,19 @@ public class ac902 {    //AcWing 902. 最短编辑距离
 
     public static void main(String[] args) throws Exception {
         n = Integer.parseInt(inb.readLine().split(" +")[0]);
-        String tmp = inb.readLine(); tmp = " "+tmp; a = tmp.toCharArray();
+        String tmp = inb.readLine(); tmp = " " + tmp; a = tmp.toCharArray();
         m = Integer.parseInt(inb.readLine().split(" +")[0]);
-        tmp = inb.readLine(); tmp = " "+tmp; b = tmp.toCharArray();
+        tmp = inb.readLine(); tmp = " " + tmp; b = tmp.toCharArray();
 
         //初始化边界
-        for (int i=1; i<=m; i++) f[0][i] = i;
-        for (int i=1; i<=n; i++) f[i][0] = i;
+        for (int i = 1; i <= m; i++) f[0][i] = i;
+        for (int i = 1; i <= n; i++) f[i][0] = i;
 
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=m; j++) {
-                f[i][j] = Math.min(f[i-1][j]+1, f[i][j-1]+1);
-                if (a[i] == b[j]) f[i][j] = Math.min(f[i][j], f[i-1][j-1]);
-                else f[i][j] = Math.min(f[i][j], f[i-1][j-1]+1);
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= m; j++) {
+                f[i][j] = Math.min(f[i - 1][j] + 1, f[i][j - 1] + 1);
+                if (a[i] == b[j]) f[i][j] = Math.min(f[i][j], f[i - 1][j - 1]);
+                else f[i][j] = Math.min(f[i][j], f[i - 1][j - 1] + 1);
             }
 
         out.println(f[n][m]);

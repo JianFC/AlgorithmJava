@@ -25,7 +25,7 @@ public class ac285 {    //AcWing 285. 没有上司的舞会
         f[u][1] = happy[u];     //如果选择该结点,则加上其happy值
         
         //对其儿子dp
-        for (int i=h[u]; i!=-1; i = ne[i]) {
+        for (int i = h[u]; i != -1; i = ne[i]) {
             int j = e[i];   //其儿子
             dfs(j);     //递归搜索其儿子
             
@@ -40,9 +40,9 @@ public class ac285 {    //AcWing 285. 没有上司的舞会
         
         Arrays.fill(h, -1);     //初始化邻接表头数组
         
-        for (int i=1; i<=n; i++) { ins.nextToken(); happy[i] = (int)ins.nval; }
+        for (int i = 1; i <= n; i++) { ins.nextToken(); happy[i] = (int)ins.nval; }
         
-        for (int i=0; i<n-1; i++) {
+        for (int i = 0; i < n - 1; i++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             add(b, a);  //b是a的直接上司

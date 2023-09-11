@@ -13,7 +13,7 @@ public class ac878 {    //878. 线性同余方程
         }
         
         int d = exgcd(b, a % b, y, x);
-        y[0] -= a/b*x[0];
+        y[0] -= a / b * x[0];
         return d;
     }
     
@@ -28,7 +28,7 @@ public class ac878 {    //878. 线性同余方程
             int[] x = {0}, y = {0};
             int d = exgcd(a, m, x, y);
             
-            if (b % d == 0) out.println((long)x[0]*(b/d) % m);  //注意数据范围，乘法可能越界
+            if (b % d == 0) out.println((long)x[0] * (b / d) % m);  //注意数据范围，乘法可能越界
             else out.println("impossible");
         }
 

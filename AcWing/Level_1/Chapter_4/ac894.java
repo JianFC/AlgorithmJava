@@ -15,12 +15,12 @@ public class ac894 {    //894. 拆分-Nim游戏
         if (f[x] != -1) return f[x];
         
         Set<Integer> S = new HashSet<Integer>();
-        for (int i=0; i<x; i++)
-            for (int j=0; j<=i; j++)
-                S.add(sg(i)^sg(j));
+        for (int i = 0; i < x; i++)
+            for (int j = 0; j <= i; j++)
+                S.add(sg(i) ^ sg(j));
         
         //求SG
-        for (int i=0; ; i++)
+        for (int i = 0; ; i++)
             if (!S.contains(i))
                 return f[x] = i;
     }

@@ -6,15 +6,15 @@ public class ac885 {    //886. 求组合数 I
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     
-    static int N = 2010, mod = (int)1e9+7;
+    static int N = 2010, mod = (int)1e9 + 7;
     
     static int[][] C = new int[N][N];
     
     static void init() {
-        for (int i=0; i<N; i++)     //注意从0开始
-            for (int j=0; j<=i; j++)    //注意从0开始
+        for (int i = 0; i < N; i++)     //注意从0开始
+            for (int j = 0; j <= i; j++)    //注意从0开始
                 if (j == 0) C[i][j] = 1;
-                else C[i][j] = (C[i-1][j]+C[i-1][j-1]) % mod;
+                else C[i][j] = (C[i - 1][j] + C[i - 1][j - 1]) % mod;
     }
     
     public static void main(String[] args) throws Exception {

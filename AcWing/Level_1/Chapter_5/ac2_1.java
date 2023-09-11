@@ -16,15 +16,15 @@ public class ac2_1 {    //2. 01背包问题_原始解法
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             ins.nextToken(); v[i] = (int)ins.nval;
             ins.nextToken(); w[i] = (int)ins.nval;
         }
         
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=m; j++) {
-                f[i][j] = f[i-1][j];
-                if (j >= v[i]) f[i][j] = Math.max(f[i][j], f[i-1][j-v[i]]+w[i]);
+        for (int i = 1; i <= n; i++)
+            for (int j = 1; j <= m; j++) {
+                f[i][j] = f[i - 1][j];
+                if (j >= v[i]) f[i][j] = Math.max(f[i][j], f[i - 1][j - v[i]] + w[i]);
             }
             
         out.println(f[n][m]);

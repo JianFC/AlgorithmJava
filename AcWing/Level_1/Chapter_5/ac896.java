@@ -23,13 +23,13 @@ public class ac896 {    //896. 最长上升子序列 II
             //二分左边界
             int l = 0, r = len;
             while (l < r) {
-                int mid = l+r+1>>1;
+                int mid = l + r + 1 >> 1;
                 if (q[mid] < a) l = mid;
-                else r = mid-1;
+                else r = mid - 1;
             }
             
-            len = Math.max(len, r+1);
-            q[r+1] = a;
+            len = Math.max(len, r + 1);
+            q[r + 1] = a;
         }
         
         out.println(len);

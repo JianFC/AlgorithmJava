@@ -18,33 +18,33 @@ public class ac907 {    // 907. 区间覆盖
         ins.nextToken(); ed = (int)ins.nval;
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             ivals[i] = new Interval(a, b);
         }
         
-        Arrays.sort(ivals, 0, n, (o1, o2) -> o1.l-o2.l);
+        Arrays.sort(ivals, 0, n, (o1, o2) -> o1.l - o2.l);
         
         boolean flag = false;
         int res = 0;
         // 双指针算法
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i ++) {
             int j = i, r = (int)-2e9;
-            while (j<n && ivals[j].l <= st) {
+            while (j < n && ivals[j].l <= st) {
                 r = Math.max(ivals[j].r, r);
-                j++;
+                j ++;
             }
             
             if (r < st) break;
             
-            res++;
+            res ++;
             if (r >= ed) {
                 flag = true; break;
             }
             
             st = r;
-            i = j-1;
+            i = j - 1;
         }
         
         if (flag) out.println(res);

@@ -13,7 +13,7 @@ public class ac877 {    //877. 扩展欧几里得算法
         }
         
         int d = exgcd(b, a % b, y, x);
-        y[0] -= a/b*x[0];
+        y[0] -= a / b * x[0];
         return d;
     }
     
@@ -26,7 +26,7 @@ public class ac877 {    //877. 扩展欧几里得算法
             
             int[] x = {0}, y = {0};
             exgcd(a, b, x, y);
-            out.println(x[0]+" "+y[0]);
+            out.println(x[0] + " " + y[0]);
         }
 
         out.flush();

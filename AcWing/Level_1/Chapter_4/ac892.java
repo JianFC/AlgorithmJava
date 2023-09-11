@@ -10,7 +10,7 @@ public class ac892 {    //892. 台阶-Nim游戏
         ins.nextToken(); int n = (int)ins.nval;
         
         int res = 0;
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             ins.nextToken(); int a = (int)ins.nval;
             if ((i & 1) == 1) res ^= a;     //二进制优化
         }
