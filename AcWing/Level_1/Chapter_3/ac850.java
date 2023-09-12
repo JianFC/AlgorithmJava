@@ -24,7 +24,7 @@ public class ac850 {    //850. Dijkstra求最短路 II
         dist[1] = 0;
         
         //自定义堆组织方式
-        PriorityQueue<PII> heap = new PriorityQueue<PII>((o1, o2) -> o1.first - o2.first);
+        PriorityQueue<PII> heap = new PriorityQueue<>((o1, o2) -> o1.first - o2.first);
         heap.add(new PII(0, 1));
         
         while (!heap.isEmpty()) {
