@@ -23,7 +23,7 @@ public class ac887 {    //887. 求组合数 III
         long res = 1;
         for (long i = 1, j = a; i <= b; i++, j--) {
             res = res * j % p;
-            res = res*qmi(i, p - 2, p) % p;
+            res = res * qmi(i, p - 2, p) % p;
         }
         
         return res;
