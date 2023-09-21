@@ -1,13 +1,13 @@
 package AcWing.LeetCode;
 
-class Solution {    //模拟+思维题
+class Solution {    //模拟 + 思维题
     public List<String> fullJustify(String[] wds, int mw) {
         List<String> res = new ArrayList<>();
         for (int i = 0; i < wds.length; i++) {
             int j = i + 1;  //j从下一个单词开始
             int len = wds[i].length();  //当前行的长度
             //计算当前行能放入多少个单词，初始时每个单词间先加入一个空格 
-            while (j < wds.length && len + 1+ wds[j].length() <= mw)    //注意判断条件
+            while (j < wds.length && len + 1 + wds[j].length() <= mw)    //注意判断条件
                 len += 1 + wds[j++].length();
 
             String line = wds[i];   //先将第一个单词放入line

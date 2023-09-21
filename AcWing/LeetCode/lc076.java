@@ -1,6 +1,6 @@
 package AcWing.LeetCode;
 
-class Solution {    //双指针+滑动窗口+哈希表+思维题
+class Solution {    //双指针 + 滑动窗口 + 哈希表 + 思维题
     public String minWindow(String s, String t) {
         //ht代表t的哈希表，hw代表滑动窗口的哈希表
         Map<Character, Integer> ht = new HashMap<>(), hw = new HashMap<>();
