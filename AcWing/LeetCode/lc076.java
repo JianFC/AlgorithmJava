@@ -6,7 +6,7 @@ class Solution {    //双指针 + 滑动窗口 + 哈希表 + 思维题
         Map<Character, Integer> ht = new HashMap<>(), hw = new HashMap<>();
         
         //更新ht
-        for (int i = 0; i < t.length(); i++) {
+        for (int i = 0; i < t.length(); i ++) {
             char c = t.charAt(i);
             if (ht.containsKey(c)) ht.put(c, ht.get(c) + 1);
             else ht.put(c, 1);
@@ -19,12 +19,12 @@ class Solution {    //双指针 + 滑动窗口 + 哈希表 + 思维题
             if (hw.containsKey(c)) hw.put(c, hw.get(c) + 1);
             else hw.put(c, 1);    //更新hw
 
-            if (ht.containsKey(c) && hw.get(c) <= ht.get(c)) cnt++;    //更新有效数量
+            if (ht.containsKey(c) && hw.get(c) <= ht.get(c)) cnt ++;    //更新有效数量
             
             char cj  = s.charAt(j);
             while (j < i && (!ht.containsKey(cj) || hw.get(cj) > ht.get(cj))) { //cj是多余字符，j++
                 hw.put(cj, hw.get(cj) - 1);
-                j++; cj = s.charAt(j);  //更新j和cj
+                j ++; cj = s.charAt(j);  //更新j和cj
             }
             
             if (cnt == t.length()) {    //找到一个覆盖字串

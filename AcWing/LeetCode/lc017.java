@@ -13,8 +13,8 @@ class Solution {    //DFS
     void dfs(String digits, int u, String path) {
         if (u == digits.length()) res.add(path);
         else {
-            int ind = digits.charAt(u)-'0';     //下标
-            for (int i = 0; i < map[ind].length(); i++) {
+            int ind = digits.charAt(u) - '0';     //下标
+            for (int i = 0; i < map[ind].length(); i ++) {
                 dfs(digits, u+1, path + map[ind].charAt(i));
             }
         }

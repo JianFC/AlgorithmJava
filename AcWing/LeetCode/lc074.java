@@ -1,6 +1,6 @@
 package AcWing.LeetCode;
 
-class Solution {    //坐标转换+二分
+class Solution {    //坐标转换 + 二分
     public boolean searchMatrix(int[][] ma, int tg) {
         if (ma.length == 0) return false;
         int n = ma.length, m = ma[0].length;

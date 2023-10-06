@@ -1,6 +1,6 @@
 package AcWing.LeetCode;
 
-class Solution {    //思维题+贪心+数学拆分
+class Solution {    //思维题 + 贪心 + 数学拆分
     public int maxProfit(int[] prices) {
         int res = 0;
         for (int i = 0; i + 1 < prices.length; i++) 

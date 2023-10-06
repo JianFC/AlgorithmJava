@@ -1,6 +1,6 @@
 package AcWing.LeetCode;
 
-class Solution {    //模拟+思维题
+class Solution {    //模拟 + 思维题
     public int maxProfit(int[] prices) {
         int res = 0;
         for (int i = 0, minp = 0x3f3f3f3f; i < prices.length; i++) {

@@ -1,6 +1,7 @@
 package AcWing.LeetCode;
+//123. 买卖股票的最佳时机 III
 
-class Solution {    //前后缀分解O(n)+思维题+模板题
+class Solution {    //前后缀分解O(n)  +思维题 + 模板题
     public int maxProfit(int[] prices) {
         int n = prices.length;
         int[] f = new int[n + 1];   //f[i]表示1~i天中交易一次获利的最大值
