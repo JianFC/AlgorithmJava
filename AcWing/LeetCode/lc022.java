@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //22. 括号生成
 
 class Solution {    //dfs
     List<String> res = new ArrayList<>();   

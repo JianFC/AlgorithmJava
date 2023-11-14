@@ -1,11 +1,11 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //4. 寻找两个正序数组的中位数
 
-class Solution {    //二分+递归
+class Solution {    //二分 + 递归
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int tot = nums1.length + nums2.length;
-        if (tot%2 == 0) {   //偶数个数
-            int left = find(nums1, 0, nums2, 0, tot/2);
-            int right = find(nums1, 0, nums2, 0, tot/2+1);
+        if (tot % 2 == 0) {   //偶数个数
+            int left = find(nums1, 0, nums2, 0, tot / 2);
+            int right = find(nums1, 0, nums2, 0, tot / 2 + 1);
             return (left + right) / 2.0;    //除以2.0防止取整
         }
         else return find(nums1, 0, nums2, 0, tot / 2 + 1);  //奇数个数

@@ -1,6 +1,6 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //12. 整数转罗马数字
 
-class Solution {    //模拟+思维题
+class Solution {    //模拟 + 思维题
     public String intToRoman(int num) {
         //时间复杂度O(logN), ref link: https://www.acwing.com/solution/content/101/
         int[] values = {
@@ -18,7 +18,7 @@ class Solution {    //模拟+思维题
 
         //贪心
         String res = "";
-        for (int i = 0; i < 13; i++)
+        for (int i = 0; i < 13; i ++)
             while (num >= values[i]) {
                 num -= values[i];
                 res += reps[i];

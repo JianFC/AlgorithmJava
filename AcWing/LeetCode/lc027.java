@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //27. 移除元素
 
 class Solution {    //双指针
     public int removeElement(int[] nums, int val) {

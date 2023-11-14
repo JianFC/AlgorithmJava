@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //26. 删除有序数组中的重复项
 
 class Solution {    //单调性 + 双指针
     public int removeDuplicates(int[] nums) {

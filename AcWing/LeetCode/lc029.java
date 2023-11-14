@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //29. 两数相除
 
 class Solution {    //倍增，快速幂
     public int divide(int x, int y) {
@@ -10,10 +10,10 @@ class Solution {    //倍增，快速幂
         for (long i = b; i <= a; i = i + i) exp.add(i);   //预处理b, b2, b2^2, b2^3...
 
         //倍增的思想
-        for (int i = exp.size()-1; i >= 0; i--) {
+        for (int i = exp.size()-1; i >= 0; i --) {
             if (a >= exp.get(i)) {
                 a -= exp.get(i);
-                res += (long)1<<i;  //转为long，防止溢出
+                res += (long)1 << i;  //转为long，防止溢出
             }
         }
         

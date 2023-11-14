@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-//6. N 字形变换
+package AcWing.LeetCode;        //6. N 字形变换
 
 class Solution {    //模拟 + 思维题 + 等差数列
     public String convert(String s, int n) {

@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //63. 不同路径 II
 
 class Solution {    //基础线性DP
     public int uniquePathsWithObstacles(int[][] o) {
@@ -7,8 +7,8 @@ class Solution {    //基础线性DP
         int m = o[0].length;
         int[][] f = new int[n][m];
 
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < m; j++)
+        for (int i = 0; i < n; i ++)
+            for (int j = 0; j < m; j ++)
                 if (o[i][j] == 0) {     //当(i, j)为空时可以走
                     if (i == 0 && j == 0) f[i][j] = 1;
                     else {

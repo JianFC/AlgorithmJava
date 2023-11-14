@@ -1,16 +1,16 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //8. 字符串转换整数 (atoi)
 
-class Solution {    //模拟+边界判断+思维
+class Solution {    //模拟 + 边界判断 + 思维
     public int myAtoi(String s) {
         int k = 0;  //遍历s
-        while (k < s.length() && s.charAt(k) == ' ') k++;   //去掉前导空格
+        while (k < s.length() && s.charAt(k) == ' ') k ++;   //去掉前导空格
         if (k == s.length()) return 0;  //特判
 
         int sig = 1;    //默认为正数
         if (s.charAt(k) == '-') {   //处理正负
-            sig = -1; k++;
+            sig = -1; k ++;
         }
-        else if (s.charAt(k) == '+') k++;   //注意else
+        else if (s.charAt(k) == '+') k ++;   //注意else
 
         int res = 0;
         while (k < s.length() && s.charAt(k) >= '0' && s.charAt(k) <= '9') {
@@ -21,7 +21,7 @@ class Solution {    //模拟+边界判断+思维
             if (-res * 10 - x == Integer.MIN_VALUE) return Integer.MIN_VALUE;
             
             res = res * 10 + x;
-            k++;
+            k ++;
         }
 
         return res * sig;

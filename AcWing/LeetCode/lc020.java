@@ -9,7 +9,7 @@ class Solution {    //DS，stack
             char c = s.charAt(i);
             if (c == '(' || c == '{' || c == '[') stk[++ tt] = c;
             else {
-                if (tt > 0 && Math.abs(c - stk[tt]) <= 2) tt--;     //括号ASCII性质
+                if (tt > 0 && Math.abs(c - stk[tt]) <= 2) tt --;     //括号ASCII性质
                 else return false;
             }
         }

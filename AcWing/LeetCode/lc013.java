@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //13. 罗马数字转整数
 
 import java.util.*;
 
@@ -12,7 +12,7 @@ class Solution {
         map.put('M', 1000); 
 
         int res = 0;
-        for (int i = 0; i < s.length(); i++)
+        for (int i = 0; i < s.length(); i ++)
             if (i + 1 < s.length() && map.get(s.charAt(i)) < map.get(s.charAt(i + 1)))
                 res -= map.get(s.charAt(i));
             else 

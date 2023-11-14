@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //25. K 个一组翻转链表
 
 /**
  * Definition for singly-linked list.
@@ -16,11 +16,11 @@ class Solution {    //单指针+双指针
 
         for (var p = dummy; ; ) {   //p单指针，每次向后移动k个位置，根据p的位置生成两个双指针
             var q = p;
-            for (int i = 0; i < k && q != null; i++) q = q.next;  //判断p之后是否还有k个节点
+            for (int i = 0; i < k && q != null; i ++) q = q.next;  //判断p之后是否还有k个节点
             if (q == null) break;   //已经没有k个节点，结束
 
             var a = p.next; var b = a.next;
-            for (int i = 0; i < k-1; i++) {     //交换k个节点内部节点，循环k-1次。a->b->c => a<-b<-c
+            for (int i = 0; i < k - 1; i ++) {     //交换k个节点内部节点，循环k - 1次。a -> b -> c => a <- b <- c
                 //a->b = > a<-b
                 var c = b.next;     //先存下b后一个节点的信息
                 b.next = a;         //更改连接方向

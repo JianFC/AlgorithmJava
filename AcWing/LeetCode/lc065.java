@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //65. 有效数字
 
-class Solution {    //模拟+思维题+双指针+扫描
+class Solution {    //模拟 + 思维题 + 双指针 + 扫描
     public boolean isNumber(String s) {
         int l = 0, r = s.length() - 1;
         //去掉前后空格
