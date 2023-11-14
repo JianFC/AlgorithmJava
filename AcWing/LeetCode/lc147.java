@@ -1,5 +1,4 @@
-package AcWing.LeetCode;    
-// 147. 对链表进行插入排序
+package AcWing.LeetCode;       // 147. 对链表进行插入排序
 
 /**
  * Definition for singly-linked list.

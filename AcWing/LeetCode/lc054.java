@@ -1,6 +1,6 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //54. 螺旋矩阵
 
-class Solution {    //方向向量+模拟题+枚举步数
+class Solution {    //方向向量 + 模拟题 + 枚举步数
     public List<Integer> spiralOrder(int[][] mx) {
         List<Integer> res = new ArrayList<>();
         int n = mx.length;
@@ -9,8 +9,8 @@ class Solution {    //方向向量+模拟题+枚举步数
         boolean[][] st = new boolean[n][m];     //判重数组，判断当前位置有没有走过
 
         int[] dx = {0, 1, 0, -1}, dy = {1, 0, -1, 0};   //移动向量，走的顺序为0123，0123...
-        //枚举n*m布，x，y代表坐标，d代表当前方向向量
-        for (int i = 0, x = 0, y = 0, d = 0; i < n * m; i++) {      
+        //枚举n * m步，x，y代表坐标，d代表当前方向向量
+        for (int i = 0, x = 0, y = 0, d = 0; i < n * m; i ++) {      
             res.add(mx[x][y]);
             st[x][y] = true;    //更新判重数组，该数已经走过
             

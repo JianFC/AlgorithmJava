@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //76. 最小覆盖子串
 
 class Solution {    //双指针 + 滑动窗口 + 哈希表 + 思维题
     public String minWindow(String s, String t) {

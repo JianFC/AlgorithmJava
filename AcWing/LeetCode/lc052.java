@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //52. N 皇后 II
 
 class Solution {    //DFS + 直线斜率优化
     int N = 10;
@@ -15,11 +15,11 @@ class Solution {    //DFS + 直线斜率优化
 
     void dfs(int u) {
         if (u == n) {
-            res++;  //找到一种合法方案
+            res ++;  //找到一种合法方案
             return;
         }
 
-        for (int i = 0; i < n; i++) {   //枚举改行哪些列可以放置皇后
+        for (int i = 0; i < n; i ++) {   //枚举改行哪些列可以放置皇后
             if (!col[i] && !dg[i + u] && !udg[i - u + n]) {
                 col[i] = dg[i + u] = udg[i - u + n] = true;
                 dfs(u + 1);

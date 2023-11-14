@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //69. x 的平方根
 
 class Solution {    //简单二分
     public int mySqrt(int x) {

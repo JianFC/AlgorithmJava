@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-//42. 接雨水
+package AcWing.LeetCode;        //42. 接雨水
 
 class Solution {    //单调栈 + 模拟
     int N = 100010;

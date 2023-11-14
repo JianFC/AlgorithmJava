@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //102. 二叉树的层序遍历
 
 /**
  * Definition for a binary tree node.
@@ -15,7 +15,7 @@ package AcWing.LeetCode;
  *     }
  * }
  */ 
-class Solution {    //BFS+层次遍历
+class Solution {    //BFS + 层次遍历
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         Queue<TreeNode> q = new LinkedList<>();     //BFS需要队列

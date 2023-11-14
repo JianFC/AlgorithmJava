@@ -1,6 +1,6 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //40. 组合总和 II
 
-class Solution {    //爆搜+找方案+排序
+class Solution {    //暴搜 + 找方案 + 排序
     List<List<Integer>> res = new ArrayList<>();
     List<Integer> path = new ArrayList<>();
 
@@ -19,16 +19,16 @@ class Solution {    //爆搜+找方案+排序
 
         if (u == cs.length) return;
 
-        int k = u+1;
-        while (k < cs.length && cs[k] == cs[u]) k++;
+        int k = u + 1;
+        while (k < cs.length && cs[k] == cs[u]) k ++;
         int cnt = k - u;    //cnt表示cs[u]的可用个数
 
-        for (int i = 0; i <= cnt && cs[u] * i <= tg; i++) {   //注意条件
+        for (int i = 0; i <= cnt && cs[u] * i <= tg; i ++) {   //注意条件
             dfs(cs, k, tg - cs[u] * i);   //注意下一个dfs的位置是k
             path.add(cs[u]);
         }
 
         //恢复现场
-        for (int i = 0; i <= cnt && cs[u] * i <= tg; i++) path.remove(path.size() - 1);
+        for (int i = 0; i <= cnt && cs[u] * i <= tg; i ++) path.remove(path.size() - 1);
     }
 }

@@ -1,10 +1,10 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //59. 螺旋矩阵 II
 
 class Solution {    //方向向量
     public int[][] generateMatrix(int n) {
         int[][] res = new int[n][n];
         int[] dx = {0, 1, 0, -1}, dy = {1, 0, -1, 0};
-        for (int i = 1, x = 0, y = 0, d = 0; i <= n * n; i++) {
+        for (int i = 1, x = 0, y = 0, d = 0; i <= n * n; i ++) {
             res[x][y] = i;  //更新res
 
             int a = x + dx[d], b = y + dy[d];

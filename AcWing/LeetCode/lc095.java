@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //95. 不同的二叉搜索树 II
 
 /**
  * Definition for a binary tree node.
@@ -28,7 +28,7 @@ class Solution {    //暴搜+枚举根节点+catalan数+模板题
             return res;
         }
 
-        for (int i = l; i <= r; i++) {  //枚举该子树的root
+        for (int i = l; i <= r; i ++) {  //枚举该子树的root
             //递归生成左右子树部分
             var left = dfs(l, i - 1); var right = dfs(i + 1, r);
             for (var ln: left)   //枚举左子树根节点

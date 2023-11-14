@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //49. 字母异位词分组
 
 class Solution {    //思维题
     public List<List<String>> groupAnagrams(String[] strs) {

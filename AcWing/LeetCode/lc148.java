@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-// 148. 排序链表
+package AcWing.LeetCode;        // 148. 排序链表
 
 /**
  * Definition for singly-linked list.

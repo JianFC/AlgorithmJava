@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-//146. LRU 缓存
+package AcWing.LeetCode;        //146. LRU 缓存
 
 class LRUCache {    //struct定义双链表 + 哈希表 + 思维题
     class Node {    //定义双链表节点

@@ -1,6 +1,6 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;            //51. N 皇后
 
-class Solution {    //DFS+直线斜率优化
+class Solution {    //DFS + 直线斜率优化
     int N = 15;
     
     int n;
@@ -10,8 +10,8 @@ class Solution {    //DFS+直线斜率优化
 
     public List<List<String>> solveNQueens(int k) {
         n = k;
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++) g[i][j] = '.';
+        for (int i = 0; i < n; i ++)
+            for (int j = 0; j < n; j ++) g[i][j] = '.';
         
         dfs(0);
 
@@ -21,12 +21,12 @@ class Solution {    //DFS+直线斜率优化
     void dfs(int u) {
         if (u == n) {   //找到一种合法答案
             List<String> row = new ArrayList<>();
-            for (int i = 0; i < n; i++) row.add(String.valueOf(g[i], 0, n));
+            for (int i = 0; i < n; i ++) row.add(String.valueOf(g[i], 0, n));
             res.add(row);
             return;
         }
 
-        for (int i = 0; i < n; i++) {   //枚举第u行能放皇后的列
+        for (int i = 0; i < n; i ++) {   //枚举第u行能放皇后的列
             if (!col[i] && !dg[i + u] && !udg[i - u + n]) {
                 g[u][i] = 'Q';
                 col[i] = dg[i + u] = udg[i - u + n] = true;

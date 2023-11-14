@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //19. 删除链表的倒数第 N 个结点
 
 /**
  * Definition for singly-linked list.
@@ -16,7 +16,7 @@ class Solution {    //双指针
 
         ListNode p1 = dummy;
         ListNode p2 = dummy;
-        while (n-- > 0) p1 = p1.next;   //p1领先p2 n步
+        while (n -- > 0) p1 = p1.next;   //p1领先p2 n步
 
         while (p1.next != null) {
             p1 = p1.next;

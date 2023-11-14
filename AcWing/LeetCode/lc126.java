@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-//126. 单词接龙 II
+package AcWing.LeetCode;        //126. 单词接龙 II
 
 class Solution {    //BFS + DFS + 建图 + 路径搜索(时间复杂度指数级别) + 求最短路路径模板
     Set<String> S = new HashSet<>();    //哈希表，存储每个单词是否出现过

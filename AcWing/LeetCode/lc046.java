@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //46. 全排列
 
 class Solution {    //DFS
     int N = 10;
@@ -19,7 +19,7 @@ class Solution {    //DFS
             return;
         }
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i ++) {
             if (!st[i]) {   //当前数没用
                 path.add(nums[i]);  //将当前数加入path
                 st[i] = true;

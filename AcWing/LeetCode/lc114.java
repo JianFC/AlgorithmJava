@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //114. 二叉树展开为链表
 
 /**
  * Definition for a binary tree node.
@@ -15,7 +15,7 @@ package AcWing.LeetCode;
  *     }
  * }
  */
-class Solution {    //迭代+思维题
+class Solution {    //迭代 + 思维题
     public void flatten(TreeNode root) {
         while (root != null) {
             var p = root.left;  //先走到左子树

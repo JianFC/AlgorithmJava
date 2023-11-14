@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //50. Pow(x, n)
 
 class Solution {    //快速幂考察
     public double myPow(double x, int n) {

@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //94. 二叉树的中序遍历
 
 /**
  * Definition for a binary tree node.
@@ -15,7 +15,7 @@ package AcWing.LeetCode;
  *     }
  * }
  */
-class Solution {    //二叉树中序遍历+递归改迭代
+class Solution {    //二叉树中序遍历 + 递归改迭代
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stk = new Stack<>();     //定义辅助栈
