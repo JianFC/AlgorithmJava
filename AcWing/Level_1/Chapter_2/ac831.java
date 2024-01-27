@@ -19,15 +19,15 @@ public class ac831 {    //831. KMP字符串
         m = Integer.parseInt(inb.readLine());
         tmp = inb.readLine(); tmp = " " + tmp; s = tmp.toCharArray();
         
-        for (int i = 2, j = 0; i <= n; i++) {
+        for (int i = 2, j = 0; i <= n; i ++) {
             while (j > 0 && p[i] != p[j + 1]) j = ne[j];
-            if (p[i] == p[j + 1]) j++;
+            if (p[i] == p[j + 1]) j ++;
             ne[i] = j;
         }
         
-        for (int i = 1, j = 0; i <= m; i++) {
+        for (int i = 1, j = 0; i <= m; i ++) {
             while (j > 0 && s[i] != p[j + 1]) j = ne[j];
-            if (s[i] == p[j + 1]) j++;
+            if (s[i] == p[j + 1]) j ++;
             if (j == n) {
                 out.print(i - n + " ");
                 j = ne[j];

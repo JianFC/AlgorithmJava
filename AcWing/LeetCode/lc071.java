@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //71. 简化路径
 
 class Solution {    //栈（实现树上递归处理思想）+模拟+思维题
     public String simplifyPath(String path) {

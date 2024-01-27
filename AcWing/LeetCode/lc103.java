@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //103. 二叉树的锯齿形层序遍历
 
 /**
  * Definition for a binary tree node.
@@ -15,7 +15,7 @@ package AcWing.LeetCode;
  *     }
  * }
  */
-class Solution {    //BFS+层序遍历+翻转
+class Solution {    //BFS + 层序遍历 + 翻转
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         Queue<TreeNode> q = new LinkedList<>();
@@ -25,14 +25,14 @@ class Solution {    //BFS+层序遍历+翻转
         while (q.size() > 0) {
             List<Integer> level = new ArrayList<>();
             int len = q.size(); //当前层节点的个数
-            while (len-- > 0) {
+            while (len -- > 0) {
                 var t = q.poll();
                 level.add(t.val);
                 if (t.left != null) q.offer(t.left);
                 if (t.right != null) q.offer(t.right);
             }
 
-            if (++cnt % 2 == 0) Collections.reverse(level); //偶数层，翻转
+            if (++ cnt % 2 == 0) Collections.reverse(level); //偶数层，翻转
             res.add(level);
         } 
 

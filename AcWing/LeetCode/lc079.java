@@ -1,9 +1,9 @@
 package AcWing.LeetCode;
 
-class Solution {    //DFS+路径搜索+剪枝+方向向量
+class Solution {    //DFS + 路径搜索 + 剪枝 + 方向向量
     public boolean exist(char[][] boa, String wd) {
         for (int i = 0; i < boa.length; i++)
-            for (int j = 0; j < boa[0].length; j++)
+            for (int j = 0; j < boa[0].length; j ++)
                 //从每个点开始搜
                 if (dfs(boa, wd, 0, i, j)) return true;
         

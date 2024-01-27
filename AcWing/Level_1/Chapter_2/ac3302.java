@@ -16,9 +16,9 @@ public class ac3302 {   //3302. 表达式求值
     static char[] op = new char[N]; //表达式栈
     
     static void eval() {
-        int b = num[tt1--];
-        int a = num[tt1--];
-        char c = op[tt2--];
+        int b = num[tt1 --];
+        int a = num[tt1 --];
+        char c = op[tt2 --];
         
         int x = 0;
         if (c == '+') x = a + b;
@@ -26,7 +26,7 @@ public class ac3302 {   //3302. 表达式求值
         else if (c == '*') x = a * b;
         else if (c == '/') x = a / b;
         
-        num[++tt1] = x;
+        num[++ tt1] = x;
     }
 
     public static void main(String[] args) throws Exception {
@@ -35,7 +35,7 @@ public class ac3302 {   //3302. 表达式求值
         Map<Character, Integer> pr = new HashMap<Character, Integer>();
         pr.put('+', 1); pr.put('-', 1); pr.put('*', 2); pr.put('/', 2);
         
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length(); i ++) {
             char c = str.charAt(i);
             
             if (Character.isDigit(c)) {
@@ -43,17 +43,17 @@ public class ac3302 {   //3302. 表达式求值
                 while (j < str.length() && Character.isDigit(str.charAt(j)))
                     x = x * 10 + str.charAt(j++)-'0';
                 i = j - 1;
-                num[++tt1] = x;
+                num[++ tt1] = x;
             }
-            else if (c == '(') op[++tt2] = c;
+            else if (c == '(') op[++ tt2] = c;
             else if (c == ')') {
                 while (op[tt2] != '(') eval();
-                tt2--;
+                tt2 --;
             }
             else {
                 //注意是>=，而非>，从而保持符号优先级严格递增
                 while (tt2 > 0 && op[tt2] != '(' && pr.get(op[tt2]) >= pr.get(c)) eval();  
-                op[++tt2] = c;
+                op[++ tt2] = c;
             }
         }
         

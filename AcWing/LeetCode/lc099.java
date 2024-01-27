@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //99. 恢复二叉搜索树
 
 /**
  * Definition for a binary tree node.
@@ -15,7 +15,7 @@ package AcWing.LeetCode;
  *     }
  * }
  */
-class Solution {    //BST的Morris中序遍历算法+逆序对+思维题
+class Solution {    //BST的Morris中序遍历算法 + 逆序对 + 思维题
     public void recoverTree(TreeNode root) {
         //first记录第一个需要交换的点，second存储第二个需要交换的点
         //last为该点中序遍历的上一个点，用于寻找逆序对

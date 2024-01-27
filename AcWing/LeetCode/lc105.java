@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //105. 从前序与中序遍历序列构造二叉树
 
 /**
  * Definition for a binary tree node.
@@ -15,7 +15,7 @@ package AcWing.LeetCode;
  *     }
  * }
  */
-class Solution {    //递归建树+模板题+数学推导
+class Solution {    //递归建树 + 模板题 + 数学推导
     Map<Integer, Integer> pos = new HashMap<>();    //映射位置哈希表，优化查找的值的位置的时间复杂度
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {

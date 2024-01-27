@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-//124. 二叉树中的最大路径和
+package AcWing.LeetCode;        //124. 二叉树中的最大路径和
 
 /**
  * Definition for a binary tree node.

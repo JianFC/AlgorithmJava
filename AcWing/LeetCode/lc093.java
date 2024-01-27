@@ -1,6 +1,6 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //93. 复原 IP 地址
 
-class Solution {    //DFS+暴搜+剪枝
+class Solution {    //DFS + 暴搜 + 剪枝
     List<String> res = new ArrayList<>();
 
     public List<String> restoreIpAddresses(String s) {
@@ -21,7 +21,7 @@ class Solution {    //DFS+暴搜+剪枝
 
         if (k == 4) return; //已经搜满四个数，剪枝
         
-        for (int i = u, t = 0; i < s.length(); i++) {
+        for (int i = u, t = 0; i < s.length(); i ++) {
             if (i > u && s.charAt(u) == '0') break;  //有前导'0'，不合法
             t = t * 10 + s.charAt(i) - '0';
             if (t <= 255) dfs(s, i + 1, k + 1, path + t + '.');  //合法，向下搜

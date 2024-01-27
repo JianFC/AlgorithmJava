@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //10. 正则表达式匹配
 
-class Solution {    //线性DP
+class Solution {    // 线性DP
     public boolean isMatch(String s, String p) {
         int n = s.length(), m = p.length();
         s = " " + s; p = " " + p;   //从下标1开始dp

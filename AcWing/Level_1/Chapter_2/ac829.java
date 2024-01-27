@@ -15,14 +15,14 @@ public class ac829 {    //829. 模拟队列
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); String op = (String)ins.sval;
             
             if (op.equals("push")) {
                 ins.nextToken(); int x = (int)ins.nval;
-                q[++tt] = x;
+                q[++ tt] = x;
             }
-            else if (op.equals("pop")) hh++;
+            else if (op.equals("pop")) hh ++;
             else if (op.equals("empty")) {
                 if (hh <= tt) out.println("NO");
                 else out.println("YES");

@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //113. 路径总和 II
 
 /**
  * Definition for a binary tree node.
@@ -15,7 +15,7 @@ package AcWing.LeetCode;
  *     }
  * }
  */
-class Solution {    //DFS+搜方案
+class Solution {    //DFS + 搜方案
     List<List<Integer>> res = new ArrayList<>();
     List<Integer> path = new ArrayList<>();
 

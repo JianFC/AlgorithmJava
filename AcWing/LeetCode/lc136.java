@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //136. 只出现一次的数字
 
 class Solution {    //异或性质考察（交换律，结合律，a ^ a = 0, (00, 11) = 0, (10, 01) = 1）
     public int singleNumber(int[] nums) {

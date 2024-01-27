@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-//127. 单词接龙
+package AcWing.LeetCode;        //127. 单词接龙
 
 class Solution {    //BFS + 建图
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {

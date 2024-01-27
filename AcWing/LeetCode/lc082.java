@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;    //82. 删除排序链表中的重复元素 II
 
 /**
  * Definition for singly-linked list.
@@ -10,7 +10,7 @@ package AcWing.LeetCode;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {    //双指针+模拟+思维题
+class Solution {    //双指针 + 模拟 + 思维题
     public ListNode deleteDuplicates(ListNode head) {
         var dummy = new ListNode(-1, head); //定义虚拟头节点
         var p = dummy;  //第一个指针，每次指向要判断重复结点的段的前一个结点

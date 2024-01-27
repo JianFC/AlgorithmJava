@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //131. 分割回文串
 
 class Solution {    //暴搜方案(时间复杂度O(2^n-1)) + 递推优化 + DFS
     int N = 20;

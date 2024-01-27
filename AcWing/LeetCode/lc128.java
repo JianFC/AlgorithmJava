@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //128. 最长连续序列
 
 class Solution {    //哈希表 + 思维题 + 双指针
     public int longestConsecutive(int[] nums) {

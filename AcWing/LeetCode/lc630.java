@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //630. 课程表 III
 
 class Solution {    //贪心 + 递推 + 思维题
     public int scheduleCourse(int[][] cs) {

@@ -20,9 +20,9 @@ public class ac837 {    //AcWing 837. 连通块中点的数量
         String[] ss = inb.readLine().split(" ");
         n = Integer.parseInt(ss[0]); m = Integer.parseInt(ss[1]);
 
-        for (int i = 1; i <= n; i++) { p[i] = i; cnt[i] = 1; }
+        for (int i = 1; i <= n; i ++) { p[i] = i; cnt[i] = 1; }
 
-        while (m-- > 0) {
+        while (m -- > 0) {
             ss = inb.readLine().split(" ");
 
             if (ss[0].equals("C")) {

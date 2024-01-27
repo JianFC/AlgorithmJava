@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //107. 二叉树的层序遍历 II
 
 /**
  * Definition for a binary tree node.
@@ -25,7 +25,7 @@ class Solution {    //BFS+模板题
             List<Integer> level = new ArrayList<>();
             int len = q.size();     //当前层节点的个数
             
-            while (len-- > 0) {
+            while (len -- > 0) {
                 var t = q.poll();
                 level.add(t.val);
                 if (t.left != null) q.offer(t.left);

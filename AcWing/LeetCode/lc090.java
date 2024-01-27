@@ -1,6 +1,6 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //90. 子集 II
 
-class Solution {    //DFS+枚举方案+模板题
+class Solution {    //DFS + 枚举方案 + 模板题
     List<List<Integer>> res = new ArrayList<>();
     List<Integer> path = new ArrayList<>();
 

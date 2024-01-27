@@ -15,14 +15,14 @@ public class ac830 {    //830. 单调栈
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int x = (int)ins.nval;
             
-            while (tt > 0 && stk[tt] >= x) tt--;
+            while (tt > 0 && stk[tt] >= x) tt --;
             if (tt > 0) out.print(stk[tt] + " ");
             else out.print("-1 ");
             
-            stk[++tt] = x;
+            stk[++ tt] = x;
         }
 
         out.flush();

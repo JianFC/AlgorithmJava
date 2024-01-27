@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-//130. 被围绕的区域
+package AcWing.LeetCode;        //130. 被围绕的区域
 
 class Solution {    //Flood Fill算法 + DFS实现 + 逆向思维
     char[][] board;

@@ -25,7 +25,7 @@ class Solution {    //BFS + 层次遍历
             List<Integer> level = new ArrayList<>();    //存储每一层节点
             int len = q.size(); //该层节点数量
 
-            while (len-- > 0) {   //遍历每一层
+            while (len -- > 0) {   //遍历每一层
                 var t = q.poll();   //取出队头
                 level.add(t.val);   //存储每一层的信息
                 if (t.left != null) q.offer(t.left);    //左儿子入队

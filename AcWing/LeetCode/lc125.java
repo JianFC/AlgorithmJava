@@ -1,5 +1,4 @@
-package AcWing.LeetCode;
-//125. 验证回文串
+package AcWing.LeetCode;        //125. 验证回文串
 
 class Solution {    //双指针
     boolean check(char c) {

@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //86. 分隔链表
 
 /**
  * Definition for singly-linked list.
@@ -10,7 +10,7 @@ package AcWing.LeetCode;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {    //链表快排模板一部分+双指针思想+思维题
+class Solution {    // 链表快排模板一部分 + 双指针思想 + 思维题
     public ListNode partition(ListNode head, int x) {
         var ld = new ListNode(-1); var rd = new ListNode(-1);   //左右链表的虚拟头节点
         var lt = ld; var rt = rd;   //左右链表的尾节点

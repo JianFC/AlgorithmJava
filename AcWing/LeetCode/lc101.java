@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //101. 对称二叉树
 
 /**
  * Definition for a binary tree node.
@@ -15,7 +15,7 @@ package AcWing.LeetCode;
  *     }
  * }
  */
-class Solution {    //递归+BT遍历
+class Solution {    //递归 + BT遍历
     public boolean isSymmetric(TreeNode root) {
         if (root == null) return true;
         return dfs(root.left, root.right);
