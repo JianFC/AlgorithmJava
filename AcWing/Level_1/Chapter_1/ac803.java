@@ -10,10 +10,10 @@ public class ac803 {
     static int N = 100010;
     
     static int n;
-    static List<PII> segs = new ArrayList<PII>();
+    static List<PII> segs = new ArrayList<>();
     
     static int merge(List<PII> segs) {
-        List<PII> res = new ArrayList<PII>();
+        List<PII> res = new ArrayList<>();
         
         segs.sort((o1, o2) -> o1.first - o2.first);   //sort参数>0交换，<0不交换
         

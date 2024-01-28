@@ -15,10 +15,10 @@ package AcWing.LeetCode;        //98. 验证二叉搜索树
  *     }
  * }
  */
-class Solution {    //BST定义+DFS(返回数组)+模板题
+class Solution {    //BST定义 + DFS(返回数组) + 模板题
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;    
-        return dfs(root)[0] == 1? true: false;
+        return dfs(root)[0] == 1 ? true: false;
     }
 
     //int[0] 表示root的子树是否合法，int[1]表示root子树中最小值，int[2]表示子树的最大值

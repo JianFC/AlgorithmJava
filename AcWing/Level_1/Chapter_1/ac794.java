@@ -8,7 +8,7 @@ public class ac794 {
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     
     static List<Integer> div(List<Integer> A, int b, int[] rr) {
-        List<Integer> res = new ArrayList<Integer>(); int r = rr[0];
+        List<Integer> res = new ArrayList<>(); int r = rr[0];
         
         for (int i = A.size() - 1; i >= 0; i--) {
             r = r * 10 + A.get(i);
@@ -25,8 +25,8 @@ public class ac794 {
     public static void main(String[] args) throws Exception {
         String a = inb.readLine(); int b = Integer.parseInt(inb.readLine()); int[] rr = {0};
         
-        List<Integer> A = new ArrayList<Integer>();
-        List<Integer> C = new ArrayList<Integer>();
+        List<Integer> A = new ArrayList<>();
+        List<Integer> C = new ArrayList<>();
         
         for (int i = a.length() - 1; i >= 0; i--) A.add(a.charAt(i)-'0');
         

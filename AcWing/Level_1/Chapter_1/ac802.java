@@ -11,8 +11,8 @@ public class ac802 {
 
     static int n, m;
     static int[] a = new int[N], s = new int[N];
-    static List<PII> ad = new ArrayList<PII>(), query = new ArrayList<PII>();
-    static List<Integer> all = new ArrayList<Integer>();
+    static List<PII> ad = new ArrayList<>(), query = new ArrayList<>();
+    static List<Integer> all = new ArrayList<>();
 
     static int unique(List<Integer> a) {
         int j = 0;

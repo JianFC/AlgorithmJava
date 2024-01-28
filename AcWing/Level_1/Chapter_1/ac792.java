@@ -18,7 +18,7 @@ public class ac792 {
     }
     
     static List<Integer> sub(List<Integer> A, List<Integer> B) {
-        List<Integer> res = new ArrayList<Integer>();
+        List<Integer> res = new ArrayList<>();
         
         for (int i = 0, t = 0; i < A.size() || t > 0; i++) {
             t = A.get(i) - t;
@@ -34,9 +34,9 @@ public class ac792 {
 
     public static void main(String[] args) throws Exception {
         String a = inb.readLine(), b = inb.readLine();
-        List<Integer> A = new ArrayList<Integer>();
-        List<Integer> B = new ArrayList<Integer>();
-        List<Integer> C = new ArrayList<Integer>();
+        List<Integer> A = new ArrayList<>();
+        List<Integer> B = new ArrayList<>();
+        List<Integer> C = new ArrayList<>();
         
         for (int i = a.length() - 1; i >= 0; i--) A.add(a.charAt(i) - '0');
         for (int i = b.length() - 1; i >= 0; i--) B.add(b.charAt(i) - '0');

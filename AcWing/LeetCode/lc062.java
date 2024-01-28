@@ -6,7 +6,7 @@ class Solution {    //基础线性DP
         for (int i = 0; i < n; i ++)
             for (int j = 0; j < m; j ++)
                 if (i == 0 && j == 0) f[i][j] = 1;
-                else {  //f[i, j] = f[i-1, j] + f[i, j-1]
+                else {  //f[i, j] = f[i - 1, j] + f[i, j - 1]
                     if (i > 0) f[i][j] += f[i - 1][j];
                     if (j > 0) f[i][j] += f[i][j - 1];  
                 }
