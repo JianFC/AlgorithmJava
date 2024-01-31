@@ -15,7 +15,7 @@ package AcWing.LeetCode;        //110. 平衡二叉树
  *     }
  * }
  */
-class Solution {    //递归+模板题
+class Solution {    //递归 + 模板题
     boolean ans = true; //存储答案，初始化为true
 
     public boolean isBalanced(TreeNode root) {

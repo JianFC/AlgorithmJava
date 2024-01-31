@@ -23,7 +23,7 @@ class Node {
 };
 */
 
-class Solution {    //BFS+next优化
+class Solution {    //BFS + next优化
     public Node connect(Node root) {
         if (root == null) return root;
         var source = root;  //记录根节点

@@ -15,7 +15,7 @@ package AcWing.LeetCode;        //112. 路径总和
  *     }
  * }
  */
-class Solution {    //递归+从上往下搜索
+class Solution {    //递归 + 从上往下搜索
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) return false; //空节点，返回false
         sum -= root.val;    //更新sum = sum - 从树根到root点的权值之和
