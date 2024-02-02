@@ -16,9 +16,9 @@ public class ac802 {
 
     static int unique(List<Integer> a) {
         int j = 0;
-        for (int i = 0; i < a.size(); i++) {
-            if (i == 0 || a.get(i) != a.get(i-1))
-                a.set(j++, a.get(i));
+        for (int i = 0; i < a.size(); i ++) {
+            if (i == 0 || a.get(i) != a.get(i - 1))
+                a.set(j ++, a.get(i));
         }
         return j;
     }
@@ -37,14 +37,14 @@ public class ac802 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i ++) {
             ins.nextToken(); int x = (int)ins.nval;
             ins.nextToken(); int c = (int)ins.nval;
             ad.add(new PII(x, c));
             all.add(x);
         }
 
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i ++) {
             ins.nextToken(); int l = (int)ins.nval;
             ins.nextToken(); int r = (int)ins.nval;
             query.add(new PII(l, r));
@@ -59,7 +59,7 @@ public class ac802 {
             a[x] += p.second;
         }
 
-        for (int i = 1; i <= all.size(); i++) s[i] = s[i - 1] + a[i];   //预处理前缀和
+        for (int i = 1; i <= all.size(); i ++) s[i] = s[i - 1] + a[i];   //预处理前缀和
 
         for (PII p: query) {
             int l = find(p.first), r = find(p.second);

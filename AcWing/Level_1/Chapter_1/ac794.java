@@ -10,7 +10,7 @@ public class ac794 {
     static List<Integer> div(List<Integer> A, int b, int[] rr) {
         List<Integer> res = new ArrayList<>(); int r = rr[0];
         
-        for (int i = A.size() - 1; i >= 0; i--) {
+        for (int i = A.size() - 1; i >= 0; i --) {
             r = r * 10 + A.get(i);
             res.add(r / b);
             r = r % b;
@@ -28,11 +28,11 @@ public class ac794 {
         List<Integer> A = new ArrayList<>();
         List<Integer> C = new ArrayList<>();
         
-        for (int i = a.length() - 1; i >= 0; i--) A.add(a.charAt(i)-'0');
+        for (int i = a.length() - 1; i >= 0; i --) A.add(a.charAt(i)-'0');
         
         C = div(A, b, rr);
         
-        for (int i = C.size() - 1; i >= 0; i--) out.print(C.get(i));
+        for (int i = C.size() - 1; i >= 0; i --) out.print(C.get(i));
         out.print("\n" + rr[0]);
 
         out.flush();

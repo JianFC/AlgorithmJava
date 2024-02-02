@@ -29,4 +29,3 @@ class Solution {    //暴搜 + 找方案数
         for (int i = 0; cs[u] * i <= tg; i ++) path.remove(path.size() - 1);
     }
 }    
-}
