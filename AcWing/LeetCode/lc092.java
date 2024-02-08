@@ -10,11 +10,11 @@ package AcWing.LeetCode;        //92. 反转链表 II
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {    //链表三指针+模板题
+class Solution {    //链表三指针 + 模板题
     public ListNode reverseBetween(ListNode head, int n, int m) {
         var dummy = new ListNode(-1, head);
         var a = dummy;
-        for (int i = 0; i < n - 1; i ++) a = a.next; //向后移动m-1次到达n前一个位置
+        for (int i = 0; i < n - 1; i ++) a = a.next; //向后移动n - 1次到达n前一个位置
         var b = a.next; var c = b.next; //b，c分别指向a后两个位置
         for (int i = 0; i < m - n; i ++) {   //中间翻转m-n次
             var t = c.next;
