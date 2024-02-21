@@ -20,9 +20,9 @@ public class ac797 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
+        for (int i = 1; i <= n; i ++) { ins.nextToken(); a[i] = (int)ins.nval; }
         
-        for (int i = 1; i <= n; i++) insert(i, i, a[i]);
+        for (int i = 1; i <= n; i ++) insert(i, i, a[i]);
         
         while (m-- > 0) {
             ins.nextToken(); int l = (int)ins.nval;
@@ -31,7 +31,7 @@ public class ac797 {
             insert(l, r, c);
         }
         
-        for (int i = 1; i <= n; i++) { b[i] += b[i - 1]; out.print(b[i] + " "); }
+        for (int i = 1; i <= n; i ++) { b[i] += b[i - 1]; out.print(b[i] + " "); }
 
         out.flush();
     }

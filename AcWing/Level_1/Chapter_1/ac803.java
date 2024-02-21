@@ -34,7 +34,7 @@ public class ac803 {
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int l = (int)ins.nval;
             ins.nextToken(); int r = (int)ins.nval;
             segs.add(new PII(l, r));

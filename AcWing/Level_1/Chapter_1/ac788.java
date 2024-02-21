@@ -18,17 +18,17 @@ public class ac788 {
         long res = mergeSort(q, l, mid) + mergeSort(q, mid + 1, r);
         
         while (i <= mid && j <= r) {
-            if (q[i] <= q[j]) tmp[k++] = q[i++];
+            if (q[i] <= q[j]) tmp[k++] = q[i ++];
             else {
                 res += mid - i + 1;
-                tmp[k++] = q[j++];
+                tmp[k ++] = q[j ++];
             }
         }
         
-        while (i <= mid) tmp[k++] = q[i++];
-        while (j <= r) tmp[k++] = q[j++];
+        while (i <= mid) tmp[k ++] = q[i ++];
+        while (j <= r) tmp[k ++] = q[j ++];
         
-        for (i = l, j = 0; i <= r; i++, j++) q[i] = tmp[j];
+        for (i = l, j = 0; i <= r; i ++, j ++) q[i] = tmp[j];
         
         return res;
     }
@@ -36,7 +36,7 @@ public class ac788 {
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) { ins.nextToken(); q[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++) { ins.nextToken(); q[i] = (int)ins.nval; }
         
         out.print(mergeSort(q, 0, n - 1));
 

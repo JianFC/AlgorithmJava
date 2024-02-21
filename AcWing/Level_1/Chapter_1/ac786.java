@@ -16,8 +16,8 @@ public class ac786 {
         
         int x = q[l + r >> 1], i = l - 1, j = r + 1;
         while (i < j) {
-            do i++; while (q[i] < x);
-            do j--; while (q[j] > x);
+            do i ++; while (q[i] < x);
+            do j --; while (q[j] > x);
             if (i < j) {
                 int t = q[i]; q[i] = q[j]; q[j] = t;
             }
@@ -31,7 +31,7 @@ public class ac786 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); k = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) { ins.nextToken(); q[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++) { ins.nextToken(); q[i] = (int)ins.nval; }
         
         out.print(quickSort(q, 0, n - 1, k));
         

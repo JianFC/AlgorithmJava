@@ -12,7 +12,7 @@ class Solution {    //KMP
         s = haystack.toCharArray(); p = needle.toCharArray();
         n = s.length - 1; m = p.length - 1;     //n和m分别表示目标串和模板串的长度
         
-        //求ne数组:ne[1] = 0;
+        //求ne数组: ne[1] = 0;
         for (int i = 2, j = 0; i < p.length; i ++) {
             while (j != 0 && p[i] != p[j + 1]) j = ne[j];
             if (p[i] == p[j + 1]) j ++;

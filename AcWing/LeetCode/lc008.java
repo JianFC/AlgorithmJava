@@ -14,7 +14,7 @@ class Solution {    //模拟 + 边界判断 + 思维
 
         int res = 0;
         while (k < s.length() && s.charAt(k) >= '0' && s.charAt(k) <= '9') {
-            int x = s.charAt(k)-'0';
+            int x = s.charAt(k) - '0';
             if (sig > 0 && res > (Integer.MAX_VALUE - x) / 10) return Integer.MAX_VALUE;
             if (sig < 0 && -res < (Integer.MIN_VALUE + x) / 10 ) return Integer.MIN_VALUE;
             //abs(Interger.MIN_VALUE) 比MAX_VALUE大一

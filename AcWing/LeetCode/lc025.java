@@ -10,7 +10,7 @@ package AcWing.LeetCode;        //25. K 个一组翻转链表
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {    //单指针+双指针
+class Solution {    //单指针 + 双指针
     public ListNode reverseKGroup(ListNode head, int k) {
         var dummy = new ListNode(-1, head);
 
@@ -21,7 +21,7 @@ class Solution {    //单指针+双指针
 
             var a = p.next; var b = a.next;
             for (int i = 0; i < k - 1; i ++) {     //交换k个节点内部节点，循环k - 1次。a -> b -> c => a <- b <- c
-                //a->b = > a<-b
+                //a -> b = > a <- b
                 var c = b.next;     //先存下b后一个节点的信息
                 b.next = a;         //更改连接方向
                 //a.next = c;     //a指针next不需要更改，a的后继不是c！！

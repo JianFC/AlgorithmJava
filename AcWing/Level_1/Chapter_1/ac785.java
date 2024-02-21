@@ -16,8 +16,8 @@ public class ac785 {
         
         int x = q[l + r >> 1], i = l - 1, j = r + 1;
         while (i < j) {
-            do i++; while (q[i] < x);
-            do j--; while (q[j] > x);
+            do i ++; while (q[i] < x);
+            do j --; while (q[j] > x);
             if (i < j) {
                 int t = q[i]; q[i] = q[j]; q[j] = t;
             }
@@ -29,11 +29,11 @@ public class ac785 {
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) { ins.nextToken(); q[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++) { ins.nextToken(); q[i] = (int)ins.nval; }
         
-        quickSort(q, 0, n-1);
+        quickSort(q, 0, n - 1);
         
-        for (int i = 0; i < n; i++) out.print(q[i]+" ");
+        for (int i = 0; i < n; i ++) out.print(q[i] + " ");
         
         out.flush();
     }

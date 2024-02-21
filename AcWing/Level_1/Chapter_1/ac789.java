@@ -15,7 +15,7 @@ public class ac789 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) { ins.nextToken(); q[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++) { ins.nextToken(); q[i] = (int)ins.nval; }
         
         while (m-- > 0) {
             ins.nextToken(); int x = (int)ins.nval;

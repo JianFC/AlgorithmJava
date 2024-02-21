@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //20. 有效的括号
 
-class Solution {    //DS，stack
+class Solution {    //DS + stack
     static int N = 100000;
 
     public boolean isValid(String s) {
@@ -14,6 +14,6 @@ class Solution {    //DS，stack
             }
         }
 
-        return (tt == 0? true: false);
+        return (tt == 0 ? true: false);
     }
 }

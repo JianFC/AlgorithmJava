@@ -17,24 +17,24 @@ public class ac154 {    //154. 滑动窗口
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); k = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++) { ins.nextToken(); a[i] = (int)ins.nval; }
         
-        for (int i = 0; i < n; i++) {
-            if (hh <= tt && i - k + 1 > q[hh]) hh++;
+        for (int i = 0; i < n; i ++) {
+            if (hh <= tt && i - k + 1 > q[hh]) hh ++;
             
-            while (hh <= tt && a[q[tt]] >= a[i]) tt--;
-            q[++tt] = i;
+            while (hh <= tt && a[q[tt]] >= a[i]) tt --;
+            q[++ tt] = i;
             
             if (i - k + 1 >= 0) out.print(a[q[hh]] + " ");
         }
         out.println();
         
         hh = 0; tt = -1;
-        for (int i = 0; i < n; i++) {
-            if (hh <= tt && i - k + 1 > q[hh]) hh++;
+        for (int i = 0; i < n; i ++) {
+            if (hh <= tt && i - k + 1 > q[hh]) hh ++;
             
-            while (hh <= tt && a[q[tt]] <= a[i]) tt--;
-            q[++tt] = i;
+            while (hh <= tt && a[q[tt]] <= a[i]) tt --;
+            q[++ tt] = i;
             
             if (i - k + 1 >= 0) out.print(a[q[hh]] + " ");
         }

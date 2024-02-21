@@ -14,7 +14,7 @@ class Solution {    //模拟 + 思维题 + 等差数列
             }
             else {
                 for (int j = i, k = 2 * n - i - 2; j < s.length() || k < s.length(); j += q, k += q) {
-                    //第i行(0<i<n-1)，首项分别是a0=i, b0=2*n-i-2，两等差数列交替排列
+                    //第i行(0 < i < n - 1)，首项分别是a0=i, b0 = 2 * n - i - 2，两等差数列交替排列
                     if (j < s.length()) res += s.charAt(j);
                     if (k < s.length()) res += s.charAt(k);
                 }

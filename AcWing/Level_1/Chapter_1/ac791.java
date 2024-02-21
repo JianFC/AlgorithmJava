@@ -10,7 +10,7 @@ public class ac791 {
     static List<Integer> add(List<Integer> A, List<Integer> B) {
         List<Integer> res = new ArrayList<>();
         
-        for (int i = 0, t = 0; i < A.size() || i < B.size() || t > 0; i++) {
+        for (int i = 0, t = 0; i < A.size() || i < B.size() || t > 0; i ++) {
             if (i < A.size()) t += A.get(i);
             if (i < B.size()) t += B.get(i);
             res.add(t % 10);
@@ -28,12 +28,12 @@ public class ac791 {
         List<Integer> B = new ArrayList<>();
         List<Integer> C = new ArrayList<>();
         
-        for (int i = a.length() - 1; i >= 0; i--) A.add(a.charAt(i) - '0');
-        for (int i = b.length() - 1; i >= 0; i--) B.add(b.charAt(i) - '0');
+        for (int i = a.length() - 1; i >= 0; i --) A.add(a.charAt(i) - '0');
+        for (int i = b.length() - 1; i >= 0; i --) B.add(b.charAt(i) - '0');
         
         C = add(A, B);
         
-        for (int i = C.size() - 1; i >= 0; i--) out.print(C.get(i));
+        for (int i = C.size() - 1; i >= 0; i --) out.print(C.get(i));
 
         out.flush();
     }

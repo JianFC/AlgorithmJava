@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //85. 最大矩形
 
-class Solution {    //单调栈应用+思维题+枚举每一行矩形的下边界+预处理递推
+class Solution {    //单调栈应用 + 思维题 + 枚举每一行矩形的下边界 + 预处理递推
     int lRA(int[] h) {  //84题模板
         int n = h.length;
         int[] left = new int[n], right = new int[n];

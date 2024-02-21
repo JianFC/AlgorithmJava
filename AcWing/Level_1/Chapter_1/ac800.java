@@ -16,11 +16,11 @@ public class ac800 {
         ins.nextToken(); m = (int)ins.nval;
         ins.nextToken(); x = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
-        for (int i = 0; i < m; i++) { ins.nextToken(); b[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++) { ins.nextToken(); a[i] = (int)ins.nval; }
+        for (int i = 0; i < m; i ++) { ins.nextToken(); b[i] = (int)ins.nval; }
         
-        for (int i = 0, j = m - 1; i < n; i++) {
-            while (j > 0 && a[i] + b[j] > x) j--;
+        for (int i = 0, j = m - 1; i < n; i ++) {
+            while (j > 0 && a[i] + b[j] > x) j --;
             if (j > 0 && a[i] + b[j] == x) out.print(i + " " + j);
         }
 

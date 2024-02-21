@@ -16,12 +16,12 @@ public class ac796 {
         ins.nextToken(); m = (int)ins.nval;
         ins.nextToken(); q = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++)
-            for (int j = 1; j <= m; j++) { ins.nextToken(); a[i][j] = (int)ins.nval; }
+        for (int i = 1; i <= n; i ++)
+            for (int j = 1; j <= m; j ++) { ins.nextToken(); a[i][j] = (int)ins.nval; }
         
         //初始化前缀和
-        for (int i = 1; i <= n; i++)
-            for (int j = 1; j <= m; j++) 
+        for (int i = 1; i <= n; i ++)
+            for (int j = 1; j <= m; j ++) 
                 s[i][j] = s[i - 1][j] + s[i][j - 1] - s[i - 1][j - 1] + a[i][j];
         
         while (q-- > 0) {

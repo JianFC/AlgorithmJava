@@ -15,11 +15,11 @@ public class ac801 {
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int x = (int)ins.nval;
             
             int res = 0;
-            while (x > 0) { x -= lowbit(x); res++; }
+            while (x > 0) { x -= lowbit(x); res ++; }
             out.print(res + " ");
         }
 

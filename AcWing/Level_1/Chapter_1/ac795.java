@@ -15,9 +15,9 @@ public class ac795 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
+        for (int i = 1; i <= n; i ++) { ins.nextToken(); a[i] = (int)ins.nval; }
         
-        for (int i = 1; i <= n; i++) s[i] = s[i - 1] + a[i];
+        for (int i = 1; i <= n; i ++) s[i] = s[i - 1] + a[i];
         
         while (m-- > 0) {
             ins.nextToken(); int l = (int)ins.nval;
