@@ -10,7 +10,7 @@ class Solution {    //DFS + n皇后变种 + 状态表示和存储
             for (int j = 0; j < 9; j ++)
                 if (board[i][j] != '.') {
                     int t = board[i][j] - '1';
-                    //第i行，第j列，第[i / 3][j / 3]个cell中t+1已经出现过
+                    //第i行，第j列，第[i / 3][j / 3]个cell中t + 1已经出现过
                     row[i][t] = col[j][t] = cell[i / 3][j / 3][t] = true;
                 }
 

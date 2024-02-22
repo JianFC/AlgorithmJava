@@ -9,7 +9,7 @@ class Solution {    //模拟 + 大数乘法
         for (int i = n - 1; i >= 0; i --) A.add(num1.charAt(i) - '0');
         for (int i = m - 1; i >= 0; i --) B.add(num2.charAt(i) - '0');
 
-        int[] C = new int[n + m];    //存储结果，有n+m位，逆序存储
+        int[] C = new int[n + m];    //存储结果，有n + m位，逆序存储
         for (int i = 0; i < n; i ++)
             for (int j = 0; j < m; j ++)
                 C[i + j] += A.get(i) * B.get(j);     //技巧，先不进位，后面进位，注意+=

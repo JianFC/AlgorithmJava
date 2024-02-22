@@ -28,11 +28,11 @@ class Solution {    //模拟题
             }
         }
 
-        //判断3*3九宫格
+        //判断3 * 3九宫格
         for (int i = 0; i < 9; i += 3) 
             for (int j = 0; j < 9; j += 3) {    //枚举起点坐标
                 Arrays.fill(st, false);
-                for (int x = 0; x < 3; x ++)     //枚举便宜
+                for (int x = 0; x < 3; x ++)     //枚举内部九宫格
                     for (int y = 0; y < 3; y ++) {
                         if (board[i + x][j + y] != '.') {
                             int t = board[i + x][j + y] - '1';

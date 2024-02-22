@@ -18,10 +18,10 @@ class Solution {    //暴搜 + 找方案数
 
         if (u == cs.length) return;     //注意此行的位置，当所有数都枚举完
 
-        //爆搜
-        for (int i = 0; cs[u]*i <= tg; i ++) {
+        //暴搜
+        for (int i = 0; cs[u] * i <= tg; i ++) {
             dfs(cs, u + 1, tg - cs[u] * i);
-            path.add(cs[u]);        //放在dfs之后保证i=0时不加入path
+            path.add(cs[u]);        //放在dfs之后保证i = 0时不加入path
                                     //且cs[u]放入path的次数和i的次数相等
         }
 

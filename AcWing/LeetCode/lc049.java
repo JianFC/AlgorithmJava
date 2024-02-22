@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //49. 字母异位词分组
 
-class Solution {    //思维题
+class Solution {    //思维题 + 哈希表
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> hash = new HashMap<>();   //key是每组字符串的升序排列
         for (String str: strs) {
