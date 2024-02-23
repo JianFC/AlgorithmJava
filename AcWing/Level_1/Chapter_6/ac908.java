@@ -25,7 +25,7 @@ public class ac908 {    //908. 最大不相交区间数量
         Arrays.sort(ivals, 0, n, (o1, o2) -> o1.r - o2.r);
         
         int res = 0, ed = (int)-2e9;    //与区间选点贪心思路一致
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i ++) {
             if (ivals[i].l > ed) {
                 res ++;
                 ed = ivals[i].r;    //更新ed

@@ -16,8 +16,8 @@ public class ac900_1 {  //AcWing 900. 整数划分，解法1：完全背包问�
 
         f[0] = 1;
 
-        for (int i = 1; i <= n; i++)
-            for (int j = i; j <= n; j++)
+        for (int i = 1; i <= n; i ++)
+            for (int j = i; j <= n; j ++)
                 f[j] = (f[j] + f[j - i]) % mod;
 
         out.println(f[n]);

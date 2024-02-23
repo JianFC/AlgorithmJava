@@ -16,7 +16,7 @@ public class ac143 {    //143. 最大异或对
     
     static void insert(int x) {
         int p = 0;
-        for (int i = 30; i >= 0; i--) {
+        for (int i = 30; i >= 0; i --) {
             int u = x >> i & 1;
             if (son[p][u] == 0) son[p][u] = ++idx;
             p = son[p][u];
@@ -25,7 +25,7 @@ public class ac143 {    //143. 最大异或对
     
     static int query(int x) {   //找出x的异或最大值
         int p = 0, res = 0;
-        for (int i = 30; i >= 0; i--) {
+        for (int i = 30; i >= 0; i --) {
             int u = x >> i & 1;
             if (son[p][1 - u] != 0) {
                 res += 1 << i;
@@ -40,13 +40,13 @@ public class ac143 {    //143. 最大异或对
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) { 
+        for (int i = 0; i < n; i ++) { 
             ins.nextToken(); a[i] = (int)ins.nval; 
             insert(a[i]);    
         }
         
         int res = 0;
-        for (int i = 0; i < n; i++) res = Math.max(res, query(a[i]));   //循环求出全局最大
+        for (int i = 0; i < n; i ++) res = Math.max(res, query(a[i]));   //循环求出全局最大
         
         out.print(res);
     

@@ -19,19 +19,19 @@ public class ac291 {    //291. 蒙德里安的梦想
     
         while (n != 0 || m != 0) {
             //f数组清零
-            for (int i = 0; i < N; i++) Arrays.fill(f[i], 0);
+            for (int i = 0; i < N; i ++) Arrays.fill(f[i], 0);
             
             //预处理st[]，大循环内进行
-            for (int i = 0; i < 1 << n; i++) {    //枚举状态
+            for (int i = 0; i < 1 << n; i ++) {    //枚举状态
                 st[i] = true;
                 
                 int cnt = 0;
-                for (int j = 0; j < n; j++) {
+                for (int j = 0; j < n; j ++) {
                     if (((i >> j) & 1) == 1) {  //当前行是1
                         if ((cnt & 1) == 1) { st[i] = false; break;}  //前有奇数个0, false
                         cnt = 0;    //偶数个0, 重置
                     }
-                    else cnt++;
+                    else cnt ++;
                 }
                 
                 if ((cnt & 1) == 1) st[i] = false;  //奇数个1
@@ -40,9 +40,9 @@ public class ac291 {    //291. 蒙德里安的梦想
             f[0][0] = 1;    //初始化
             
             //DP过程
-            for (int i = 1; i <= m; i++)    //枚举列，注意多枚举一列，答案为f[m][0]
-                for (int j = 0; j < 1 << n; j++)  //枚举状态
-                    for (int k = 0; k < 1 << n; k++)  //枚举上一列状态
+            for (int i = 1; i <= m; i ++)    //枚举列，注意多枚举一列，答案为f[m][0]
+                for (int j = 0; j < 1 << n; j ++)  //枚举状态
+                    for (int k = 0; k < 1 << n; k ++)  //枚举上一列状态
                         if ((j & k) == 0 && st[j | k])
                             f[i][j] += f[i - 1][k];
             

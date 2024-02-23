@@ -7,7 +7,7 @@ class Solution {    //坐标转换 + 二分
         int l =  0, r = n * m - 1;  //将ma展平成一维数组
         while (l < r) {
             int mid = l + r >> 1;
-            if (ma[mid / m][mid % m] >= tg) r = mid; //x = mid/m, y = mid%m;
+            if (ma[mid / m][mid % m] >= tg) r = mid; //x = mid / m, y = mid % m;
             else l = mid + 1; 
         }
 

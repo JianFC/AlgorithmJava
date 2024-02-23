@@ -17,11 +17,11 @@ public class ac826 {
     }
     
     static void addToHead(int x) {
-        e[idx] = x; ne[idx] = head; head = idx++;
+        e[idx] = x; ne[idx] = head; head = idx ++;
     }
     
     static void add(int k, int x) {
-        e[idx] = x; ne[idx] = ne[k]; ne[k] = idx++;
+        e[idx] = x; ne[idx] = ne[k]; ne[k] = idx ++;
     }
     
     static void remove(int k) {
@@ -33,7 +33,7 @@ public class ac826 {
         
         init(); //记得初始化
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); String op = (String)ins.sval;
             
             if (op.equals("H")) {

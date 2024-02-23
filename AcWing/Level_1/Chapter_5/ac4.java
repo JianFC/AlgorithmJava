@@ -16,16 +16,16 @@ public class ac4 {      //4. 多重背包问题 I_朴素版本
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i ++) {
             ins.nextToken(); v[i] = (int)ins.nval;
             ins.nextToken(); w[i] = (int)ins.nval; 
             ins.nextToken(); s[i] = (int)ins.nval;
         }
         
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=m; j++)
-                for (int k=0; k<=s[i] && k*v[i]<=j; k++)
-                    f[i][j] = Math.max(f[i][j], f[i-1][j-k*v[i]]+k*w[i]);
+        for (int i = 1; i <= n; i ++)
+            for (int j = 1; j <= m; j ++)
+                for (int k = 0; k <= s[i] && k * v[i] <= j; k ++)
+                    f[i][j] = Math.max(f[i][j], f[i - 1][j - k * v[i]] + k * w[i]);
                     
         out.println(f[n][m]);
 

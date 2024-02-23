@@ -15,7 +15,7 @@ public class ac905 {    //905. 区间选点
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i ++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             ivals[i] = new Interval(a, b);
@@ -27,7 +27,7 @@ public class ac905 {    //905. 区间选点
         int res = 0, ed = (int)-2e9;     //ed初始化当前所有区间最右点为-2e9
         for (int i = 0; i < n; i++) {
             if (ivals[i].l > ed) {
-                res++;
+                res ++;
                 ed = ivals[i].r;    //更新ed
             }
         }

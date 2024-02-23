@@ -21,7 +21,7 @@ public class ac876 {    //876. 快速幂求逆元
     public static void main(String[] args) throws Exception {
         ins.nextToken(); int n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int p = (int)ins.nval;
             

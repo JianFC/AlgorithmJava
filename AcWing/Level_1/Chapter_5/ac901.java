@@ -32,14 +32,14 @@ public class ac901 {    //AcWing 901. 滑雪
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 0; i <= n; i++) Arrays.fill(f[i], -1);
+        for (int i = 0; i <= n; i ++) Arrays.fill(f[i], -1);
         
-        for (int i = 1; i <= n; i++)
+        for (int i = 1; i <= n; i ++)
             for (int j = 1; j <= m; j++) { ins.nextToken(); h[i][j] = (int)ins.nval; }
             
         int res = 0;
-        for (int i = 1; i <= n; i++)
-            for (int j = 1; j <= m; j++)
+        for (int i = 1; i <= n; i ++)
+            for (int j = 1; j <= m; j ++)
                 res = Math.max(res, dp(i, j));
         
         out.println(res);

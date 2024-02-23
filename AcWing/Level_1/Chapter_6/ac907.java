@@ -18,7 +18,7 @@ public class ac907 {    // 907. 区间覆盖
         ins.nextToken(); ed = (int)ins.nval;
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i ++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             ivals[i] = new Interval(a, b);

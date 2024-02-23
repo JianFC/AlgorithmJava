@@ -18,7 +18,7 @@ class Solution {    //模拟 + 思维题
             else {  //左右对齐
                 //cnt代表该行中的间隙个数，r代表能用的空格数量
                 int cnt = j - i - 1, r = mw - len + cnt;
-                int k = 0;  //前r % cnt个缝隙的空格数为 r/cnt+1个
+                int k = 0;  //前r % cnt个缝隙的空格数为 r / cnt + 1个
                 while (k < r % cnt) {
                     line += sspace(r / cnt + 1) + wds[i + k + 1];
                     k ++;    //更新k

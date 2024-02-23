@@ -23,12 +23,12 @@ public class ac859 {    //AcWing 859. Kruskal算法求最小生成树
         Arrays.sort(edges, 0, m, (o1, o2) -> o1.w - o2.w);
         
         int res = 0, cnt = 0;
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i ++) {
             int a = edges[i].a, b = edges[i].b, w = edges[i].w;
             
             if (find(a) != find(b)) {
                 res += w;
-                cnt++;
+                cnt ++;
                 p[find(a)] = find(b);
             }
         }
@@ -40,9 +40,9 @@ public class ac859 {    //AcWing 859. Kruskal算法求最小生成树
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++) p[i] = i;  // 初始化并查集
+        for (int i = 1; i <= n; i ++) p[i] = i;  // 初始化并查集
         
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i ++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             ins.nextToken(); int c = (int)ins.nval;

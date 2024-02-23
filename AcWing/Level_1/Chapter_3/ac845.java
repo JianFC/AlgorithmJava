@@ -23,7 +23,7 @@ public class ac845 {    //八数码
             int k = t.indexOf("x"), dist = d.get(t);
             int x = k / 3, y = k % 3;
             
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 4; i ++) {
                 int a = x + dx[i], b = y + dy[i];
                 
                 if (a >= 0 && a < 3 && b >= 0 && b < 3) {

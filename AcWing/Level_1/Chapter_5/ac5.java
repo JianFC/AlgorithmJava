@@ -17,28 +17,28 @@ public class ac5 {  //5. 多重背包问题 II_位进制优化
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int vv = (int)ins.nval;
             ins.nextToken(); int ww = (int)ins.nval;
             ins.nextToken(); int s = (int)ins.nval;
             
             int k = 1;
             while (k <= s) {
-                cnt++;
+                cnt ++;
                 v[cnt] = k * vv;
                 w[cnt] = k * ww;
                 s -= k; k *= 2; //注意顺序
             }
             
             if (s > 0) {
-                cnt++;
+                cnt ++;
                 v[cnt] = s * vv;
                 w[cnt] = s * ww;
             }
         }
         
-        for (int i = 1; i <= cnt; i++)
-            for (int j = m; j >= v[i]; j--)
+        for (int i = 1; i <= cnt; i ++)
+            for (int j = m; j >= v[i]; j --)
                 f[j] = Math.max(f[j], f[j - v[i]] + w[i]);
                 
         out.println(f[m]);

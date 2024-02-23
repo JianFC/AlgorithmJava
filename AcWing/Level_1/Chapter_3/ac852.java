@@ -17,12 +17,12 @@ public class ac852 {    //AcWing 852. spfa判断负环
     static int[] dist = new int[N], cnt = new int[N];   //cnt[i]表示初始某个点到结点i的路径边数。
     
     static void add(int a, int b, int c) {
-        e[idx] = b; w[idx] = c; ne[idx] = h[a]; h[a] = idx++;
+        e[idx] = b; w[idx] = c; ne[idx] = h[a]; h[a] = idx ++;
     }
     
     static boolean spfa() {
         //存在负权边，所以dist可以不用初始化为INF
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i ++) {
             q.offer(i); st[i] = true;   //初始将所有点加入q中
         }
         

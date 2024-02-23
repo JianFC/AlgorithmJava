@@ -16,7 +16,7 @@ public class ac846 {    //846. 树的重心
     static int ans = N;
     
     static void add(int a, int b) {
-        e[idx] = b; ne[idx] = h[a]; h[a] = idx++;
+        e[idx] = b; ne[idx] = h[a]; h[a] = idx ++;
     }
     
     static int dfs(int u) { //返回以u为根的子树的结点个数，包括u
@@ -43,7 +43,7 @@ public class ac846 {    //846. 树的重心
         
         Arrays.fill(h, -1);
         
-        for (int i = 0; i < n-1; i++) {
+        for (int i = 0; i < n - 1; i ++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             add(a, b); add(b, a);

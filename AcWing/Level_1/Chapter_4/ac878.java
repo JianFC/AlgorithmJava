@@ -20,7 +20,7 @@ public class ac878 {    //878. 线性同余方程
     public static void main(String[] args) throws Exception {
         ins.nextToken(); int n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             ins.nextToken(); int m = (int)ins.nval;

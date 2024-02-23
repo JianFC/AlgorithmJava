@@ -17,17 +17,17 @@ public class ac847 {    //847. 图中点的层次
     static int[] q = new int[N];
     
     static void add(int a, int b) {
-        e[idx] = b; ne[idx] = h[a]; h[a] = idx++;
+        e[idx] = b; ne[idx] = h[a]; h[a] = idx ++;
     }
     
     static int bfs() {
         Arrays.fill(d, -1);
         
         d[1] = 0;
-        q[++tt] = 1;
+        q[++ tt] = 1;
         
         while (hh <= tt) {
-            int t = q[hh++];
+            int t = q[hh ++];
             
             for (int i = h[t]; i != -1; i = ne[i]) {
                 int j = e[i];
@@ -48,7 +48,7 @@ public class ac847 {    //847. 图中点的层次
         
         Arrays.fill(h, -1);
         
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i ++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             add(a, b);

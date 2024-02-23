@@ -17,7 +17,7 @@ public class ac840_2 {
     static void insert(int x) {
         int k = (x % N + N) % N;
 
-        e[idx] = x; ne[idx] = h[k]; h[k] = idx++;
+        e[idx] = x; ne[idx] = h[k]; h[k] = idx ++;
     }
 
     static boolean find(int x) {
@@ -29,9 +29,9 @@ public class ac840_2 {
     }
 
     public static void main(String[] args) throws Exception {
-        // for (int i = 100000; true; i++) {
+        // for (int i = 100000; true; i ++) {
         //     int flag = 1;
-        //     for (int j = 2; j <= i / j; j++) {
+        //     for (int j = 2; j <= i / j; j ++) {
         //         if (i % j == 0) {
         //             flag = 0;
         //             break;
@@ -46,7 +46,7 @@ public class ac840_2 {
         Arrays.fill(h, -1);
         ins.nextToken(); n = (int)ins.nval;
 
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); String op = (String)ins.sval;
             ins.nextToken(); int x = (int)ins.nval;
 

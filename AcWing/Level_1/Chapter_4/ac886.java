@@ -24,13 +24,13 @@ public class ac886 {    //886. 求组合数 II
     public static void main(String[] args) throws Exception {
         //预处理阶乘
         fact[0] = infact[0] = 1;
-        for (int i = 1; i < N; i++) {
+        for (int i = 1; i < N; i ++) {
             fact[i] = fact[i - 1] * i % mod;
             infact[i] = infact[i - 1] * qmi(i, mod - 2, mod) % mod;
         }
         
         ins.nextToken(); int n = (int)ins.nval; 
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int a = (int)ins.nval;     
             ins.nextToken(); int b = (int)ins.nval; 
             out.println(fact[a] * infact[a - b] % mod * infact[b] % mod);

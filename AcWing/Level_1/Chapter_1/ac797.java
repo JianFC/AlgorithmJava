@@ -24,7 +24,7 @@ public class ac797 {
         
         for (int i = 1; i <= n; i ++) insert(i, i, a[i]);
         
-        while (m-- > 0) {
+        while (m -- > 0) {
             ins.nextToken(); int l = (int)ins.nval;
             ins.nextToken(); int r = (int)ins.nval;
             ins.nextToken(); int c = (int)ins.nval;

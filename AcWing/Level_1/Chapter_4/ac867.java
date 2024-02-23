@@ -7,11 +7,11 @@ public class ac867 {
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     
     static void divide(int x) {
-        for (int i = 2; i <= x / i; i++)
+        for (int i = 2; i <= x / i; i ++)
             if (x % i == 0) {
                 int s = 0;
                 while (x % i == 0) {
-                    x /= i; s++;
+                    x /= i; s ++;
                 }
                 out.println(i + " " + s);
             }
@@ -24,7 +24,7 @@ public class ac867 {
     public static void main(String[] args) throws Exception {
         ins.nextToken(); int n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int a = (int)ins.nval;
             divide(a);
         }

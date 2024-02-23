@@ -23,7 +23,7 @@ public class ac841 {    //841. 字符串哈希
         
         //预处理h和p数组
         p[0] = 1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i ++) {
             p[i] = p[i - 1] * P;
             h[i] = h[i - 1] * P + str.charAt(i);
         }

@@ -10,7 +10,7 @@ package AcWing.LeetCode;        //61. 旋转链表
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {    //模拟+思维题
+class Solution {    //模拟 + 思维题
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null) return head;  //特判
         int n = 0;      //存储链表总节点数
@@ -19,11 +19,11 @@ class Solution {    //模拟+思维题
             tail = p;
             n ++;
         }
-        k %= n;     //将k限制在[0, n-1]之间，因为旋转n次等价于不做任何操作
+        k %= n;     //将k限制在[0, n - 1]之间，因为旋转n次等价于不做任何操作
         if (k == 0) return head;
 
         var p = head;
-        for (int i = 0; i < n - k - 1; i ++) p = p.next;     //跳n-k-1次，p存储第n-k个节点
+        for (int i = 0; i < n - k - 1; i ++) p = p.next;     //跳n - k - 1次，p存储第n - k个节点
         tail.next = head;   //画图理解
         head = p.next;
         p.next = null;

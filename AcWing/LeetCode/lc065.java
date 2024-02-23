@@ -25,7 +25,7 @@ class Solution {    //模拟 + 思维题 + 双指针 + 扫描
             else if (s.charAt(i) == 'e' || s.charAt(i) == 'E') {
                 //e出现在最前，e出现在最后，e已经出现过，返回false
                 if (i == 0 || i + 1 == s.length() || e > 0) return false;
-                //e后一个字符为+or-时，其不能为最后一个
+                //e后一个字符为+ or -时，其不能为最后一个
                 if (s.charAt(i + 1) == '+' || s.charAt(i + 1) == '-') {
                     if (i + 2 == s.length()) return false;
                     i ++;    //跳过下一个+或者-

@@ -36,7 +36,7 @@ public class ac838 {
         for (int i = 1; i <= n; i ++) { ins.nextToken(); h[i] = (int)ins.nval; }
         cnt = n;
         
-        for (int i = n / 2; i > 0; i--) down(i);  //O(n)方式建堆
+        for (int i = n / 2; i > 0; i --) down(i);  //O(n)方式建堆
         
         while (m-- > 0) {
             out.print(h[1] + " ");

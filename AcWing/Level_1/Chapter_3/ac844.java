@@ -24,9 +24,9 @@ public class ac844 {    //走迷宫
         q[++tt] = new PII(0, 0);
         
         while (hh <= tt) {
-            PII t = q[hh++];
+            PII t = q[hh ++];
             
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 4; i ++) {
                 int x = t.first + dx[i], y = t.second + dy[i];
                 if (x >= 0 && x < n && y >= 0 && y < m && g[x][y] != 1 && d[x][y] == -1) {
                     d[x][y] = d[t.first][t.second] + 1;
@@ -51,8 +51,8 @@ public class ac844 {    //走迷宫
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < m; j++) { ins.nextToken(); g[i][j] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++)
+            for (int j = 0; j < m; j ++) { ins.nextToken(); g[i][j] = (int)ins.nval; }
         
         out.println(bfs());
 

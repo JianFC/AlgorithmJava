@@ -15,14 +15,14 @@ public class ac828 {    //828. 模拟栈
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); String op = (String)ins.sval;
             
             if (op.equals("push")) {
                 ins.nextToken(); int x = (int)ins.nval;
                 stk[++tt] = x;
             }
-            else if (op.equals("pop")) tt--;
+            else if (op.equals("pop")) tt --;
             else if (op.equals("empty")) {
                 if (tt > 0) out.println("NO");
                 else out.println("YES");

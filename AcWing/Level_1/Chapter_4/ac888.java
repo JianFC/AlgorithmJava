@@ -16,10 +16,10 @@ public class ac888 {    //888. 求组合数 IV
     
     //线性筛
     static void get_primes(int n) {
-        for (int i = 2; i <= n; i++) {
-            if (!st[i]) primes[cnt++] = i;
+        for (int i = 2; i <= n; i ++) {
+            if (!st[i]) primes[cnt ++] = i;
             
-            for (int j = 0; primes[j] <= n / i; j++) {
+            for (int j = 0; primes[j] <= n / i; j ++) {
                 st[primes[j] * i] = true;
                 
                 if (i % primes[j] == 0) break;
@@ -42,7 +42,7 @@ public class ac888 {    //888. 求组合数 IV
     static List<Integer> mul(List<Integer> A, int b) {
         List<Integer> res = new ArrayList<>();
         
-        for (int i = 0, t = 0; i < A.size() || t != 0; i++) {
+        for (int i = 0, t = 0; i < A.size() || t != 0; i ++) {
             if (i < A.size()) t += A.get(i) * b;
             res.add(t % 10);
             t /= 10;
@@ -59,18 +59,18 @@ public class ac888 {    //888. 求组合数 IV
         
         get_primes(a);
         
-        for (int i = 0; i < cnt; i++) {
+        for (int i = 0; i < cnt; i ++) {
             int p = primes[i];
             sum[i] = get(a, p) - get(a - b, p) - get(b, p);
         }
         
         List<Integer> ans = new ArrayList<>(); ans.add(1);
         
-        for (int i = 0; i < cnt; i++)
-            for (int j = 0; j < sum[i]; j++)    
+        for (int i = 0; i < cnt; i ++)
+            for (int j = 0; j < sum[i]; j ++)    
                 ans = mul(ans, primes[i]);
         
-        for (int i = ans.size() - 1; i >= 0; i--) out.print(ans.get(i));
+        for (int i = ans.size() - 1; i >= 0; i --) out.print(ans.get(i));
         
         out.flush();
     }

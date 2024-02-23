@@ -15,12 +15,12 @@ public class ac104 {    //104. 货仓选址
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++) { ins.nextToken(); a[i] = (int)ins.nval; }
         
         Arrays.sort(a, 0, n);   //从小到大排序，用于求中位数
         
         long res = 0;
-        for (int i = 0; i < n; i++) res += Math.abs(a[i] - a[(n - 1) / 2]);
+        for (int i = 0; i < n; i ++) res += Math.abs(a[i] - a[(n - 1) / 2]);
         
         out.println(res);
         

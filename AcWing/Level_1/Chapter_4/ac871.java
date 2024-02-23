@@ -14,10 +14,10 @@ public class ac871 {    //871. 约数之和
     public static void main(String[] args) throws Exception {
         ins.nextToken(); int n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int x = (int)ins.nval;
             
-            for (int i = 2; i <= x / i; i++)
+            for (int i = 2; i <= x / i; i ++)
                 if (x % i == 0)
                     while (x % i == 0) {
                         primes.put(i, primes.getOrDefault(i, 0) + 1);

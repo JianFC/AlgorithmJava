@@ -17,7 +17,7 @@ public class ac896 {    //896. 最长上升子序列 II
         ins.nextToken(); n = (int)ins.nval;
         
         q[0] = (int)-2e9;   //设置哨兵
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int a = (int)ins.nval;
             
             //二分左边界

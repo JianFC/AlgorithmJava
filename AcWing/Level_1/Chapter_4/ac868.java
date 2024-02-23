@@ -15,8 +15,8 @@ public class ac868 {
     
     // 朴素筛法，时间复杂度O(nlnn)
     static void getPrimes(int n) {
-        for (int i = 2; i <= n; i++) {
-            if (!st[i]) primes[cnt++] = i;
+        for (int i = 2; i <= n; i ++) {
+            if (!st[i]) primes[cnt ++] = i;
             
             for (int j = i + i; j <= n; j += i) st[j] = true;
         }

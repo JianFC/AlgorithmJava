@@ -15,7 +15,7 @@ public class ac125 {    //125. 耍杂技的牛
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i ++) {
             ins.nextToken(); int w = (int)ins.nval;
             ins.nextToken(); int s = (int)ins.nval;
             cows[i] = new Cow(w + s, w);
@@ -25,7 +25,7 @@ public class ac125 {    //125. 耍杂技的牛
         Arrays.sort(cows, 0, n, (o1, o2) -> (o1.l - o2.l));
         
         long res = (int)-2e9, sum = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i ++) {
             int s = cows[i].l - cows[i].r, w = cows[i].r;
             res = Math.max(res, sum - s);
             sum += w;

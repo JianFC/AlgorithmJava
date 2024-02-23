@@ -10,7 +10,7 @@ public class ac869 {
     static List<Integer> getDivisors(int x) {
         List<Integer> res = new ArrayList<>();
         
-        for (int i = 1; i <= x / i; i++) {
+        for (int i = 1; i <= x / i; i ++) {
             if (x % i == 0) {
                 res.add(i);
                 
@@ -25,7 +25,7 @@ public class ac869 {
     public static void main(String[] args) throws Exception {
         ins.nextToken(); int n = (int)ins.nval;
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); int x = (int)ins.nval;
             
             List<Integer> res = getDivisors(x);

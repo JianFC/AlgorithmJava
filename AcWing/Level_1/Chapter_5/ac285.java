@@ -17,7 +17,7 @@ public class ac285 {    //AcWing 285. 没有上司的舞会
     static int[][] f = new int[N][2];
     
     static void add(int a, int b) {
-        e[idx] = b; ne[idx] = h[a]; h[a] = idx++;
+        e[idx] = b; ne[idx] = h[a]; h[a] = idx ++;
     }
     
     //树形DP
@@ -40,9 +40,9 @@ public class ac285 {    //AcWing 285. 没有上司的舞会
         
         Arrays.fill(h, -1);     //初始化邻接表头数组
         
-        for (int i = 1; i <= n; i++) { ins.nextToken(); happy[i] = (int)ins.nval; }
+        for (int i = 1; i <= n; i ++) { ins.nextToken(); happy[i] = (int)ins.nval; }
         
-        for (int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n - 1; i ++) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             add(b, a);  //b是a的直接上司
@@ -50,7 +50,7 @@ public class ac285 {    //AcWing 285. 没有上司的舞会
         }
         
         int root = 1;
-        while (has_fa[root]) root++;    //寻找树根
+        while (has_fa[root]) root ++;    //寻找树根
         
         dfs(root);  //从根结点开始向下dp
         

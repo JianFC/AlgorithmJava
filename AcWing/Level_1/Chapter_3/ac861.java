@@ -16,7 +16,7 @@ public class ac861 {    //861. 二分图的最大匹配
     static boolean[] st = new boolean[N];
     
     static void add(int a, int b) {
-        e[idx] = b; ne[idx] = h[a]; h[a] = idx++;
+        e[idx] = b; ne[idx] = h[a]; h[a] = idx ++;
     }
     
     static boolean find(int x) {
@@ -43,16 +43,16 @@ public class ac861 {    //861. 二分图的最大匹配
         
         Arrays.fill(h, -1);
         
-        while (m-- > 0) {
+        while (m -- > 0) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             add(a, b);
         }
         
         int res = 0;
-        for (int i = 1; i <= n1; i++) {
+        for (int i = 1; i <= n1; i ++) {
             Arrays.fill(st, false);
-            if (find(i)) res++;
+            if (find(i)) res ++;
         }
         
         out.println(res);

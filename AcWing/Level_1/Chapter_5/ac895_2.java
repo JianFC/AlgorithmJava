@@ -14,12 +14,12 @@ public class ac895_2 {    //895. 最长上升子序列_打印路径
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++) { ins.nextToken(); a[i] = (int)ins.nval; }
+        for (int i = 1; i <= n; i ++) { ins.nextToken(); a[i] = (int)ins.nval; }
         
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i ++) {
             f[i] = 1;   //没有第i-1个数
             g[i] = 0;   //前驱是0
-            for (int j = 1; j < i; j++)
+            for (int j = 1; j < i; j ++)
                 if (a[j] < a[i])
                     if (f[i] < f[j] + 1) {
                         f[i] = f[j] + 1;
@@ -29,13 +29,13 @@ public class ac895_2 {    //895. 最长上升子序列_打印路径
         
         //找出答案
         int k = 1;
-        for (int i = 1; i <= n; i++)
+        for (int i = 1; i <= n; i ++)
             if (f[i] > f[k]) k = i;
         
         out.println(f[k]);
         
         //打印路径
-        for (int i = 0, len = f[k]; i < len; i++) {
+        for (int i = 0, len = f[k]; i < len; i ++) {
             out.print(a[k] + " ");
             k = g[k];
         }

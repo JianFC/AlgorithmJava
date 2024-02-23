@@ -17,13 +17,13 @@ public class ac874 {    //874. 筛法求欧拉函数
     static long getEulers(int n) {
         phi[1] = 1;     //注意边界
         
-        for (int i = 2; i <= n; i++) {
+        for (int i = 2; i <= n; i ++) {
             if (!st[i]) {
-                primes[cnt++] = i;
-                phi[i] = i - 1;   //当i时质数时，有定义知1~i-1与i互质，故phi[i] = i-1;
+                primes[cnt ++] = i;
+                phi[i] = i - 1;   //当i时质数时，有定义知1 ~ i - 1与i互质，故phi[i] = i - 1;
             }
             
-            for (int j = 0; primes[j] <= n / i; j++) {
+            for (int j = 0; primes[j] <= n / i; j ++) {
                 st[primes[j] * i] = true;
                 
                 if (i % primes[j] == 0) {
@@ -36,7 +36,7 @@ public class ac874 {    //874. 筛法求欧拉函数
         }
         
         long res = 0;
-        for (int i = 1; i <= n; i++) res += phi[i];
+        for (int i = 1; i <= n; i ++) res += phi[i];
         return res;
     }
 

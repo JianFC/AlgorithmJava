@@ -1,12 +1,11 @@
 package AcWing.LeetCode;        //73. 矩阵置零
-//73. 矩阵置零
 
-class Solution {    //模拟+思维题
+class Solution {    //模拟 + 思维题 + 时间复杂度：常数遍O(n ^ 2)，即O(n ^ 2)
     public void setZeroes(int[][] ma) {
         if (ma.length == 0) return;
         int n = ma.length, m = ma[0].length;
         
-        int r0 = 1, c0 = 1; //r0表示第0行有没有0，c0表示第0列有没有0
+        int r0 = 1, c0 = 1; //r0记录第0行有没有0，c0记录第0列有没有0
         //计算r0和c0
         for (int i = 0; i < m; i ++) if (ma[0][i] == 0) r0 = 0;
         for (int i = 0; i < n; i ++) if (ma[i][0] == 0) c0 = 0;
@@ -21,12 +20,12 @@ class Solution {    //模拟+思维题
             for (int j = 0; j < m; j ++) //计算改行是否包含0
                 if (ma[i][j] == 0) ma[i][0] = 0;
         
-        //更新1-m列
+        //更新1 - m列
         for (int i = 1; i < m; i ++)
             if (ma[0][i] == 0)
                 for (int j = 0; j < n; j ++) ma[j][i] = 0;
         
-        //更新1-n行
+        //更新1 - n行
         for (int i = 1; i < n; i ++)
             if (ma[i][0] == 0)
                 for (int j = 0; j < m; j ++) ma[i][j] = 0;

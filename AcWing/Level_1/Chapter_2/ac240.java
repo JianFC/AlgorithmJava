@@ -25,7 +25,7 @@ public class ac240 {
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); k = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++) p[i] = i;
+        for (int i = 1; i <= n; i ++) p[i] = i;
         
         int res = 0;
         while (k-- > 0) {

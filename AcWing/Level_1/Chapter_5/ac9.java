@@ -17,18 +17,18 @@ public class ac9 {  //AcWing 9. 分组背包问题
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i ++) {
             ins.nextToken(); s[i] = (int)ins.nval;
             
-            for (int j = 1; j <= s[i]; j++) {
+            for (int j = 1; j <= s[i]; j ++) {
                 ins.nextToken(); v[i][j] = (int)ins.nval;
                 ins.nextToken(); w[i][j] = (int)ins.nval;
             }
         }
         
-        for (int i = 1; i <= n; i++)
-            for (int j = m; j >= 1; j--)
-                for (int k = 1; k <= s[i]; k++)
+        for (int i = 1; i <= n; i ++)
+            for (int j = m; j >= 1; j --)
+                for (int k = 1; k <= s[i]; k ++)
                     if (j >= v[i][k]) f[j] = Math.max(f[j], f[j - v[i][k]] + w[i][k]);
         
         out.println(f[m]);

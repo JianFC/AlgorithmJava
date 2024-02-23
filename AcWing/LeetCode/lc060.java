@@ -5,7 +5,7 @@ class Solution {    //类计数DP思路 + 模拟 + 代码实现
         String res = "";
         boolean[] st = new boolean[n + 1];  //判重数组，记录每个数的使用情况
         for (int i = 0; i < n; i ++) {   //枚举每次确定的数的位置
-            int fact = 1;   //预处理当前前缀的序列个数
+            int fact = 1;   //预处理当前前缀的序列个数(当前第i位确定后，剩下数的阶乘)
             for (int j = 1; j <= n - i - 1; j ++) fact *= j; 
 
             for (int j = 1; j <= n; j ++) {  //枚举当前位置应该为哪个数

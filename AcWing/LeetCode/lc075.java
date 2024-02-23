@@ -6,7 +6,7 @@ class Solution {    //思维题 + 模拟 + 指针
         for (int i = 0, j = 0, k = nums.length - 1; i <= k; ) {
             if (nums[i] == 0) {
                 int t = nums[j]; nums[j] = nums[i]; nums[i] = t;
-                j ++; i ++;   //i,j指针分别向前移动一位
+                j ++; i ++;   //i, j指针分别向前移动一位
             }
             else if (nums[i] == 2) {
                 int t = nums[k]; nums[k] = nums[i]; nums[i] = t;

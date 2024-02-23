@@ -16,12 +16,12 @@ public class ac2_3 {    //2. 01背包问题_降维优化
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i ++) {
             ins.nextToken(); v[i] = (int)ins.nval;
             ins.nextToken(); w[i] = (int)ins.nval;
         }
         
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i ++) {
             for (int j = m; j >= 0; j--)
                 if (j >= v[i]) f[j] = Math.max(f[j], f[j - v[i]] + w[i]);
         }

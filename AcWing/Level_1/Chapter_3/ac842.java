@@ -14,12 +14,12 @@ public class ac842 {    //842. 排列数字
     
     static void dfs(int u) {
         if (u == n) {   //退出条件
-            for (int i = 0; i < n; i++) out.print(path[i]+" ");
+            for (int i = 0; i < n; i ++) out.print(path[i]+" ");
             out.println();
             return;
         }
         
-        for (int i = 1; i <= n; i++) 
+        for (int i = 1; i <= n; i ++) 
             if (!st[i]) {
                 path[u] = i;
                 st[i] = true;

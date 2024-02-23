@@ -12,7 +12,7 @@ public class ac148 {    //148. 合并果子
     
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i ++) {
             ins.nextToken(); int a = (int)ins.nval;
             heap.add(a);
         }

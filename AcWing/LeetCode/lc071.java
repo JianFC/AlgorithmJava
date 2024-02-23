@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //71. 简化路径
 
-class Solution {    //栈（实现树上递归处理思想）+模拟+思维题
+class Solution {    //栈（实现树上递归处理思想）+ 模拟 + 思维题
     public String simplifyPath(String path) {
         String res = "", name = ""; //name表示当前处理的目录名，res既当栈用，也存储结果
         //统一格式，方便处理

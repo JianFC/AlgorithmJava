@@ -16,14 +16,14 @@ public class ac3_3 {    //3. 完全背包问题_优化时间复杂度&降维
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i ++) {
             ins.nextToken(); v[i] = (int)ins.nval;
             ins.nextToken(); w[i] = (int)ins.nval;
         }
         
-        for (int i=1; i<=n; i++)
-            for (int j=1; j<=m; j++) 
-                if (j>=v[i]) f[j] = Math.max(f[j], f[j-v[i]]+w[i]);
+        for (int i = 1; i <= n; i ++)
+            for (int j = 1; j <= m; j ++) 
+                if (j >= v[i]) f[j] = Math.max(f[j], f[j - v[i]] + w[i]);
             
         out.println(f[m]);
 

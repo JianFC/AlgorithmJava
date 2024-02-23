@@ -21,7 +21,7 @@ public class ac887 {    //887. 求组合数 III
         if (b > a) return 0;
         
         long res = 1;
-        for (long i = 1, j = a; i <= b; i++, j--) {
+        for (long i = 1, j = a; i <= b; i ++, j --) {
             res = res * j % p;
             res = res * qmi(i, p - 2, p) % p;
         }
@@ -37,7 +37,7 @@ public class ac887 {    //887. 求组合数 III
     public static void main(String[] args) throws Exception {
         int n = Integer.parseInt(inb.readLine());
         
-        while (n-- > 0) {
+        while (n -- > 0) {
             //备注: StreamTokenizer读取大于10^16的整数时会发生精度丢失
             String[] tmp = inb.readLine().split("\\s+");
             // \\s表示空格,回车,换行等空白符, +号表示一个或多个的意思

@@ -4,7 +4,7 @@ class Solution {    //模拟题 + 高精度加法思想
     public int[] plusOne(int[] di) {
         List<Integer> res = new ArrayList<>();
         reverse(di, 0, di.length - 1);    //翻转di
-        //t表示进位，+1可视为从上一位进一位
+        //t表示进位，+ 1可视为从上一位进一位
         int t = 1;
         for (int i = 0; i < di.length; i ++) {    
             t += di[i];

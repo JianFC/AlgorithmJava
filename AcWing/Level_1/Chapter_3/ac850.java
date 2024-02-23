@@ -16,7 +16,7 @@ public class ac850 {    //850. Dijkstra求最短路 II
     static boolean[] st = new boolean[N];
     
     static void add(int a, int b, int c) {
-        e[idx] = b; w[idx] = c; ne[idx] = h[a]; h[a] = idx++;
+        e[idx] = b; w[idx] = c; ne[idx] = h[a]; h[a] = idx ++;
     }
     
     static int dijkstra() {
@@ -53,7 +53,7 @@ public class ac850 {    //850. Dijkstra求最短路 II
         
         Arrays.fill(h, -1);
         
-        while (m-- > 0) {
+        while (m -- > 0) {
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
             ins.nextToken(); int c = (int)ins.nval;

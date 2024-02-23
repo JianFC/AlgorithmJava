@@ -47,7 +47,7 @@ public class ac839 {
         ins.nextToken(); n = (int)ins.nval;
         
         int kk = 0;
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); String op = (String)ins.sval;
             
             if (op.equals("I")) {
@@ -58,12 +58,12 @@ public class ac839 {
             }
             else if (op.equals("PM")) out.println(h[1]);
             else if (op.equals("DM")) {
-                heap_swap(1, cnt--); down(1); 
+                heap_swap(1, cnt --); down(1); 
             }
             else if (op.equals("D")) {
                 ins.nextToken(); int k = (int)ins.nval;
                 k = ph[k];
-                heap_swap(k, cnt--); down(k); up(k);
+                heap_swap(k, cnt --); down(k); up(k);
             }
             else {
                 ins.nextToken(); int k = (int)ins.nval;

@@ -20,7 +20,7 @@ public class ac827 {    //827. 双链表
     static void add(int k, int x) {     //在第k个插入的数右边插入一个结点
         e[idx] = x;
         l[idx] = k; r[idx] = r[k];
-        l[r[k]] = idx; r[k] = idx++;
+        l[r[k]] = idx; r[k] = idx ++;
     }
     
     static void remove(int k) {

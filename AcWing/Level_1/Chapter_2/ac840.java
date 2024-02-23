@@ -19,7 +19,7 @@ public class ac840 {    //AcWing 840. 模拟散列表
         int k = (x % N + N) % N;
 
         while (h[k] != nul && h[k] != x) {
-            k++;
+            k ++;
             if (k == N) k = 0; 
         }
 
@@ -28,9 +28,9 @@ public class ac840 {    //AcWing 840. 模拟散列表
 
 
     public static void main(String[] args) throws Exception {
-        // for (int i = 200000; true; i++) {
+        // for (int i = 200000; true; i ++) {
         //     int flag = 1;
-        //     for (int j = 2; j <= i / j; j++)
+        //     for (int j = 2; j <= i / j; j ++)
         //         if (i % j == 0) {
         //             flag = 0;
         //             break;
@@ -43,7 +43,7 @@ public class ac840 {    //AcWing 840. 模拟散列表
         Arrays.fill(h, nul);
         ins.nextToken(); n = (int)ins.nval;
 
-        while (n-- > 0) {
+        while (n -- > 0) {
             ins.nextToken(); String op = (String)ins.sval;
             ins.nextToken(); int x = (int)ins.nval;
 

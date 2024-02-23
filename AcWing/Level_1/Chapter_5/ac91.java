@@ -16,16 +16,16 @@ public class ac91 {     //91. 最短Hamilton路径
     public static void main(String[] args) throws Exception {
         ins.nextToken(); n = (int)ins.nval;
         
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++) { ins.nextToken(); w[i][j] = (int)ins.nval; }
+        for (int i = 0; i < n; i ++)
+            for (int j = 0; j < n; j ++) { ins.nextToken(); w[i][j] = (int)ins.nval; }
             
-        for (int i = 0; i < M; i++) Arrays.fill(f[i], INF);     //初始化
+        for (int i = 0; i < M; i ++) Arrays.fill(f[i], INF);     //初始化
         f[1][0] = 0;
         
-        for (int i = 0; i < 1 << n; i++)  //枚举状态i
-            for (int j = 0; j < n; j++)
+        for (int i = 0; i < 1 << n; i ++)  //枚举状态i
+            for (int j = 0; j < n; j ++)
                 if ((i >> j & 1) == 1)    //走过j点
-                    for (int k = 0; k < n; k++) //枚举j前一个走过的点k
+                    for (int k = 0; k < n; k ++) //枚举j前一个走过的点k
                         if (((i - (1 << j)) >> k & 1) == 1)     //注意运算符优先级
                             f[i][j] = Math.min(f[i][j], f[i - (1 << j)][k] + w[k][j]);
         

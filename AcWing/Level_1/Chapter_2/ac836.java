@@ -22,7 +22,7 @@ public class ac836 {    //acwing836 合并集合
 
         for (int i = 1; i <= n; i ++) p[i] = i;
 
-        while (m-- > 0) {
+        while (m -- > 0) {
             ins.nextToken(); String op = (String)ins.sval;
             ins.nextToken(); int a = (int)ins.nval;
             ins.nextToken(); int b = (int)ins.nval;
