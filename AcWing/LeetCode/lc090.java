@@ -1,4 +1,4 @@
-package AcWing.LeetCode;        //90. 子集 II
+package AcWing.LeetCode;        //90. 子集 II（类似lc039）
 
 class Solution {    //DFS + 枚举方案 + 模板题
     List<List<Integer>> res = new ArrayList<>();
@@ -18,13 +18,13 @@ class Solution {    //DFS + 枚举方案 + 模板题
         }
 
         int k = u + 1;
-        while (k < nums.length && nums[k] == nums[u]) k++;  //k记录重复元素的右边界(不含)
+        while (k < nums.length && nums[k] == nums[u]) k ++;  //k记录重复元素的右边界(不含)
 
-        for (int i = 0; i <= k - u; i++) {   //枚举nums[u]选多少个
+        for (int i = 0; i <= k - u; i ++) {   //枚举nums[u]选多少个
             dfs(nums, k);
-            path.add(nums[u]);  //放到dfs之后，实现i=0，选0个，i=1，选1个..i = j，选j个
+            path.add(nums[u]);  //放到dfs之后，实现i = 0，选0个，i = 1，选1个..i = j，选j个
         }
 
-        for (int i = 0; i <= k - u; i++) path.remove(path.size() - 1);   //恢复现场
+        for (int i = 0; i <= k - u; i ++) path.remove(path.size() - 1);   //恢复现场
     }
 } 
