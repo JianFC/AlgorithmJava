@@ -15,7 +15,7 @@ package AcWing.LeetCode;        //100. 相同的树
  *     }
  * }
  */
-class Solution {    //递归+模板题
+class Solution {    //递归 + 模板题
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) return true;    //都为空，返回true
         if (p == null || q == null || p.val != q.val) return false;  //结构不一样or值不一样
