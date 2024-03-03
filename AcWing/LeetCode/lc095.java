@@ -15,21 +15,21 @@ package AcWing.LeetCode;        //95. 不同的二叉搜索树 II
  *     }
  * }
  */
-class Solution {    //暴搜+枚举根节点+catalan数+模板题
+class Solution {    //暴搜 + 枚举根节点 + catalan数 + 模板题
     public List<TreeNode> generateTrees(int n) {
         if (n < 1) return new ArrayList<TreeNode>();
         return dfs(1, n);
     }
 
     List<TreeNode> dfs(int l, int r) {
-        List<TreeNode> res = new ArrayList<>(); //存储[l, r]每个数为根的子树root，每个子树都是连续的一段
+        List<TreeNode> res = new ArrayList<>(); //存储以[l, r]区间中每个数为根的二叉树的根节点root
         if (l > r) {
             res.add(null);  //没有合法结点，注意此句不能省
             return res;
         }
 
         for (int i = l; i <= r; i ++) {  //枚举该子树的root
-            //递归生成左右子树部分
+            //递归生成左右子树部分的集合
             var left = dfs(l, i - 1); var right = dfs(i + 1, r);
             for (var ln: left)   //枚举左子树根节点
                 for (var rn: right) {    //枚举右子树根节点
@@ -41,4 +41,4 @@ class Solution {    //暴搜+枚举根节点+catalan数+模板题
 
         return res;
     }
-}
+} 

@@ -13,6 +13,11 @@ class LRUCache {    //struct定义双链表 + 哈希表 + 思维题
     int n;
     Map<Integer, Node> hash = new HashMap<>();  //哈希表，O(1)实现put和get方法
 
+    public LRUCache(int capacity) {
+        n = capacity;   //更新容量
+        L.right = R; R.left = L;    //初始化头尾节点
+    }
+
     void insert(Node p) {   //将p插到头节点之后
         p.right = L.right; p.left = L;
         L.right.left = p; L.right = p;
@@ -21,11 +26,6 @@ class LRUCache {    //struct定义双链表 + 哈希表 + 思维题
     void remove(Node p) {   //删除p节点
         p.left.right = p.right;
         p.right.left = p.left;
-    }
-
-    public LRUCache(int capacity) {
-        n = capacity;   //更新容量
-        L.right = R; R.left = L;    //初始化头尾节点
     }
     
     public int get(int key) {

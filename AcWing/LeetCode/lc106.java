@@ -27,8 +27,8 @@ class Solution {    //递归建树 + 模板题
         if (il > ir) return null;   //区间空
         var root = new TreeNode(postorder[pr]);     //后序遍历最后一个点为root
         int k = pos.get(root.val);  //找到中序遍历中root的位置
-        root.left = build(inorder, postorder, il, k - 1, pl, pl + k - 1 - il);  //build左子树
-        root.right = build(inorder, postorder, k + 1, ir, pl + k - 1 - il + 1, pr - 1); //build右子树
+        root.left = build(inorder, postorder, il, k - 1, pl, pl + (k - 1 - il));  //build左子树
+        root.right = build(inorder, postorder, k + 1, ir, pl + (k - 1 - il) + 1, pr - 1); //build右子树
         return root;
     }
 }
