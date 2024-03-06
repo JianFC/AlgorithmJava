@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //127. 单词接龙
 
-class Solution {    //BFS + 建图
+class Solution {    //BFS求最短路 + 建图
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> S = new HashSet<>();    //哈希表
         for (int i = 0; i < wordList.size(); i ++) S.add(wordList.get(i));

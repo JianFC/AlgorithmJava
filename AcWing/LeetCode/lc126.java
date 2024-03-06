@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //126. 单词接龙 II
 
-class Solution {    //BFS + DFS + 建图 + 路径搜索(时间复杂度指数级别) + 求最短路路径模板
+class Solution {    //BFS最短路 + DFS暴搜 + 建图 + 路径搜索(时间复杂度指数级别) + 求最短路路径模板
     Set<String> S = new HashSet<>();    //哈希表，存储每个单词是否出现过
     Map<String, Integer> dist = new HashMap<>();    //dist[i]存储单词i到bw的最短距离
     Queue<String> q = new LinkedList<>();       //q宽搜dist队列
@@ -33,7 +33,7 @@ class Solution {    //BFS + DFS + 建图 + 路径搜索(时间复杂度指数级
         }
 
         if (!dist.containsKey(ew))  return ans;     //没有合法路径
-        path.add(ew);   
+        path.add(ew);   //先将终点插入路径
         dfs(ew);    //从终点开始往回搜，dfs求路径
         return ans;
     }
@@ -49,7 +49,7 @@ class Solution {    //BFS + DFS + 建图 + 路径搜索(时间复杂度指数级
             char[] sc = t.toCharArray();
             for (int i = 0; i < sc.length; i ++) {  //看t上一个单词可能是啥
                 sc = t.toCharArray();
-                for (int j = 'a'; j <= 'z'; j++) {
+                for (int j = 'a'; j <= 'z'; j ++) {
                     sc[i] = (char)j;
                     String s = String.valueOf(sc);
                     if (dist.containsKey(s) && dist.get(s) + 1 == dist.get(t)) {    //剪枝条件，最短路性质

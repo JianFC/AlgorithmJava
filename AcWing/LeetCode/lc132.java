@@ -4,8 +4,8 @@ class Solution {    //线性DP + 预处理区间状态数组
     public int minCut(String s) {
         int n = s.length();
         s = ' ' + s;    //下标从1开始
-        boolean[][] g = new boolean[n + 1][n + 1];  //g[i][j]表示Si-Sj是否为回文串
-        int[] f = new int[n + 1];   //f[i]代表从s1-si的所有分割方案
+        boolean[][] g = new boolean[n + 1][n + 1];  //g[i][j]表示Si - Sj是否为回文串
+        int[] f = new int[n + 1];   //f[i]代表从s1 - si的所有分割方案
         
         for (int j = 1; j <= n; j ++)
             for (int i = 1; i <= n; i ++)

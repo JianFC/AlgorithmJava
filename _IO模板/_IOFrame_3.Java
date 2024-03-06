@@ -8,7 +8,7 @@ class Main {
 
     public static void main(String[] args) throws Exception {
         String s = in.next();
-        int n = in.neInt();
+        int n = in.nextInt();
         double x = in.nextDouble();
         boolean b = in.nextBoolean();
 

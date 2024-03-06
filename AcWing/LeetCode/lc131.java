@@ -1,6 +1,6 @@
 package AcWing.LeetCode;        //131. 分割回文串
 
-class Solution {    //暴搜方案(时间复杂度O(2^n-1)) + 递推优化 + DFS
+class Solution {    //暴搜方案(时间复杂度O(2 ^ (n - 1)) + 递推优化 + DFS
     int N = 20;
     boolean[][] f = new boolean[N][N];  //递推求f[i][j],表示si - sj是否为回文串，优化暴搜时间复杂度
     List<List<String>> res = new ArrayList<>();
@@ -13,7 +13,7 @@ class Solution {    //暴搜方案(时间复杂度O(2^n-1)) + 递推优化 + DFS
             for (int i = 0; i <= j; i ++)
                 if (i == j) f[i][j] = true; //只包含一个字符，是回文串
                 else if (s.charAt(i) == s.charAt(j)) {       //当s[i] == s[j]时
-                    if (i + 1 > j - 1 || f[i + 1][j - 1])   //只有两个字符or 上一层f[i + 1][j - 1]为true
+                    if (i + 1 > j - 1 || f[i + 1][j - 1])   //只有两个字符且相等or 上一层f[i + 1][j - 1]为true
                         f[i][j] = true;
                 }
         

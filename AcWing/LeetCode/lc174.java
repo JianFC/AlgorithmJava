@@ -3,7 +3,7 @@ package AcWing.LeetCode;        //174. 地下城游戏
 class Solution {    //DP数字三角形模型 + 注意分析思路
     public int calculateMinimumHP(int[][] w) {
         int n = w.length, m = w[0].length, INF = 0x3f3f3f3f;
-        int[][] f = new int[n][m];  //f[i][j]表示从(i, j)走到终点的路径集合的进入血量最小值
+        int[][] f = new int[n][m];                              //f[i][j]表示从(i, j)走到终点的路径集合的进入血量最小值
         for (int i = 0; i < n; i ++) Arrays.fill(f[i], INF);    //初始化f[i][j]为最大值
 
         for (int i = n - 1; i >= 0; i --)   //从终点往前dp

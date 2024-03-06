@@ -7,8 +7,8 @@ class Solution {    //哈希表 + 思维题 + 双指针
 
         int res = 0;    //存储答案
         for (var t: nums) {
-            if (!S.contains(t - 1)) {   //保证t是每一段的起点
-                S.remove(t); //将t从哈希表中删除，保证每个数只会被搜一次
+            if (S.contains(t) && !S.contains(t - 1)) {   //保证t是每一段的起点
+                S.remove(t);            //将t从哈希表中删除，保证每个数只会被搜一次
                 int y = t;
                 while (S.contains(y + 1)) {
                     y ++;

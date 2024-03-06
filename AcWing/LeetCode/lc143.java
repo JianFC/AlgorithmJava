@@ -17,7 +17,7 @@ class Solution {    //链表 + 双指针 + 思维题
         for (var p = head; p != null; p = p.next) n ++;
 
         var mid = head;
-        for (int i = 0; i < (n + 1) / 2 - 1; i ++) mid = mid.next;  //跳(n+1)/2-1下取整到中点
+        for (int i = 0; i < (n + 1) / 2 - 1; i ++) mid = mid.next;  //跳(n + 1) / 2 - 1下取整到中点
         
         ListNode a = mid, b = a.next;
         for (int i = 0; i < n / 2; i ++) {  //从中点后开始反转链表
@@ -26,10 +26,10 @@ class Solution {    //链表 + 双指针 + 思维题
         }
 
         ListNode p = head, q = a;   //p节点从链表头开始，q节点从链表尾开始
-        for (int i = 0; i < n / 2; i ++) {  //走n/2次
+        for (int i = 0; i < n / 2; i ++) {  //走n / 2次
             var c = q.next;
             q.next = p.next;    //q插到p的后面
-            p.next = q; //更新p的next
+            p.next = q;         //更新p的next
             p = q.next; q = c;  //更新p和q的位置
         }
 

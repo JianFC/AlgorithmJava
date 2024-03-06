@@ -8,7 +8,7 @@ class Node {
     public Node right;
     public Node next;
 
-    public Node() {}
+    public Node() {}  
     
     public Node(int _val) {
         val = _val;
@@ -23,14 +23,14 @@ class Node {
 };
 */
 
-class Solution {    //BFS+链表维护+思维题
+class Solution {    //BFS + 链表维护 + 思维题
     public Node connect(Node root) {
         if (root == null) return root;
         var cur = root;
-        while (cur != null) {   //cur指向每一层从左往右第一个点
-            var head = new Node(-1);    //手动维护下一层链表，虚拟头节点
-            var tail = head;    //下一层链表尾节点
-            for (var p = cur; p != null; p = p.next) {  //层序遍历，手动维护链表
+        while (cur != null) {               //cur指向每一层从左往右第一个点
+            var head = new Node(-1);        //手动维护下一层链表，虚拟头节点
+            var tail = head;                //下一层链表尾节点
+            for (var p = cur; p != null; p = p.next) {      //层序遍历，手动维护下一层节点next构成的链表
                 if (p.left != null) tail = tail.next = p.left;
                 if (p.right != null) tail = tail.next = p.right;
             }

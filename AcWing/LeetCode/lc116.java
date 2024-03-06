@@ -26,11 +26,11 @@ class Node {
 class Solution {    //BFS + next优化
     public Node connect(Node root) {
         if (root == null) return root;
-        var source = root;  //记录根节点
-        while (root.left != null) {     //root表示每一层从左往右第一个点
-            for (var p = root; p != null; p = p.next) {    //层序遍历，从root开始
-                p.left.next = p.right;  //左儿子的next = 右儿子
-                if (p.next != null) p.right.next = p.next.left;
+        var source = root;                                  //记录最初根节点
+        while (root.left != null) {                         //root表示每一层从左往右第一个点
+            for (var p = root; p != null; p = p.next) {     //层序遍历，从root开始
+                p.left.next = p.right;                      //左儿子的next = 右儿子
+                if (p.next != null) p.right.next = p.next.left;     //右儿子next = 下一个节点左儿子
             }
             root = root.left;   //更新root
         }

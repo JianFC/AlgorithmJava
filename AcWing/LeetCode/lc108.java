@@ -21,7 +21,7 @@ class Solution {    //递归 + 线段树与平衡树建树方式
     }
 
     TreeNode build(int[] nums, int l, int r) {
-        if (l > r) return null; //区间已空
+        if (l > r) return null;     //区间已空
         int mid = l + r >> 1;   //求出中点
         var root = new TreeNode(nums[mid]); //创建root
         root.left = build(nums, l, mid - 1);  //创建左子树

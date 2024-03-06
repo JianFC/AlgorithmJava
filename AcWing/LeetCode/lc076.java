@@ -22,7 +22,7 @@ class Solution {    //双指针 + 滑动窗口 + 哈希表 + 思维题 + 时O(n)
             if (ht.containsKey(c) && hw.get(c) <= ht.get(c)) cnt ++;    //更新有效数量
             
             char cj  = s.charAt(j);
-            while (j < i && (!ht.containsKey(cj) || hw.get(cj) > ht.get(cj))) { //cj是多余字符，j++
+            while (j < i && (!ht.containsKey(cj) || hw.get(cj) > ht.get(cj))) { //cj是多余字符，j ++
                 hw.put(cj, hw.get(cj) - 1);
                 j ++; cj = s.charAt(j);  //更新j和cj
             }

@@ -21,7 +21,7 @@ class Solution {    //记忆化搜索 + 滑雪变形
     int dp(int i) {     //记忆化搜索，时间复杂度O(n)
         if (f[i] != -1) return f[i];    //已经搜索过
         f[i] = 1;   //初始化
-        if (i > 0 && w[i - 1] < w[i]) f[i] = Math.max(f[i], dp(i - 1) + 1);  //左边孩子更矮
+        if (i > 0 && w[i - 1] < w[i]) f[i] = Math.max(f[i], dp(i - 1) + 1);     //左边孩子更矮
         if (i + 1 < n && w[i + 1] < w[i]) f[i] = Math.max(f[i], dp(i + 1) + 1);  //右边孩子更矮
         return f[i];
     }

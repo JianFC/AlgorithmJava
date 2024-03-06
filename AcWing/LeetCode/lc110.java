@@ -25,7 +25,7 @@ class Solution {    //递归 + 模板题
 
     int dfs(TreeNode root) {    //返回root为根的子树的最大深度
         if (root == null) return 0; //root为空，返回0
-        int lh = dfs(root.left), rh = dfs(root.right);  //lh，左子树最大深度，右子树最大深度
+        int lh = dfs(root.left), rh = dfs(root.right);  //lh左子树最大深度，rh右子树最大深度
         if (Math.abs(lh - rh) > 1) ans = false;     //不平衡
         return Math.max(lh, rh) + 1;    //返回当前子树深度最大值
     }

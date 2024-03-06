@@ -11,6 +11,6 @@ class Solution {    //递推 + 滚动数组
 
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i <= n; i ++) res.add(f[n & 1][i]);
-        return res;
+        return res; 
     }
 }

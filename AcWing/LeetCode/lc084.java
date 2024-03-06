@@ -10,7 +10,7 @@ class Solution {    //单调栈应用 + 模板题 + 枚举上边界
         //求出每个数左边第一个比它小的数的下标，更新left数组，从左往右扫描, O(n)
         for (int i = 0; i < n; i ++) {
             while (tt > 0 && h[stk[tt]] >= h[i]) tt --;  //找到第一个≤的数的下标
-            if (tt == 0) left[i] = -1;  //i左边所有数>=i
+            if (tt == 0) left[i] = -1;  //i左边所有数 >= i
             else left[i] = stk[tt]; //更新left[i]
             stk[++ tt] = i;  //将第i个数加入单调栈，维护单调栈性质
         }

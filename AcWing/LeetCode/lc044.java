@@ -6,7 +6,7 @@ class Solution {    //DP + 枚举 + 完全背包优化
     public boolean isMatch(String s, String p) {
         int n = s.length(), m = p.length();
         s = " " + s; p = " " + p;   //加上“ ”方便dp
-        boolean[][] f = new boolean[N][N];  //f[i][j]代表的集合为s[1-i]和p[1-j]匹配的方案数的集合
+        boolean[][] f = new boolean[N][N];  //f[i][j]代表的集合为s[1 - i]和p[1 - j]匹配的方案数的集合
                                             //boolean为状态表示的属性
         f[0][0] = true;     //空串和空串匹配
         for (int i = 0; i <= n; i ++) {  //注意下标从0开始，s空串可能和其他串匹配
