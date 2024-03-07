@@ -15,7 +15,7 @@ class Node {
 }
 */
 
-class Solution {    //时间复杂度O(n), 空间复杂度O(1), + 哈希表优化空间 + 思维题
+class Solution {    //时间复杂度O(n), 空间复杂度O(1), + 优化：省掉哈希表 + 思维题
     public Node copyRandomList(Node head) {
         for (var p = head; p != null; p = p.next.next) {    //为每个节点复制一个小弟挂在next上，所以跳俩次
             var q = new Node(p.val);

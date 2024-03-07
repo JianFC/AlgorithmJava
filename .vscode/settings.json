@@ -130,6 +130,9 @@
         "PARSE.C": "cpp",
         "cctype": "cpp",
         "string": "cpp",
-        "SCAN.C": "cpp"
+        "SCAN.C": "cpp",
+        "string_view": "cpp",
+        "*.tcc": "cpp",
+        "unordered_set": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
 }

@@ -22,7 +22,7 @@ class Solution {    //模板题 + 辅助栈
         while (root != null || stk.size() > 0) {
             while (root != null) {
                 res.add(root.val);
-                stk.push(root);         //入栈
+                stk.push(root);         //根节点入栈
                 root = root.right;      //走到右子树
             }                           //按照根 -> 右 -> 左的顺序遍历
             
