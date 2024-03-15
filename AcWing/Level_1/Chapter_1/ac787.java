@@ -35,7 +35,7 @@ public class ac787 {
         
         mergeSort(q, 0, n - 1);
         
-        for (int i = 0; i < n; i ++) out.print(q[i]+" ");
+        for (int i = 0; i < n; i ++) out.print(q[i] + " ");
         
         out.flush();
     } 

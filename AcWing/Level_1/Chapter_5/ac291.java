@@ -47,9 +47,6 @@ public class ac291 {    //291. 蒙德里安的梦想
                             f[i][j] += f[i - 1][k];
             
             out.println(f[m][0]);   //答案为f[m][0]
-            
-            ins.nextToken(); n = (int)ins.nval;
-            ins.nextToken(); m = (int)ins.nval;
         }
 
         out.flush();
