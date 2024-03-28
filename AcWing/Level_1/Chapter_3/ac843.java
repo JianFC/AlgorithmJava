@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;       //AcWing 843. n-皇后问题
 
 import java.io.*;
 

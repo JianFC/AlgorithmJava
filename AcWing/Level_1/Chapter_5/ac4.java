@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_5;
+package AcWing.Level_1.Chapter_5;     //4. 多重背包问题 I_朴素版本
 
 import java.io.*;
 

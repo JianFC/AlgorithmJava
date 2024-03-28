@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;       //AcWing 849. Dijkstra求最短路 I
 
 import java.io.*;
 import java.util.*;
@@ -40,7 +40,7 @@ public class ac849 {    //849. Dijkstra求最短路 I
         ins.nextToken(); n = (int)ins.nval;
         ins.nextToken(); m = (int)ins.nval;
         
-        for (int i = 1; i <= n; i++) Arrays.fill(g[i], INF);
+        for (int i = 1; i <= n; i ++) Arrays.fill(g[i], INF);
         
         while (m-- > 0) {
             ins.nextToken(); int a = (int)ins.nval;

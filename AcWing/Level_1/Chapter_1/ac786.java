@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_1;
+package AcWing.Level_1.Chapter_1;       //AcWing 786. 第k个数
 
 import java.io.*;
 
-public class ac786 {
+public class ac786 { 
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

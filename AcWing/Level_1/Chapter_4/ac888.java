@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;    //888. 求组合数 IV
 
 import java.io.*;
 import java.util.*;
 
-public class ac888 {    //888. 求组合数 IV
+public class ac888 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

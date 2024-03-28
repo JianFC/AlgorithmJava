@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;           //870. 约数个数
 
 import java.io.*;
 import java.util.*;
 
-public class ac870 {    //870. 约数个数
+public class ac870 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

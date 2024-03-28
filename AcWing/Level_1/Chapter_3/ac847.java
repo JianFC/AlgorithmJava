@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;       //AcWing 847. 图中点的层次
 
 import java.io.*;
 import java.util.*;
@@ -33,7 +33,7 @@ public class ac847 {    //847. 图中点的层次
                 int j = e[i];
                 if (d[j] == -1) {
                     d[j] = d[t] + 1;
-                    q[++tt] = j;
+                    q[++ tt] = j;
                 }
             }
         }

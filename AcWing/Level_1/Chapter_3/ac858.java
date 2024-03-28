@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;           //AcWing 858. Prim算法求最小生成树
 
 import java.io.*;
 import java.util.*;
 
-public class ac858 {    //AcWing 858. Prim算法求最小生成树
+public class ac858 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

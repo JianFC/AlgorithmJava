@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;           //871. 约数之和
 
 import java.io.*;
 import java.util.*;
 
-public class ac871 {    //871. 约数之和
+public class ac871 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

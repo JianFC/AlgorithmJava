@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;    //889. 满足条件的01序列
 
 import java.io.*;
 
-public class ac889 {    //889. 满足条件的01序列
+public class ac889 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 

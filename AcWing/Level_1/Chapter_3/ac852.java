@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;           //AcWing 852. spfa判断负环
 
 import java.io.*;
 import java.util.*;
 
-public class ac852 {    //AcWing 852. spfa判断负环
+public class ac852 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

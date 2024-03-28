@@ -1,10 +1,10 @@
-package AcWing.Level_1.Chapter_2;
+package AcWing.Level_1.Chapter_2;       //AcWing 840. 模拟散列表
 
 import java.io.*;
 import java.util.*;
 
 //开放寻址法
-public class ac840 {    //AcWing 840. 模拟散列表
+public class ac840 {    
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 

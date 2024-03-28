@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_1;
+package AcWing.Level_1.Chapter_1;       //AcWing 787. 归并排序       
 
 import java.io.*;
 
-public class ac787 {    
+public class ac787 { 
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

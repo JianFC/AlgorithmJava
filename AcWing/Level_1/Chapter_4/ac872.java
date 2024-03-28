@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;           //872. 最大公约数
 
 import java.io.*;
 
-public class ac872 {    //872. 最大公约数
+public class ac872 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

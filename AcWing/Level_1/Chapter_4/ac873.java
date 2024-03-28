@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;       //AcWing 873. 欧拉函数
 
 import java.io.*;
 

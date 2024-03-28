@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;           //204. 表达整数的奇怪方式
 
 import java.io.*;
 
-public class ac204 {    //204. 表达整数的奇怪方式
+public class ac204 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;    //AcWing 883. 高斯消元解线性方程组
 
 import java.io.*;
 
-public class ac883 {    //AcWing 883. 高斯消元解线性方程组
+public class ac883 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 

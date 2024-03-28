@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;    //894. 拆分-Nim游戏
 
 import java.io.*;
 import java.util.*;
 
-public class ac894 {    //894. 拆分-Nim游戏
+public class ac894 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

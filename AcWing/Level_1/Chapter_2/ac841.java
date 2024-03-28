@@ -1,15 +1,15 @@
-package AcWing.Level_1.Chapter_2;
+package AcWing.Level_1.Chapter_2;      //AcWing 841. 字符串哈希
 
 import java.io.*;
 
-public class ac841 {    //841. 字符串哈希
+public class ac841 {    
     static BufferedReader inb = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     
     static int N = 100010, P = 131;
     
     static int n, m;
-    //Java中无unsigned long long类型，此处用long类型替代，范围是-2^63-2^63-1，即Q从2^64变为2^63。
+    //Java中无unsigned long long类型，此处用long类型替代，范围是-2^63 - (2^63 - 1)，即Q从2^64变为2^63。
     static long[] h = new long[N], p = new long[N];
     
     static long get(int l, int r) {
@@ -28,7 +28,7 @@ public class ac841 {    //841. 字符串哈希
             h[i] = h[i - 1] * P + str.charAt(i);
         }
         
-        while (m-- > 0) {
+        while (m -- > 0) {
             String[] tp = inb.readLine().split(" ");
             int l1 = Integer.parseInt(tp[0]);
             int r1 = Integer.parseInt(tp[1]);

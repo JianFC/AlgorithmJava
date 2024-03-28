@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;           //AcWing 854. Floyd求最短路
 
 import java.io.*;
 
-public class ac854 {    //AcWing 854. Floyd求最短路
+public class ac854 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 

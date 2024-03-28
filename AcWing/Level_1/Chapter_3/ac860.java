@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;          //AcWing 860. 染色法判定二分图 
 
 import java.io.*;
 import java.util.*;
 
-public class ac860 {    //AcWing 860. 染色法判定二分图 
+public class ac860 { 
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_1;
+package AcWing.Level_1.Chapter_1;          //AcWing 799. 最长连续不重复子序列
 
 import java.io.*;
 
-public class ac799 {
+public class ac799 { 
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

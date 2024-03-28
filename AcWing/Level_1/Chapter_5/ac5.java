@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_5;
+package AcWing.Level_1.Chapter_5;   //5. 多重背包问题 II_位进制优化
 
 import java.io.*;
 
-public class ac5 {  //5. 多重背包问题 II_位进制优化
+public class ac5 {      //5. 多重背包问题 II_位进制优化
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

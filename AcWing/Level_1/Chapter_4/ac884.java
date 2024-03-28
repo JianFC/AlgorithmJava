@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;    //884. 高斯消元解异或线性方程组
 
 import java.io.*;
 
-public class ac884 {    //884. 高斯消元解异或线性方程组
+public class ac884 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

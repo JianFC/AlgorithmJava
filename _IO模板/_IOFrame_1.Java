@@ -9,6 +9,7 @@ class Main {
     public static void main(String[] args) throws Exception {
         ins.nextToken(); 
         int n = (int)ins.nval; String s = (String)ins.sval;
+        double x = (double)ins.nval;
 
         out.flush();
     }

@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_2;
+package AcWing.Level_1.Chapter_2;       //AcWing 826. 单链表  
 
 import java.io.*;
 
-public class ac826 {
+public class ac826 {    
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

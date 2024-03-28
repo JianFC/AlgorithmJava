@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_2;
+package AcWing.Level_1.Chapter_2;        //AcWing 837. 连通块中点的数量
 
 import java.io.*;
 
-public class ac837 {    //AcWing 837. 连通块中点的数量
+public class ac837 {   
     static BufferedReader inb = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 

@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;           //AcWing 859. Kruskal算法求最小生成树
 
 import java.io.*;
 import java.util.*;
 
-public class ac859 {    //AcWing 859. Kruskal算法求最小生成树
+public class ac859 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

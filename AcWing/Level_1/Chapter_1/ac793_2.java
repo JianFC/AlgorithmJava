@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_1;
+package AcWing.Level_1.Chapter_1;      //AcWing 793. 高精度乘法
 
 import java.io.*;
 import java.math.*;
 
-public class ac793_2 {
+public class ac793_2 { 
     static BufferedReader inb = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 

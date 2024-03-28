@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_1;
+package AcWing.Level_1.Chapter_1;           //AcWing 795. 前缀和
 
 import java.io.*;
 

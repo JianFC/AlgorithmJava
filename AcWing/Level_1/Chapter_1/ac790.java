@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_1;
+package AcWing.Level_1.Chapter_1;       //AcWing 790. 数的三次方根
 
 import java.io.*;
 import java.util.*;
 
-public class ac790 {
+public class ac790 {       
     static Scanner in = new Scanner(System.in);
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 

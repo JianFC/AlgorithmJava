@@ -31,8 +31,8 @@ class Solution {    //暴搜 + 枚举根节点 + catalan数 + 模板题
         for (int i = l; i <= r; i ++) {  //枚举该子树的root
             //递归生成左右子树部分的集合
             var left = dfs(l, i - 1); var right = dfs(i + 1, r);
-            for (var ln: left)   //枚举左子树根节点
-                for (var rn: right) {    //枚举右子树根节点
+            for (var ln : left)   //枚举左子树根节点
+                for (var rn : right) {    //枚举右子树根节点
                     var root = new TreeNode(i);  //以i为根，注意每次要新建root，防止读写冲突
                     root.left = ln; root.right = rn;  //更新root的左右子树根节点
                     res.add(root);  //更新res

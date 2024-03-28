@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_4;
+package AcWing.Level_1.Chapter_4;    //887. 求组合数 III
 
 import java.io.*;
 
-public class ac887 {    //887. 求组合数 III
+public class ac887 {
     static BufferedReader inb = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

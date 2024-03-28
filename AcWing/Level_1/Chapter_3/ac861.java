@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;           //861. 二分图的最大匹配
 
 import java.io.*;
 import java.util.*;
 
-public class ac861 {    //861. 二分图的最大匹配
+public class ac861 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

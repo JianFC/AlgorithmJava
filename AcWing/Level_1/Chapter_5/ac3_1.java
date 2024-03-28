@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_5;
+package AcWing.Level_1.Chapter_5;    //3. 完全背包问题_朴素版本
 
 import java.io.*;
 
-public class ac3_1 {    //3. 完全背包问题_朴素版本
+public class ac3_1 {
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

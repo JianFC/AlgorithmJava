@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_2;
+package AcWing.Level_1.Chapter_2;       //AcWing 240. 食物链
 
 import java.io.*;
 
@@ -33,11 +33,11 @@ public class ac240 {
             ins.nextToken(); int x = (int)ins.nval;
             ins.nextToken(); int y = (int)ins.nval;
             
-            if (x > n || y > n) res++;
+            if (x > n || y > n) res ++;
             else {
                 if (t == 1) {
                     int px = find(x), py = find(y);
-                    if (px == py && (d[x] - d[y]) % 3 != 0) res++;
+                    if (px == py && (d[x] - d[y]) % 3 != 0) res ++;
                     else if (px != py) {
                         p[px] = py;
                         d[px] = d[y] - d[x];
@@ -45,7 +45,7 @@ public class ac240 {
                 }
                 else if (t == 2){
                     int px = find(x), py = find(y);
-                    if (px == py && (d[x] - d[y] + 1) % 3 != 0) res++;
+                    if (px == py && (d[x] - d[y] + 1) % 3 != 0) res ++;
                     else if (px != py) {
                         p[px] = py;
                         d[px] = d[y] - d[x] - 1;

@@ -1,8 +1,8 @@
-package AcWing.Level_1.Chapter_1;
+package AcWing.Level_1.Chapter_1;       //AcWing 785. 快速排序
 
 import java.io.*;
 
-public class ac785 {
+public class ac785 {        
     static StreamTokenizer ins = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

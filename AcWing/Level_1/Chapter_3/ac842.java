@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_3;
+package AcWing.Level_1.Chapter_3;       //AcWing 842. 排列数字
 
 import java.io.*;
 

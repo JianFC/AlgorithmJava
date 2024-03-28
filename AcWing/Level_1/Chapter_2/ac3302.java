@@ -1,9 +1,9 @@
-package AcWing.Level_1.Chapter_2;
+package AcWing.Level_1.Chapter_2;      //AcWing 3302. 表达式求值
 
 import java.io.*;
 import java.util.*;
 
-public class ac3302 {   //3302. 表达式求值
+public class ac3302 {   
     static BufferedReader inb = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
     

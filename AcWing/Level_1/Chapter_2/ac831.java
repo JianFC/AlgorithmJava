@@ -1,4 +1,4 @@
-package AcWing.Level_1.Chapter_2;
+package AcWing.Level_1.Chapter_2;       //AcWing 831. KMP字符串
 
 import java.io.*;
 
