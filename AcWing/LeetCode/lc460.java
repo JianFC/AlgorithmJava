@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //LeetCode 460. LFU 缓存
 
 class LFUCache {    //双链表LFU套双链表LRU + 模拟题 + 数据结构
     class Node {        //每个block内部节点，LRU双链表
