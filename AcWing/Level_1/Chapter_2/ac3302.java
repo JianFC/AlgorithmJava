@@ -41,7 +41,7 @@ public class ac3302 {
             if (Character.isDigit(c)) {
                 int x = 0, j = i;
                 while (j < str.length() && Character.isDigit(str.charAt(j)))
-                    x = x * 10 + str.charAt(j++)-'0';
+                    x = x * 10 + str.charAt(j ++)-'0';
                 i = j - 1;
                 num[++ tt1] = x;
             }
