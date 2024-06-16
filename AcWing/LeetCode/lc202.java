@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;    //LeetCode 202. 快乐数
 
 class Solution {    //思维题 + 时O(1)（最多执行812次）+ 快慢指针
     int get(int x) {    //计算x的下一个数
