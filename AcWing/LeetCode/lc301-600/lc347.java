@@ -1,4 +1,4 @@
-package AcWing.LeetCode;
+package AcWing.LeetCode;        //347. 前 K 个高频元素
 
 class Solution {    //哈希表 + 计数排序思想 + 时O(n)
     public int[] topKFrequent(int[] nums, int k) {
